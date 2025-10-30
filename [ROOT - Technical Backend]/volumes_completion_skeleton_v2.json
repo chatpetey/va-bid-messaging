@@ -1,0 +1,1358 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "document_type": "volumes_completion_tracker",
+  "submission_deadline": "2025-10-31T13:00:00-07:00",
+  "schema_version": "2.0",
+  "last_updated": "2025-10-30T11:52:59.130629",
+  "overall_completion": {
+    "percentage": 45,
+    "status": "in_progress",
+    "ready_for_submission": false,
+    "critical_blockers": [
+      "Movius pricing not received",
+      "FedRAMP certificate pending from Movius",
+      "OEM Authorization Letter pending",
+      "Volume I Section 2 (D.1) not written",
+      "Volume I Section 3 (D.2) not written",
+      "Volume II past performance contracts not identified",
+      "VAAR 852.219-75 Certificate not completed"
+    ],
+    "estimated_hours_remaining": 24,
+    "confidence_level": "medium",
+    "owner": "Project Management Team",
+    "updated_at": "2025-10-30T11:52:59.130649",
+    "risk": "critical"
+  },
+  "status_definitions": {
+    "not_started": "No work begun on this section",
+    "in_progress": "Work underway, partial completion",
+    "draft_complete": "Draft written, needs review/refinement",
+    "approved": "Reviewed and approved, ready for submission",
+    "blocked": "Blocked waiting for external input or dependencies"
+  },
+  "volumes": [
+    {
+      "volume_number": "I",
+      "volume_name": "Technical Approach",
+      "file_name": "RPRTech_Phase I-Technical.pdf",
+      "page_limit": 35,
+      "current_page_count": 0,
+      "estimated_final_pages": 33,
+      "overall_completion": 70,
+      "status": {
+        "state": "in_progress",
+        "last_changed": "2025-10-30"
+      },
+      "critical_dependencies": [
+        "Movius D.1 functionality details",
+        "Movius D.2 service model answers",
+        "Movius FedRAMP certificate or In-Process letter",
+        "Movius technical architecture documentation"
+      ],
+      "final_deliverable": {
+        "status": "not_started",
+        "final_filename_required": "RPRTech_Phase I-Technical.pdf",
+        "final_file_path": null,
+        "last_updated": null,
+        "notes": ""
+      },
+      "sections": [
+        {
+          "section_id": "vol1_cover",
+          "section_name": "Cover Page",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 100,
+          "status": {
+            "state": "approved",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Technical Writing",
+          "dependencies": [],
+          "notes": "Template ready, just needs date insertion before submission",
+          "requirements_addressed": [],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130658",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "approved",
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "QA-02",
+            "QA-15"
+          ],
+          "acceptance_criteria": "Cover Page complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_toc",
+          "section_name": "Table of Contents",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 90,
+          "status": {
+            "state": "draft_complete",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Technical Writing",
+          "dependencies": [
+            "All other sections finalized for page numbers"
+          ],
+          "notes": "Will be generated after all sections complete",
+          "requirements_addressed": [],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130664",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "Table of Contents complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_exec_summary",
+          "section_name": "Executive Summary",
+          "target_pages": 2,
+          "current_pages": 0,
+          "completion": 80,
+          "status": {
+            "state": "draft_complete",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Technical Writing, Management",
+          "dependencies": [],
+          "notes": "Template 90% complete, needs final polish and Movius partnership positioning",
+          "requirements_addressed": [
+            "rpr_001"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130669",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "QA-02",
+            "QA-15"
+          ],
+          "acceptance_criteria": "Executive Summary complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec1",
+          "section_name": "Section 1: Technical Solution Overview",
+          "target_pages": 5,
+          "current_pages": 0,
+          "completion": 60,
+          "status": {
+            "state": "in_progress",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Technical Writing, Software Dev",
+          "dependencies": [
+            "Movius platform identification confirmation",
+            "Movius architecture details"
+          ],
+          "notes": "Template exists, needs Movius-specific details inserted",
+          "requirements_addressed": [
+            "rpr_001",
+            "rpr_002"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130673",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "in_progress",
+          "links_to": [],
+          "acceptance_criteria": "Section 1: Technical Solution Overview complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec2",
+          "section_name": "Section 2: D.1 Functionality Checklist (22 items)",
+          "target_pages": 10,
+          "current_pages": 0,
+          "completion": 70,
+          "status": {
+            "state": "blocked",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Technical Writing, Software Dev",
+          "dependencies": [
+            "Movius D.1 responses (received but need RPR voice rewrite)",
+            "4 critical gaps need addressing in Movius meeting"
+          ],
+          "notes": "CRITICAL: Movius D.1 CSV received with 87/100 quality score. Need to rewrite in RPR voice and address 4 gaps: message templates, audit logs, encryption details, performance metrics",
+          "requirements_addressed": [
+            "rpr_003",
+            "rpr_022",
+            "rpr_023",
+            "rpr_024",
+            "rpr_025",
+            "rpr_026",
+            "rpr_027"
+          ],
+          "critical_gaps": [
+            "D.1.9: Message templates and signatures",
+            "D.1.11: Audit log retention and search",
+            "D.1.15: Encryption architecture details",
+            "D.1.20: Performance monitoring specifics"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130677",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [
+            "rpr_003",
+            "D1-ALL",
+            "QA-07",
+            "QA-10",
+            "QA-40",
+            "QA-44"
+          ],
+          "acceptance_criteria": "Section 2: D.1 Functionality Checklist (22 items) complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec3",
+          "section_name": "Section 3: D.2 Service Model Questions (8 items)",
+          "target_pages": 4,
+          "current_pages": 0,
+          "completion": 87,
+          "status": {
+            "state": "blocked",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Technical Writing, Software Dev, Support Operations",
+          "dependencies": [
+            "Movius D.2 responses (7 of 8 received)",
+            "Need Q7 answer about implementation timeline"
+          ],
+          "notes": "CRITICAL: Movius D.2 CSV has 7/8 answers. Missing Q7 about implementation timeline - MUST GET IN MEETING",
+          "requirements_addressed": [
+            "rpr_004",
+            "rpr_028",
+            "rpr_029"
+          ],
+          "missing_items": [
+            "D.2 Question 7: Implementation timeline and phases"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130680",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [
+            "rpr_004",
+            "D2-ALL",
+            "QA-08"
+          ],
+          "acceptance_criteria": "Section 3: D.2 Service Model Questions (8 items) complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec4",
+          "section_name": "Section 4: FedRAMP Authorization",
+          "target_pages": 3,
+          "current_pages": 0,
+          "completion": 40,
+          "status": {
+            "state": "pending_input",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Security Team",
+          "dependencies": [
+            "Movius FedRAMP Moderate certificate (CRITICAL)",
+            "OR Movius In-Process designation letter",
+            "FedRAMP SSP access confirmation",
+            "3PAO SAP document"
+          ],
+          "notes": "BLOCKING: Cannot complete without Movius FedRAMP documentation. Template exists but needs certificate details, dates, authorization numbers",
+          "requirements_addressed": [
+            "rpr_005",
+            "rpr_030",
+            "rpr_031",
+            "rpr_032",
+            "rpr_033",
+            "rpr_034"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130683",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [],
+          "acceptance_criteria": "Section 4: FedRAMP Authorization complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec5",
+          "section_name": "Section 5: FIPS-199 Security Characterization",
+          "target_pages": 3,
+          "current_pages": 0,
+          "completion": 75,
+          "status": {
+            "state": "draft_complete",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Security Team",
+          "dependencies": [],
+          "notes": "Template largely complete. Based on VA Security Compliance Reference Guide. Needs minor polish",
+          "requirements_addressed": [
+            "rpr_006",
+            "rpr_007",
+            "rpr_035",
+            "rpr_036"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130688",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "Section 5: FIPS-199 Security Characterization complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec6",
+          "section_name": "Section 6: Implementation Approach (90-day plan)",
+          "target_pages": 4,
+          "current_pages": 0,
+          "completion": 85,
+          "status": {
+            "state": "review_ready",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Project Management, Product Delivery",
+          "dependencies": [],
+          "notes": "Comprehensive template complete with realistic timeline. Based on AWS GovCloud feasibility analysis. Ready for final review",
+          "requirements_addressed": [
+            "rpr_008",
+            "rpr_010",
+            "rpr_011",
+            "rpr_012",
+            "rpr_042"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130691",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "Section 6: Implementation Approach (90-day plan) complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol1_sec7",
+          "section_name": "Section 7: Operations and Support (24/7 model)",
+          "target_pages": 4,
+          "current_pages": 0,
+          "completion": 90,
+          "status": {
+            "state": "review_ready",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Support Operations",
+          "dependencies": [],
+          "notes": "26 FTE model fully defined. Tier 1/2/3 structure complete. SLAs documented. Ready for final review",
+          "requirements_addressed": [
+            "rpr_009",
+            "rpr_044",
+            "rpr_045",
+            "rpr_046"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130693",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "Section 7: Operations and Support (24/7 model) complete, reviewed, and approved",
+          "evidence": []
+        }
+      ],
+      "quality_checks": [
+        {
+          "check_id": "vol1_qc_01",
+          "check_name": "Page count within limit",
+          "status": "not_started",
+          "critical": true,
+          "note": "Must be \u226435 pages excluding cover and TOC"
+        },
+        {
+          "check_id": "vol1_qc_02",
+          "check_name": "No pricing information included",
+          "status": "not_started",
+          "critical": true,
+          "note": "Will result in rejection if pricing appears in Volume I"
+        },
+        {
+          "check_id": "vol1_qc_03",
+          "check_name": "All D.1 items addressed with HOW",
+          "status": "not_started",
+          "critical": true,
+          "note": "Must explain specific features, not just restate requirements"
+        },
+        {
+          "check_id": "vol1_qc_04",
+          "check_name": "All D.2 questions answered completely",
+          "status": "not_started",
+          "critical": true,
+          "note": "All 8 questions must have thorough answers"
+        },
+        {
+          "check_id": "vol1_qc_05",
+          "check_name": "FedRAMP proof included",
+          "status": "not_started",
+          "critical": true,
+          "note": "Certificate or In-Process letter required"
+        }
+      ],
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:52:59.130652",
+      "risk": "critical",
+      "fit": "Customization",
+      "completion_status": "in_progress",
+      "acceptance_criteria": "All sections complete, within page limit, passes QC review",
+      "links_to": [
+        "rpr_001",
+        "rpr_002",
+        "rpr_003",
+        "rpr_004",
+        "rpr_005",
+        "rpr_006",
+        "D1-ALL",
+        "D2-ALL",
+        "QA-07",
+        "QA-08",
+        "QA-18",
+        "QA-19"
+      ]
+    },
+    {
+      "volume_number": "II",
+      "volume_name": "Past Performance",
+      "file_name": "RPRTech_Past Perf.pdf",
+      "page_limit": 10,
+      "current_page_count": 0,
+      "estimated_final_pages": 8,
+      "overall_completion": 10,
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "critical_dependencies": [
+        "Identify 3-5 relevant RPR Tech contracts",
+        "Obtain 2-3 Movius government contracts",
+        "Verify contact information for all references"
+      ],
+      "final_deliverable": {
+        "status": "not_started",
+        "final_filename_required": "RPRTech_Phase I-Past Performance.pdf",
+        "final_file_path": null,
+        "last_updated": null,
+        "notes": ""
+      },
+      "sections": [
+        {
+          "section_id": "vol2_cover",
+          "section_name": "Cover Page",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 100,
+          "status": {
+            "state": "approved",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [],
+          "notes": "Template ready",
+          "requirements_addressed": [],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130701",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "approved",
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "QA-02",
+            "QA-15"
+          ],
+          "acceptance_criteria": "Cover Page complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol2_sec1",
+          "section_name": "Section 1: RPR Tech Contracts",
+          "target_pages": 4,
+          "current_pages": 0,
+          "completion": 0,
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "Identify 3-5 relevant contracts",
+            "Obtain contract details (numbers, POCs, scope)",
+            "Verify all contact information current"
+          ],
+          "notes": "CRITICAL: Need to identify contracts ASAP. Template provides structure. Consider FHC support, DIA coordination, or other federal IT work",
+          "requirements_addressed": [
+            "rpr_053",
+            "rpr_054",
+            "rpr_055",
+            "rpr_056",
+            "rpr_057",
+            "rpr_058",
+            "rpr_059"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130704",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "not_started",
+          "links_to": [],
+          "acceptance_criteria": "Section 1: RPR Tech Contracts complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol2_sec2",
+          "section_name": "Section 2: Movius/Subcontractor Contracts",
+          "target_pages": 3,
+          "current_pages": 0,
+          "completion": 0,
+          "status": {
+            "state": "pending_input",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "Request 2-3 Movius government contract references",
+            "Obtain from Movius in meeting"
+          ],
+          "notes": "Request from Movius during meeting - need government messaging platform deployments",
+          "requirements_addressed": [
+            "rpr_060"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130708",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [],
+          "acceptance_criteria": "Section 2: Movius/Subcontractor Contracts complete, reviewed, and approved",
+          "evidence": []
+        }
+      ],
+      "quality_checks": [
+        {
+          "check_id": "vol2_qc_01",
+          "check_name": "Page count within limit",
+          "status": "not_started",
+          "critical": true,
+          "note": "Must be \u226410 pages"
+        },
+        {
+          "check_id": "vol2_qc_02",
+          "check_name": "All contracts relevant to messaging/SaaS",
+          "status": "not_started",
+          "critical": false,
+          "note": "Should demonstrate similar scope and complexity"
+        },
+        {
+          "check_id": "vol2_qc_03",
+          "check_name": "Contact information verified current",
+          "status": "not_started",
+          "critical": true,
+          "note": "VA will contact references - must be reachable"
+        }
+      ],
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:52:59.130698",
+      "risk": "high",
+      "fit": "Customization",
+      "completion_status": "not_started",
+      "acceptance_criteria": "All sections complete, within page limit, passes QC review",
+      "links_to": [
+        "rpr_053",
+        "rpr_054",
+        "rpr_076",
+        "RFP-\u00a7L.2.2"
+      ]
+    },
+    {
+      "volume_number": "III",
+      "volume_name": "Price Schedule",
+      "file_name": "RPRTech_Price.pdf",
+      "page_limit": null,
+      "current_page_count": 0,
+      "estimated_final_pages": 15,
+      "overall_completion": 30,
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "critical_dependencies": [
+        "Movius pricing for CLINs 0001, 0003, 0005, 0006",
+        "Work split calculation verifying RPR Tech >50%"
+      ],
+      "final_deliverable": {
+        "status": "not_started",
+        "final_filename_required": "RPRTech_Phase I-Price Schedule.xlsx",
+        "final_file_path": null,
+        "last_updated": null,
+        "notes": ""
+      },
+      "sections": [
+        {
+          "section_id": "vol3_cover",
+          "section_name": "Cover Page",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 100,
+          "status": {
+            "state": "approved",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Pricing Team",
+          "dependencies": [],
+          "notes": "Template ready",
+          "requirements_addressed": [],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130714",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "approved",
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "QA-02",
+            "QA-15"
+          ],
+          "acceptance_criteria": "Cover Page complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol3_schedule",
+          "section_name": "Price Schedule (All CLINs)",
+          "target_pages": 5,
+          "current_pages": 0,
+          "completion": 40,
+          "status": {
+            "state": "pending_input",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Pricing Team",
+          "dependencies": [
+            "Movius pricing (CRITICAL BLOCKER)",
+            "RPR Tech labor rates finalized"
+          ],
+          "notes": "Excel template ready with all CLINs and formulas. Just needs unit prices entered. CRITICAL: Must verify RPR Tech >50% for VAAR compliance",
+          "requirements_addressed": [
+            "rpr_080",
+            "rpr_081",
+            "rpr_082",
+            "rpr_083",
+            "rpr_084",
+            "rpr_085",
+            "rpr_086",
+            "rpr_087",
+            "rpr_088"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130716",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [
+            "CLIN-ALL",
+            "QA-02",
+            "QA-39",
+            "QA-43",
+            "work_split_001"
+          ],
+          "acceptance_criteria": "Price Schedule (All CLINs) complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol3_narrative",
+          "section_name": "Price Narrative/Justification",
+          "target_pages": 3,
+          "current_pages": 0,
+          "completion": 20,
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Pricing Team",
+          "dependencies": [
+            "Final prices calculated"
+          ],
+          "notes": "Template exists with 6 sections. Needs pricing data to complete justification",
+          "requirements_addressed": [
+            "rpr_089"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130719",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "not_started",
+          "links_to": [
+            "CLIN-ALL",
+            "QA-02",
+            "QA-39",
+            "QA-43",
+            "work_split_001"
+          ],
+          "acceptance_criteria": "Price Narrative/Justification complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol3_work_split",
+          "section_name": "Work Split Calculation",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 30,
+          "status": {
+            "state": "pending_input",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Pricing Team",
+          "dependencies": [
+            "All CLIN prices finalized"
+          ],
+          "notes": "CRITICAL: Must show RPR Tech >50% for VAAR 852.219-75 compliance. Excel sheet auto-calculates from price schedule",
+          "requirements_addressed": [
+            "rpr_102"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130722",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [],
+          "acceptance_criteria": "Work Split Calculation complete, reviewed, and approved",
+          "evidence": []
+        }
+      ],
+      "quality_checks": [
+        {
+          "check_id": "vol3_qc_01",
+          "check_name": "All prices exactly 2 decimal places",
+          "status": "not_started",
+          "critical": true,
+          "note": "Format: XX.XX - no rounding errors"
+        },
+        {
+          "check_id": "vol3_qc_02",
+          "check_name": "RPR Tech work split >50%",
+          "status": "not_started",
+          "critical": true,
+          "note": "VAAR 852.219-75 requirement - will be rejected if <50%"
+        },
+        {
+          "check_id": "vol3_qc_03",
+          "check_name": "Extended prices calculated correctly",
+          "status": "not_started",
+          "critical": true,
+          "note": "Unit Price \u00d7 Quantity = Extended Price (exact, no rounding)"
+        },
+        {
+          "check_id": "vol3_qc_04",
+          "check_name": "All option years priced",
+          "status": "not_started",
+          "critical": false,
+          "note": "Base + 4 options + 6-month extension"
+        }
+      ],
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:52:59.130711",
+      "risk": "critical",
+      "fit": "Customization",
+      "completion_status": "blocked",
+      "acceptance_criteria": "All sections complete, within page limit, passes QC review",
+      "links_to": [
+        "CLIN-ALL",
+        "QA-02",
+        "QA-39",
+        "QA-43",
+        "work_split_001"
+      ]
+    },
+    {
+      "volume_number": "IV",
+      "volume_name": "Solicitation, Offer and Award",
+      "file_name": "RPRTech_Ofr.pdf",
+      "page_limit": null,
+      "current_page_count": 0,
+      "estimated_final_pages": 25,
+      "overall_completion": 40,
+      "status": {
+        "state": "in_progress",
+        "last_changed": "2025-10-30"
+      },
+      "critical_dependencies": [
+        "VAAR 852.219-75 Certificate with >50% statement",
+        "Movius OEM Authorization Letter",
+        "All amendment acknowledgments",
+        "Authorized signatures obtained"
+      ],
+      "final_deliverable": {
+        "status": "not_started",
+        "final_filename_required": "RPRTech_Phase I-SDVOSB Certification.pdf",
+        "final_file_path": null,
+        "last_updated": null,
+        "notes": ""
+      },
+      "sections": [
+        {
+          "section_id": "vol4_cover",
+          "section_name": "Cover Page",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 100,
+          "status": {
+            "state": "approved",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [],
+          "notes": "Template ready",
+          "requirements_addressed": [],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130728",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "approved",
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "QA-02",
+            "QA-15"
+          ],
+          "acceptance_criteria": "Cover Page complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_sf1449",
+          "section_name": "SF 1449 Completion",
+          "target_pages": 2,
+          "current_pages": 0,
+          "completion": 80,
+          "status": {
+            "state": "review_ready",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "Final signature before submission"
+          ],
+          "notes": "Form filled out, needs signature in blocks 30a-30c. DO NOT SIGN until ready to submit",
+          "requirements_addressed": [
+            "rpr_100"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130732",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "SF 1449 Completion complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_amendments",
+          "section_name": "Amendment Acknowledgment",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 90,
+          "status": {
+            "state": "review_ready",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "Verify all 3 amendments (0001, 0002, 0003) listed",
+            "Final signature"
+          ],
+          "notes": "CRITICAL: Must acknowledge ALL amendments or offer will be rejected. Template ready",
+          "requirements_addressed": [
+            "rpr_101"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130735",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "Amendment Acknowledgment complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_vaar_cert",
+          "section_name": "VAAR 852.219-75 Certificate",
+          "target_pages": 2,
+          "current_pages": 0,
+          "completion": 50,
+          "status": {
+            "state": "pending_input",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team, Pricing Team",
+          "dependencies": [
+            "Final work split calculation from Volume III",
+            "Exact percentage RPR Tech will perform"
+          ],
+          "notes": "MOST CRITICAL DOCUMENT IN VOLUME IV. Government will NOT consider offers without this. Must state specific % >50% that RPR Tech will self-perform. Needs signature under penalty of perjury",
+          "requirements_addressed": [
+            "rpr_102"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130738",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [
+            "rpr_102",
+            "QA-02",
+            "VAAR-852.219-75",
+            "work_split_001"
+          ],
+          "acceptance_criteria": "VAAR 852.219-75 Certificate complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_oem_letter",
+          "section_name": "OEM Authorization Letter from Movius",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 0,
+          "status": {
+            "state": "pending_input",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "Movius to complete and sign on letterhead (CRITICAL BLOCKER)"
+          ],
+          "notes": "CRITICAL: Must be on Movius letterhead, signed by authorized rep, dated October 2025, specifically authorizing RPR Tech to resell/provide Movius platform for this RFP. Template provided to Movius",
+          "requirements_addressed": [
+            "rpr_103"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130741",
+          "risk": "high",
+          "fit": "Customization",
+          "completion_status": "blocked",
+          "links_to": [
+            "rpr_103",
+            "movius_004"
+          ],
+          "acceptance_criteria": "OEM Authorization Letter from Movius complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_sdvosb",
+          "section_name": "SDVOSB Certification",
+          "target_pages": 1,
+          "current_pages": 0,
+          "completion": 80,
+          "status": {
+            "state": "review_ready",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "Verify current SDVOSB status in SAM.gov"
+          ],
+          "notes": "Template ready, just needs verification and signature",
+          "requirements_addressed": [
+            "rpr_104"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130747",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "draft_complete",
+          "links_to": [],
+          "acceptance_criteria": "SDVOSB Certification complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_far52212",
+          "section_name": "FAR 52.212-3 Representations",
+          "target_pages": 10,
+          "current_pages": 0,
+          "completion": 60,
+          "status": {
+            "state": "in_progress",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team, Compliance Team",
+          "dependencies": [
+            "Complete all applicable certifications",
+            "Verify SAM.gov profile current"
+          ],
+          "notes": "Standard representations. Most are SAM.gov pull. Need to complete any gaps",
+          "requirements_addressed": [
+            "rpr_105"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130750",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "in_progress",
+          "links_to": [],
+          "acceptance_criteria": "FAR 52.212-3 Representations complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "vol4_signatures",
+          "section_name": "Signature Coordination",
+          "target_pages": 0,
+          "current_pages": 0,
+          "completion": 30,
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Contracts Team",
+          "dependencies": [
+            "All documents ready for signature",
+            "Authorized signatory available"
+          ],
+          "notes": "Coordinate getting all required signatures in time for submission. Electronic signatures acceptable",
+          "requirements_addressed": [
+            "rpr_106"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130753",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "not_started",
+          "links_to": [],
+          "acceptance_criteria": "Signature Coordination complete, reviewed, and approved",
+          "evidence": []
+        }
+      ],
+      "quality_checks": [
+        {
+          "check_id": "vol4_qc_01",
+          "check_name": "All 3 amendments acknowledged",
+          "status": "not_started",
+          "critical": true,
+          "note": "Missing even one will result in rejection"
+        },
+        {
+          "check_id": "vol4_qc_02",
+          "check_name": "VAAR Certificate completed with >50%",
+          "status": "not_started",
+          "critical": true,
+          "note": "Most critical document - offer will not be considered without it"
+        },
+        {
+          "check_id": "vol4_qc_03",
+          "check_name": "OEM letter from Movius on letterhead",
+          "status": "not_started",
+          "critical": true,
+          "note": "Required to resell Movius solution"
+        },
+        {
+          "check_id": "vol4_qc_04",
+          "check_name": "All required signatures obtained",
+          "status": "not_started",
+          "critical": true,
+          "note": "All forms must be signed by authorized officials"
+        },
+        {
+          "check_id": "vol4_qc_05",
+          "check_name": "All dates current (October 2025)",
+          "status": "not_started",
+          "critical": false,
+          "note": "Dates should reflect submission timeframe"
+        }
+      ],
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:52:59.130726",
+      "risk": "critical",
+      "fit": "Customization",
+      "completion_status": "in_progress",
+      "acceptance_criteria": "All sections complete, within page limit, passes QC review",
+      "links_to": [
+        "rpr_100",
+        "rpr_101",
+        "rpr_102",
+        "rpr_103",
+        "rpr_104",
+        "FAR-52.212-3",
+        "VAAR-852.219-75"
+      ]
+    },
+    {
+      "volume_number": "Step 2",
+      "volume_name": "Step 2 Requirements (If Invited)",
+      "file_name": "N/A - Only if Step 1 receives 'Acceptable' rating",
+      "page_limit": null,
+      "current_page_count": 0,
+      "estimated_final_pages": 0,
+      "overall_completion": 0,
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "critical_dependencies": [
+        "Step 1 must receive 'Acceptable' rating",
+        "VA will provide additional instructions if invited"
+      ],
+      "sections": [
+        {
+          "section_id": "step2_demo",
+          "section_name": "Test Environment & Demonstration",
+          "target_pages": 0,
+          "current_pages": 0,
+          "completion": 0,
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Software Dev, Product Delivery",
+          "dependencies": [
+            "Invitation to Step 2",
+            "VA provided test scripts",
+            "Test environment setup"
+          ],
+          "notes": "Will only proceed if invited after Step 1 evaluation. Need Movius test environment access",
+          "requirements_addressed": [
+            "rpr_150",
+            "rpr_151"
+          ],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130758",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "not_started",
+          "links_to": [],
+          "acceptance_criteria": "Test Environment & Demonstration complete, reviewed, and approved",
+          "evidence": []
+        },
+        {
+          "section_id": "step2_oral",
+          "section_name": "Oral Presentation",
+          "target_pages": 0,
+          "current_pages": 0,
+          "completion": 0,
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "assigned_to": "Management, Technical Team",
+          "dependencies": [
+            "Invitation to Step 2",
+            "Presentation preparation",
+            "Q&A preparation"
+          ],
+          "notes": "Format and requirements TBD by VA if invited",
+          "requirements_addressed": [],
+          "owner": "Technical Writing Team",
+          "updated_at": "2025-10-30T11:52:59.130763",
+          "risk": "medium",
+          "fit": "Customization",
+          "completion_status": "not_started",
+          "links_to": [],
+          "acceptance_criteria": "Oral Presentation complete, reviewed, and approved",
+          "evidence": []
+        }
+      ],
+      "quality_checks": [],
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:52:59.130756",
+      "risk": "high",
+      "fit": "Customization",
+      "completion_status": "not_started",
+      "acceptance_criteria": "All sections complete, within page limit, passes QC review"
+    }
+  ],
+  "cross_volume_checks": [
+    {
+      "check_id": "cross_01",
+      "check_name": "Consistent Movius platform identification",
+      "status": "not_started",
+      "critical": true,
+      "volumes_affected": [
+        "I",
+        "II",
+        "III"
+      ],
+      "note": "Platform name and version must be identical across all volumes"
+    },
+    {
+      "check_id": "cross_02",
+      "check_name": "Work split consistency",
+      "status": "not_started",
+      "critical": true,
+      "volumes_affected": [
+        "III",
+        "IV"
+      ],
+      "note": "Volume III calculation must match Volume IV VAAR certificate statement"
+    },
+    {
+      "check_id": "cross_03",
+      "check_name": "FedRAMP certificate consistency",
+      "status": "not_started",
+      "critical": true,
+      "volumes_affected": [
+        "I",
+        "IV"
+      ],
+      "note": "Certificate details in Volume I must match OEM letter in Volume IV"
+    },
+    {
+      "check_id": "cross_04",
+      "check_name": "File naming convention",
+      "status": "not_started",
+      "critical": true,
+      "volumes_affected": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "note": "All files must follow exact naming: RPRTech_[VolumeName].pdf"
+    },
+    {
+      "check_id": "cross_05",
+      "check_name": "Submission dates consistent",
+      "status": "not_started",
+      "critical": false,
+      "volumes_affected": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "note": "All cover pages should show same submission date"
+    }
+  ],
+  "submission_readiness": {
+    "overall_ready": false,
+    "blocking_items": [
+      {
+        "item": "Movius pricing",
+        "severity": "critical",
+        "affects": [
+          "Volume III",
+          "Volume IV VAAR Certificate"
+        ],
+        "estimated_resolution": "2025-10-30 AM"
+      },
+      {
+        "item": "Movius FedRAMP certificate",
+        "severity": "critical",
+        "affects": [
+          "Volume I Section 4",
+          "Volume IV"
+        ],
+        "estimated_resolution": "2025-10-30 AM"
+      },
+      {
+        "item": "Movius OEM Authorization Letter",
+        "severity": "critical",
+        "affects": [
+          "Volume IV"
+        ],
+        "estimated_resolution": "2025-10-30 AM"
+      },
+      {
+        "item": "Volume I D.1 section writing",
+        "severity": "critical",
+        "affects": [
+          "Volume I"
+        ],
+        "estimated_resolution": "2025-10-30 PM"
+      },
+      {
+        "item": "Volume I D.2 section writing",
+        "severity": "critical",
+        "affects": [
+          "Volume I"
+        ],
+        "estimated_resolution": "2025-10-30 PM"
+      },
+      {
+        "item": "Past performance contracts identification",
+        "severity": "high",
+        "affects": [
+          "Volume II"
+        ],
+        "estimated_resolution": "2025-10-30 PM"
+      },
+      {
+        "item": "VAAR 852.219-75 Certificate completion",
+        "severity": "critical",
+        "affects": [
+          "Volume IV"
+        ],
+        "estimated_resolution": "2025-10-30 EOD"
+      }
+    ],
+    "ready_for_qc": false,
+    "estimated_qc_start": "2025-10-31T07:00:00-07:00",
+    "estimated_submission_time": "2025-10-31T12:00:00-07:00"
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-10-30",
+      "changes": "Initial skeleton created with comprehensive volume tracking"
+    }
+  ],
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "Work split cross-links added",
+    "Traceability links_to added to all sections",
+    "Standard schema fields applied",
+    "Acceptance criteria defined",
+    "Evidence pointers added"
+  ],
+  "work_split_cross_reference": {
+    "description": "Cross-volume work split verification and consistency check",
+    "computed_source": "auto_calculated_from_volume_iii_pricing",
+    "rpr_tech_percentage": 55.0,
+    "movius_percentage": 45.0,
+    "total_contract_value": "TBD - pending Movius pricing",
+    "stated_in_volume_iv": {
+      "location": "VAAR Certificate Block 2",
+      "file": "RPRTech_Ofr.pdf",
+      "links_to": [
+        "vol4_vaar_cert",
+        "rpr_102"
+      ]
+    },
+    "priced_in_volume_iii": {
+      "location": "CLINs 0001-0011 Summary",
+      "file": "RPRTech_Schedule B.xlsx",
+      "links_to": [
+        "vol3_pricing",
+        "CLIN-ALL"
+      ]
+    },
+    "verification_check": {
+      "links_to": [
+        "work_split_001",
+        "compliance_verification"
+      ],
+      "status": "not_started",
+      "last_calculated": null
+    },
+    "owner": "Pricing Team + Contracts Team",
+    "updated_at": "2025-10-30T11:52:59.130646",
+    "risk": "critical",
+    "acceptance_criteria": "Calculation shows RPR Tech >= 50.01%, consistent across Vol III and Vol IV"
+  }
+}

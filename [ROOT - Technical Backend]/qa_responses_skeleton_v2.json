@@ -1,0 +1,1575 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "document_type": "qa_responses",
+  "published_date": "2025-10-21",
+  "total_questions": 53,
+  "schema_version": "2.0",
+  "status_definitions": {
+    "critical_blocker": "Blocks proposal submission or disqualifies offer",
+    "needs_addressing": "Must be incorporated into proposal volumes",
+    "addressed_in_proposal": "Already covered in existing proposal content",
+    "impacts_pricing": "Affects Volume III pricing strategy",
+    "not_relevant_to_proposal": "Informational only, no action required",
+    "evaluation_guidance": "Clarifies how VA will evaluate proposals"
+  },
+  "team_definitions": {
+    "software_dev": "Platform development, application features, mobile apps",
+    "security": "FedRAMP, ATO, encryption, FIPS, data protection",
+    "integrations": "EntraID, Active Directory, MDM, SSO, APIs",
+    "product_delivery": "Implementation, rollout, training, change management",
+    "contracts": "Teaming agreements, OEM letters, past performance, legal",
+    "pricing": "CLIN structure, license costs, volume discounts, work split",
+    "technical_writing": "Volume I, Volume II, documentation, page management",
+    "project_management": "Timeline, milestones, coordination, deliverables",
+    "support_operations": "Help desk, 24/7 support, SLAs, user support"
+  },
+  "qa_responses": [
+    {
+      "qa_number": 1,
+      "pws_reference": "General",
+      "question": "Can the Government confirm that funding is currently obligated or anticipated to be obligated at the time of award for Solicitation 36C10A25R0002",
+      "answer": "Funding is not currently available as the Federal Government is shutdown. Requirement will not be awarded until such time as funds are made available. FAR Clause 52.232-18 'Availability of Funds' has been added via amendment to the solicitation.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "contracts",
+        "project_management",
+        "pricing"
+      ],
+      "priority": "critical",
+      "impact_area": "business",
+      "actionable": true,
+      "action_required": "Discuss with Movius/Infobip their willingness to commit resources given uncertain award timeline. Consider requesting deadline extension from VA.",
+      "volumes_impacted": [
+        "all"
+      ],
+      "proposal_section": "N/A - Business decision",
+      "notes": "Award date uncertain. October 31 deadline may be extended. FAR 52.232-18 added to contract terms.",
+      "owner": "contracts",
+      "updated_at": "2025-10-30T11:51:07.178319",
+      "risk": "critical",
+      "compliance_status": "critical_blocker",
+      "va_position": "NO funding available due to government shutdown. Award delayed indefinitely until funds made available.",
+      "links_to": [
+        "RFP-\u00a7General",
+        "FAR-52.232-18"
+      ],
+      "drives_edits_in": [
+        "business_decision",
+        "timeline_assumptions"
+      ],
+      "acceptance_criteria": "Action completed: Discuss with Movius/Infobip their willingness to commit resources given uncertain award timeline. Consider requesting deadline extension from VA."
+    },
+    {
+      "qa_number": 2,
+      "pws_reference": "General",
+      "question": "Will the cost of OEM COTS software licenses provided to the Government under this contract be treated as 'materials' or 'supplies' that are excluded from the 50% self-performance calculation for services contracts under FAR 52.219-14/VAAR 852.219-75?",
+      "answer": "The requirement is for Software as a Service and will not be treated as a supply requirement. 'In the case of a contract for services (except construction), the contractor will not pay more than 50% of the amount paid by the government to it to firms that are not certified SDVOSBs'",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "contracts",
+        "pricing"
+      ],
+      "priority": "critical",
+      "impact_area": "business",
+      "actionable": true,
+      "action_required": "Calculate exact work split ensuring RPR Tech performs >50% of TOTAL contract value (including license costs). Negotiate pricing with Movius to ensure compliance.",
+      "volumes_impacted": [
+        "III",
+        "IV"
+      ],
+      "proposal_section": "Volume IV: VAAR 852.219-75 Certificate",
+      "notes": "GAME CHANGER: License costs COUNT toward 50% subcontractor limit. Must ensure Movius total cost (licenses + services) is <50% of total contract value.",
+      "owner": "contracts",
+      "updated_at": "2025-10-30T11:51:07.178325",
+      "risk": "critical",
+      "compliance_status": "critical_blocker",
+      "va_position": "License costs COUNT toward 50% self-performance requirement. NOT treated as materials/supplies.",
+      "links_to": [
+        "VAAR-852.219-75",
+        "RFP-\u00a7L.5",
+        "vol4_vaar_cert",
+        "vol3_pricing",
+        "rpr_102"
+      ],
+      "drives_edits_in": [
+        "vol3_pricing_strategy",
+        "vol4_vaar_certificate",
+        "work_split_calculation"
+      ],
+      "acceptance_criteria": "Action completed: Calculate exact work split ensuring RPR Tech performs >50% of TOTAL contract value (including license costs). Negotiate pricing with Movius to ensure compliance."
+    },
+    {
+      "qa_number": 3,
+      "pws_reference": "General",
+      "question": "Does the Government anticipate structuring the license portion under a separate CLIN and/or NAICS code to distinguish it from services?",
+      "answer": "The license CLINS will not be assigned a separate NAICS code.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "pricing",
+        "contracts"
+      ],
+      "priority": "medium",
+      "impact_area": "pricing",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "III"
+      ],
+      "proposal_section": "Volume III: Price Schedule",
+      "notes": "All CLINs use same NAICS code (541519). License CLINs don't get separate classification.",
+      "owner": "pricing",
+      "updated_at": "2025-10-30T11:51:07.178330",
+      "risk": "medium",
+      "compliance_status": "addressed_in_proposal",
+      "va_position": "License CLINs will NOT have separate NAICS code. All use 541519.",
+      "links_to": [
+        "vol3_pricing",
+        "NAICS-541519"
+      ],
+      "drives_edits_in": [
+        "vol3_clin_structure"
+      ],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 4,
+      "pws_reference": "General",
+      "question": "Does the Government anticipate an applicable Non-Manufacturer Rule (NMR) waiver for the license component?",
+      "answer": "The VA is not seeking an individual NMR waiver as this RFP is for a Software as a Service (SaaS).",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "contracts"
+      ],
+      "priority": "low",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [],
+      "proposal_section": "N/A",
+      "notes": "NMR waiver not needed for SaaS offering.",
+      "owner": "contracts",
+      "updated_at": "2025-10-30T11:51:07.178333",
+      "risk": "medium",
+      "compliance_status": "not_relevant_to_proposal",
+      "va_position": "NO Non-Manufacturer Rule waiver needed. This is SaaS not supply.",
+      "links_to": [
+        "RFP-\u00a7General"
+      ],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 5,
+      "pws_reference": "Sec. E.2 (Pg 105)",
+      "question": "For Step 2, which mobile devices will evaluators use?",
+      "answer": "Apple and Android",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "product_delivery"
+      ],
+      "priority": "high",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Ensure test environment works flawlessly on both iOS and Android devices. Provide 6 trial licenses (3 iOS, 3 Android recommended).",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "Evaluators will test on both Apple and Android devices. Must ensure cross-platform compatibility.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178335",
+      "risk": "high",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "Offerors should provide up to 6 test devices, not all 20K devices.",
+      "links_to": [
+        "RFP-\u00a7M.1.2",
+        "step2_testing",
+        "rpr_111"
+      ],
+      "drives_edits_in": [
+        "step2_test_plan"
+      ],
+      "acceptance_criteria": "Action completed: Ensure test environment works flawlessly on both iOS and Android devices. Provide 6 trial licenses (3 iOS, 3 Android recommended)."
+    },
+    {
+      "qa_number": 6,
+      "pws_reference": "Sec. E.2 (Pg 105)",
+      "question": "For Step 2, can application login credentials be sent separately from the Step 2 documentation?",
+      "answer": "Offerors can provide this in accordance with FAR 52.212-1 Additional Instructions: (II) Technical step 2.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "product_delivery",
+        "security"
+      ],
+      "priority": "medium",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Plan credential delivery method (can be separate from Step 2 document). Ensure secure delivery via email to CO and Contract Specialist.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "Credentials can be sent separately. Recommend secure email with 2-day advance notice.",
+      "owner": "product_delivery",
+      "updated_at": "2025-10-30T11:51:07.178338",
+      "risk": "medium",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "Offerors can provide this in accordance with FAR 52.212-1 Additional Instructions: (II) Technical step 2.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Plan credential delivery method (can be separate from Step 2 document). Ensure secure delivery via email to CO and Contract Specialist."
+    },
+    {
+      "qa_number": 7,
+      "pws_reference": "Sec. E.1 of the PWS (Pgs 92-93)",
+      "question": "Is the intention that D.1 and D.2 are answered in the RFP response doc rather than in the Excel spreadsheet? Would VA consider increasing page count from 35 to 40 pages?",
+      "answer": "Offerors shall adhere to FAR 52.212-1 Additional Instructions: (I) Volume I - Technical (Phase 1) Paragraph 1 '...B.4. The narrative shall also address how the Offeror's proposed solution meets all of the Attachment D.1 - Functionality Checklist.' The VA declines to increase the page count.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "priority": "high",
+      "impact_area": "compliance",
+      "actionable": true,
+      "action_required": "Address ALL D.1 functionality items and D.2 questions in Volume I narrative (NOT in Excel). Stay within 35-page limit.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Sections 2 and 3",
+      "notes": "35-page limit is FIRM. Must be extremely concise. Use tables and formatting efficiently.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178343",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "D.1 and D.2 answers must be in narrative format within Volume I body, not separate attachments.",
+      "links_to": [
+        "RFP-\u00a7L.2",
+        "D1-ALL",
+        "D2-ALL",
+        "vol1_section2",
+        "vol1_section3"
+      ],
+      "drives_edits_in": [
+        "vol1_section2_d1",
+        "vol1_section3_d2"
+      ],
+      "acceptance_criteria": "Action completed: Address ALL D.1 functionality items and D.2 questions in Volume I narrative (NOT in Excel). Stay within 35-page limit."
+    },
+    {
+      "qa_number": 8,
+      "pws_reference": "Sec. D (Pg 86)",
+      "question": "Please confirm that the Excel document with tabs D.1 and D.2 is no longer a deliverable in Excel format.",
+      "answer": "This was answered at question 7.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "priority": "medium",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Sections 2 and 3",
+      "notes": "Confirmed: D.1 and D.2 addressed in narrative, not as separate Excel deliverable.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178346",
+      "risk": "medium",
+      "compliance_status": "addressed_in_proposal",
+      "va_position": "For D.1 and D.2 only, table format is acceptable within Volume I narrative.",
+      "links_to": [
+        "RFP-\u00a7L.2",
+        "D1-ALL",
+        "D2-ALL"
+      ],
+      "drives_edits_in": [
+        "vol1_formatting_d1_d2"
+      ],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 9,
+      "pws_reference": "Tab D.3 - Written Step-by-Step Instructions for B.4.15",
+      "question": "Tab D.3 references B.4.15 but RFP has this as B.4.14. Please confirm correct numbering.",
+      "answer": "Attachment D.3 has been updated via amendment to the solicitation to align with the PWS for B.4.14.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "priority": "low",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing (D.3 use cases)",
+      "notes": "D.3 has been corrected to reference B.4.14 (not B.4.15). Use B.4.14 in all references.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178348",
+      "risk": "medium",
+      "compliance_status": "addressed_in_proposal",
+      "va_position": "Attachment D.3 has been updated via amendment to the solicitation to align with the PWS for B.4.14.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 10,
+      "pws_reference": "General",
+      "question": "What mobile device management (MDM) solution does VA currently use for GFE devices?",
+      "answer": "Microsoft InTune (preferred) and WorkSpace One",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "integrations",
+        "software_dev"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Verify Movius/Infobip platform supports InTune integration (preferred). Confirm WorkSpace One support as secondary. Document in Volume I Section 2.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - MDM Integration)",
+      "notes": "InTune is PREFERRED MDM. Must demonstrate native integration capability.",
+      "owner": "integrations",
+      "updated_at": "2025-10-30T11:51:07.178351",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Platform must support Microsoft InTune MDM integration.",
+      "links_to": [
+        "RFP-\u00a7B.4.6",
+        "D1-MDM",
+        "rpr_047"
+      ],
+      "drives_edits_in": [
+        "vol1_section2_d1_mdm",
+        "movius_question"
+      ],
+      "acceptance_criteria": "Action completed: Verify Movius/Infobip platform supports InTune integration (preferred). Confirm WorkSpace One support as secondary. Document in Volume I Section 2."
+    },
+    {
+      "qa_number": 11,
+      "pws_reference": "Sec. B.4.9.2",
+      "question": "For audit trails mentioned in B.4.9.2, what specific data elements must be captured, and in what format should logs be exportable?",
+      "answer": "Images, pictures. Logs should be export in CSV, PDF or Excel",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "security"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Verify platform can capture images/pictures in audit logs and export in CSV, PDF, Excel formats. Document capability in Volume I.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - Audit Logging)",
+      "notes": "Audit logs must capture images/pictures and support three export formats.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178353",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Platform must provide comprehensive audit logs for all user activities.",
+      "links_to": [
+        "RFP-\u00a7B.4.5.11",
+        "D1-logging"
+      ],
+      "drives_edits_in": [
+        "vol1_section5_audit_logging"
+      ],
+      "acceptance_criteria": "Action completed: Verify platform can capture images/pictures in audit logs and export in CSV, PDF, Excel formats. Document capability in Volume I."
+    },
+    {
+      "qa_number": 12,
+      "pws_reference": "General",
+      "question": "What is the expected peak message volume per hour and average message size to properly size the infrastructure?",
+      "answer": "Peak message volume can vary depending on location. For example: VA Hines, IL could receive priority messages every 15 minutes, whereas VA Topeka, Kansas might receive messages every 1 to 3 hours.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "project_management"
+      ],
+      "priority": "medium",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Design for variable message loads across facilities (some get priority messages every 15 min). Address scalability in Volume I.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 1 (Technical Solution Overview - Scalability)",
+      "notes": "No single peak volume number. Must design for variable loads from every 15 min to every 3 hours.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178355",
+      "risk": "medium",
+      "compliance_status": "needs_addressing",
+      "va_position": "Peak message volume can vary depending on location. For example: VA Hines, IL could receive priority messages every 15 minutes, whereas VA Topeka, Kansas might receive messages every 1 to 3 hours.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Design for variable message loads across facilities (some get priority messages every 15 min). Address scalability in Volume I."
+    },
+    {
+      "qa_number": 13,
+      "pws_reference": "Sec. B.4.10",
+      "question": "Can you provide examples of the message escalation cascade rules mentioned in B.4.10?",
+      "answer": "CRITICAL ALERT: Patient Doe, John, Rm 421. Troponin: 2.1 ng/mL. Acknowledge and order cardiology consult. STROKE ALERT: Patient Jane Doe, 68F, presents to ED with facial droop and slurred speech. Last seen normal: 13:30. Activate Stroke Team.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "technical_writing"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Use these actual clinical examples in Volume I to demonstrate understanding of escalation workflows and acknowledgment requirements.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - Message Escalation)",
+      "notes": "EXCELLENT examples to use in proposal. Shows clinical urgency and need for acknowledgment tracking.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178358",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Must provide examples of escalation process from Tier 1 to Tier 2/3 support.",
+      "links_to": [
+        "RFP-\u00a7B.4.8.2",
+        "vol1_section7"
+      ],
+      "drives_edits_in": [
+        "vol1_section7_escalation_examples"
+      ],
+      "acceptance_criteria": "Action completed: Use these actual clinical examples in Volume I to demonstrate understanding of escalation workflows and acknowledgment requirements."
+    },
+    {
+      "qa_number": 14,
+      "pws_reference": "General",
+      "question": "Can VA clarify expected timeline and process for mobile application compliance approvals? Will these occur sequentially or in parallel?",
+      "answer": "Reference paragraph B.4.5.10.1.1 'The contractor shall obtain VA authorization within 12 months from date of award.' and B.4.5.10.1.15 'Successful issuance of a VA ATO will be required before live VA data can be used in the system.'",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "security",
+        "project_management",
+        "product_delivery"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Document 12-month ATO timeline in Volume I Section 6 (Implementation Approach). Show parallel workstreams for FedRAMP, Privacy, Security, 508, TRM approvals.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 6 (Implementation Approach - ATO Timeline)",
+      "notes": "12-month ATO deadline is firm. Live data cannot be used until ATO granted.",
+      "owner": "security",
+      "updated_at": "2025-10-30T11:51:07.178360",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Reference paragraph B.4.5.10.1.1 'The contractor shall obtain VA authorization within 12 months from date of award.' and B.4.5.10.1.15 'Successful issuance of a VA ATO will be required before live VA ...",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Document 12-month ATO timeline in Volume I Section 6 (Implementation Approach). Show parallel workstreams for FedRAMP, Privacy, Security, 508, TRM approvals."
+    },
+    {
+      "qa_number": 15,
+      "pws_reference": "General",
+      "question": "Does 'access to proposed temporary software licenses in vendor training environment' mean fully functional mock prototype accessible to VA evaluators at time of proposal submission?",
+      "answer": "Offerors proposed solution should meet all of the requirements of B.4 of the solicitation at time of proposal. Offerors shall adhere to FAR 52.212-1 Additional Instructions: (I) Volume I - Technical Step 2. Offerors are expected to provide VA with access to the offeror's testing environment for the proposed Messaging SaaS.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "product_delivery",
+        "project_management"
+      ],
+      "priority": "critical",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Ensure Movius/Infobip provides FULLY FUNCTIONAL testing environment that meets ALL B.4 requirements. Provide 6 trial licenses with 2-day advance notice.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "Solution must be PRODUCTION-READY at proposal submission. Not a demo - must meet all B.4 requirements.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178365",
+      "risk": "critical",
+      "compliance_status": "critical_blocker",
+      "va_position": "Solution must be production-ready at proposal submission. No development work allowed post-award.",
+      "links_to": [
+        "RFP-\u00a7General",
+        "rpr_001"
+      ],
+      "drives_edits_in": [
+        "vol1_executive_summary",
+        "movius_readiness_question"
+      ],
+      "acceptance_criteria": "Action completed: Ensure Movius/Infobip provides FULLY FUNCTIONAL testing environment that meets ALL B.4 requirements. Provide 6 trial licenses with 2-day advance notice."
+    },
+    {
+      "qa_number": 16,
+      "pws_reference": "General",
+      "question": "Does government desire changes to submission clearly marked, or entirely new submission?",
+      "answer": "Offerors shall submit a complete proposal in response to the amended solicitation.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing",
+        "project_management"
+      ],
+      "priority": "medium",
+      "impact_area": "compliance",
+      "actionable": true,
+      "action_required": "Submit COMPLETE proposal (all volumes) in response to amended RFP. Not just changes.",
+      "volumes_impacted": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "proposal_section": "All Volumes",
+      "notes": "Must submit entire proposal again, not just amendments. Can update any content.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178367",
+      "risk": "medium",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "Offerors shall submit a complete proposal in response to the amended solicitation.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Submit COMPLETE proposal (all volumes) in response to amended RFP. Not just changes."
+    },
+    {
+      "qa_number": 17,
+      "pws_reference": "General",
+      "question": "Does government desire changes to focus only on changed requirements, or can other content be updated?",
+      "answer": "This was answered at question 16.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "priority": "low",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I",
+        "II",
+        "III",
+        "IV"
+      ],
+      "proposal_section": "All Volumes",
+      "notes": "Can update any content in complete proposal, not limited to just amendment changes.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178372",
+      "risk": "medium",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "This was answered at question 16.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 18,
+      "pws_reference": "General",
+      "question": "Is VA open to proposals based on any FedRAMP High-authorized SaaS solution, or are only specifically listed vendors/products eligible?",
+      "answer": "FedRAMP Moderate is the minimum acceptable requirement. The solicitation does not contain any specifically listed vendors or products.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "security",
+        "contracts"
+      ],
+      "priority": "critical",
+      "impact_area": "compliance",
+      "actionable": true,
+      "action_required": "Verify Movius/Infobip has FedRAMP Moderate authorization OR In-Process letter. Obtain certificate/letter by EOD Oct 30.",
+      "volumes_impacted": [
+        "I",
+        "IV"
+      ],
+      "proposal_section": "Volume I: Section 4 (FedRAMP Authorization) & Volume IV",
+      "notes": "FedRAMP Moderate minimum. No vendor restrictions. Must provide proof at proposal.",
+      "owner": "security",
+      "updated_at": "2025-10-30T11:51:07.178374",
+      "risk": "critical",
+      "compliance_status": "critical_blocker",
+      "va_position": "FedRAMP MODERATE required (downgraded from High). Must have certificate OR In-Process letter.",
+      "links_to": [
+        "RFP-\u00a7B.4.5.10",
+        "vol1_section4",
+        "rpr_005",
+        "rpr_030"
+      ],
+      "drives_edits_in": [
+        "vol1_section4_fedramp",
+        "movius_fedramp_artifact"
+      ],
+      "acceptance_criteria": "Action completed: Verify Movius/Infobip has FedRAMP Moderate authorization OR In-Process letter. Obtain certificate/letter by EOD Oct 30."
+    },
+    {
+      "qa_number": 19,
+      "pws_reference": "General",
+      "question": "Will VA accept consortium or integrator approaches (SDVOSB prime with large business partner), or must all licensing/support flow through SDVOSB?",
+      "answer": "Offerors shall comply with C.1.11 VAAR 852.219-73 VA Notice of Total Set-Aside paragraph (f) regarding Joint Ventures.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "contracts"
+      ],
+      "priority": "medium",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "IV"
+      ],
+      "proposal_section": "Volume IV: VAAR 852.219-75 Certificate",
+      "notes": "Joint ventures allowed per VAAR 852.219-73(f). RPR Tech as prime with Movius/Infobip as sub is compliant.",
+      "owner": "contracts",
+      "updated_at": "2025-10-30T11:51:07.178376",
+      "risk": "medium",
+      "compliance_status": "addressed_in_proposal",
+      "va_position": "FIPS-199 must be rated Moderate for Confidentiality, Integrity, Availability.",
+      "links_to": [
+        "RFP-\u00a7B.4.3",
+        "vol1_section5",
+        "rpr_006",
+        "rpr_035"
+      ],
+      "drives_edits_in": [
+        "vol1_section5_fips199"
+      ],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 20,
+      "pws_reference": "General",
+      "question": "Will VA consider solutions that meet compliance/security requirements but may not offer every feature listed?",
+      "answer": "Offerors shall propose a detailed written approach addressing the requirements, as stated in the instructions provided in the solicitation at page 93-94.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "priority": "high",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Address ALL requirements with detailed written approach. Do not skip features - explain how each requirement is met.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: All Sections",
+      "notes": "Must address ALL requirements. VA will evaluate based on detailed written approach.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178378",
+      "risk": "high",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "Offerors shall propose a detailed written approach addressing the requirements, as stated in the instructions provided in the solicitation at page 93-94.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Address ALL requirements with detailed written approach. Do not skip features - explain how each requirement is met."
+    },
+    {
+      "qa_number": 21,
+      "pws_reference": "General",
+      "question": "Are there any 'must-have' requirements that would disqualify a solution if not met at go-live?",
+      "answer": "Offerors shall propose a detailed written approach addressing the requirements, as stated in the instructions provided in the solicitation at page 93-94.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing",
+        "project_management"
+      ],
+      "priority": "medium",
+      "impact_area": "evaluation",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: All Sections",
+      "notes": "VA doesn't specify must-haves vs nice-to-haves. Address all requirements thoroughly.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178380",
+      "risk": "medium",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "Offerors shall propose a detailed written approach addressing the requirements, as stated in the instructions provided in the solicitation at page 93-94.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 22,
+      "pws_reference": "General",
+      "question": "Does VA require proposed solution to have active VA ATO at proposal submission, or can this be completed post-award?",
+      "answer": "This was answered at question 14.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "security",
+        "project_management"
+      ],
+      "priority": "high",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 6 (Implementation Approach)",
+      "notes": "ATO NOT required at proposal. Must be completed within 12 months post-award.",
+      "owner": "security",
+      "updated_at": "2025-10-30T11:51:07.178382",
+      "risk": "high",
+      "compliance_status": "addressed_in_proposal",
+      "va_position": "This was answered at question 14.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 32,
+      "pws_reference": "General",
+      "question": "Will testers utilize a variety of devices for testing (i.e. iPhone, Android, Desktop)?",
+      "answer": "This was answered at question 5.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "product_delivery"
+      ],
+      "priority": "medium",
+      "impact_area": "evaluation",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "Apple and Android devices only for testing. Ensure both platforms work flawlessly.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178384",
+      "risk": "medium",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "This was answered at question 5.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 33,
+      "pws_reference": "General",
+      "question": "Are any or all of the testers clinicians?",
+      "answer": "The VA will utilize a mix of subject matter experts.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing",
+        "product_delivery"
+      ],
+      "priority": "medium",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Write test instructions for mixed audience (clinicians, IT staff, security, admin). Make instructions clear for non-technical evaluators.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "Mix of SMEs - not just clinicians. May include IT, security, admin staff. Instructions must be clear for all.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178386",
+      "risk": "medium",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "The VA will utilize a mix of subject matter experts.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Write test instructions for mixed audience (clinicians, IT staff, security, admin). Make instructions clear for non-technical evaluators."
+    },
+    {
+      "qa_number": 34,
+      "pws_reference": "General",
+      "question": "Will bidders be aware of specific time frame test scripts are executed and allowed to interact with testers?",
+      "answer": "Offerors will not be permitted to interact with the testers during the evaluation for demonstration purposes.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "product_delivery",
+        "support_operations"
+      ],
+      "priority": "high",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Test instructions must be PERFECT - no live support during evaluation. Environment must work flawlessly without assistance.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "NO interaction with testers allowed. Instructions must be crystal clear. Environment must work perfectly.",
+      "owner": "product_delivery",
+      "updated_at": "2025-10-30T11:51:07.178391",
+      "risk": "high",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "There will be NO interaction between offerors and Government during Step 2 testing evaluation.",
+      "links_to": [
+        "RFP-\u00a7M.1.2",
+        "step2_testing"
+      ],
+      "drives_edits_in": [
+        "step2_test_scripts_must_be_perfect"
+      ],
+      "acceptance_criteria": "Action completed: Test instructions must be PERFECT - no live support during evaluation. Environment must work flawlessly without assistance."
+    },
+    {
+      "qa_number": 35,
+      "pws_reference": "General",
+      "question": "Can VA elaborate on assessment criteria for data retention features, especially solutions featuring automated bots?",
+      "answer": "The solution must be capable of implementing and enforcing data retention policies to maintain records that align with federal guidelines.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "security"
+      ],
+      "priority": "medium",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Document data retention policy capabilities in Volume I. Ensure compliance with federal record-keeping guidelines.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - Data Retention)",
+      "notes": "Must support configurable data retention policies aligned with federal guidelines.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178395",
+      "risk": "medium",
+      "compliance_status": "needs_addressing",
+      "va_position": "The solution must be capable of implementing and enforcing data retention policies to maintain records that align with federal guidelines.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Document data retention policy capabilities in Volume I. Ensure compliance with federal record-keeping guidelines."
+    },
+    {
+      "qa_number": 36,
+      "pws_reference": "General",
+      "question": "Could VA provide insight into how it appraises proposals' integration of AI or large language models?",
+      "answer": "Currently, AI is not being utilized.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev"
+      ],
+      "priority": "low",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "DO NOT propose AI/LLM features. VA explicitly not interested in AI capabilities currently.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "N/A",
+      "notes": "VA does not want AI features. Focus on core secure messaging capabilities only.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178397",
+      "risk": "medium",
+      "compliance_status": "not_relevant_to_proposal",
+      "va_position": "Currently, AI is not being utilized.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: DO NOT propose AI/LLM features. VA explicitly not interested in AI capabilities currently."
+    },
+    {
+      "qa_number": 37,
+      "pws_reference": "General",
+      "question": "Will each tester execute all test scripts provided?",
+      "answer": "Yes",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing",
+        "product_delivery"
+      ],
+      "priority": "high",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "ALL 6 testers will execute ALL test scripts. Ensure environment can handle concurrent testing. Instructions must be clear and comprehensive.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions",
+      "notes": "Each of 6 testers executes ALL test scripts. Environment must support concurrent users.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178400",
+      "risk": "high",
+      "compliance_status": "evaluation_guidance",
+      "va_position": "Offeror must provide test scripts for ALL D.3 use cases, not just selected ones.",
+      "links_to": [
+        "RFP-\u00a7M.1.2",
+        "D3-ALL",
+        "step2_testing",
+        "rpr_110"
+      ],
+      "drives_edits_in": [
+        "step2_all_test_scripts"
+      ],
+      "acceptance_criteria": "Action completed: ALL 6 testers will execute ALL test scripts. Ensure environment can handle concurrent testing. Instructions must be clear and comprehensive."
+    },
+    {
+      "qa_number": 38,
+      "pws_reference": "General",
+      "question": "Could government provide insight into decision to shift from FedRAMP High to FedRAMP Moderate?",
+      "answer": "The prior requirement was unduly restrictive and VA determined it was in its best interest to amend the requirement.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "security"
+      ],
+      "priority": "low",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [],
+      "proposal_section": "N/A",
+      "notes": "VA lowered from High to Moderate to expand vendor pool. FedRAMP High was 'unduly restrictive'.",
+      "owner": "security",
+      "updated_at": "2025-10-30T11:51:07.178402",
+      "risk": "medium",
+      "compliance_status": "not_relevant_to_proposal",
+      "va_position": "The prior requirement was unduly restrictive and VA determined it was in its best interest to amend the requirement.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 39,
+      "pws_reference": "General",
+      "question": "How does government want vendor to show graduated pricing for licenses in case of volume discounts?",
+      "answer": "Offerors may propose volume discount pricing or graduated pricing in their proposal. There is not a defined format.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "pricing"
+      ],
+      "priority": "medium",
+      "impact_area": "pricing",
+      "actionable": true,
+      "action_required": "Negotiate volume discounts with Movius. Structure graduated pricing in Volume III (no required format - flexibility allowed).",
+      "volumes_impacted": [
+        "III"
+      ],
+      "proposal_section": "Volume III: Price Schedule",
+      "notes": "Can propose any format for volume/graduated pricing. Negotiate aggressive discounts for 120K licenses.",
+      "owner": "pricing",
+      "updated_at": "2025-10-30T11:51:07.178404",
+      "risk": "medium",
+      "compliance_status": "impacts_pricing",
+      "va_position": "No volume discounts. All option years priced at base year rates.",
+      "links_to": [
+        "vol3_pricing",
+        "CLIN-ALL"
+      ],
+      "drives_edits_in": [
+        "vol3_option_year_pricing"
+      ],
+      "acceptance_criteria": "Action completed: Negotiate volume discounts with Movius. Structure graduated pricing in Volume III (no required format - flexibility allowed)."
+    },
+    {
+      "qa_number": 40,
+      "pws_reference": "PWS B.4.1",
+      "question": "Does conflict exist: 'No government data on device' vs '100% separation of government/corporate and personal data'? Is temporary device storage acceptable?",
+      "answer": "On a government-furnished device managed by Mobile Device Management, data storage is acceptable. For bring-your-own-device (BYOD), the VA does not want any data stored on the personal device. Storing data in the SaaS environment is acceptable.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "security",
+        "integrations"
+      ],
+      "priority": "critical",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Verify Movius platform supports ZERO data storage on BYOD devices. Must explain technical architecture for BYOD data isolation (SaaS-only). GFE with MDM can store data.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - BYOD Data Isolation)",
+      "notes": "CRITICAL TECHNICAL DISCRIMINATOR: GFE/MDM = data OK; BYOD = zero data storage. Must use SaaS-only architecture for BYOD.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178406",
+      "risk": "critical",
+      "compliance_status": "critical_blocker",
+      "va_position": "ZERO data storage on BYOD personal devices required. All data must remain in cloud.",
+      "links_to": [
+        "RFP-\u00a7B.4.5.8",
+        "D1-security",
+        "rpr_022"
+      ],
+      "drives_edits_in": [
+        "vol1_section2_byod_architecture",
+        "movius_zero_data_question"
+      ],
+      "acceptance_criteria": "Action completed: Verify Movius platform supports ZERO data storage on BYOD devices. Must explain technical architecture for BYOD data isolation (SaaS-only). GFE with MDM can store data."
+    },
+    {
+      "qa_number": 41,
+      "pws_reference": "General",
+      "question": "Will there be dev, testing, QA, and/or production environments for all VA systems requiring integration?",
+      "answer": "Integration with EntraID system for user lookup is required. However, if application supports SSO with EntraID (Also known as Active Directory), please note that only a production environment is available.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "integrations",
+        "software_dev"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Verify Movius supports EntraID SSO and user lookup in PRODUCTION environment only (no dev/test). Document integration approach in Volume I.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - EntraID Integration)",
+      "notes": "ONLY production environment available for EntraID integration. No dev/test environments. Must test in production.",
+      "owner": "integrations",
+      "updated_at": "2025-10-30T11:51:07.178408",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Integration with EntraID system for user lookup is required. However, if application supports SSO with EntraID (Also known as Active Directory), please note that only a production environment is avail...",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Verify Movius supports EntraID SSO and user lookup in PRODUCTION environment only (no dev/test). Document integration approach in Volume I."
+    },
+    {
+      "qa_number": 42,
+      "pws_reference": "General",
+      "question": "How many different types of systems will SaaS product need to integrate with besides VA's Active Directory/EntraID?",
+      "answer": "Active Directory and EntraID are the authentication solutions. If your solution is capable of integrating with these systems for seamless user lookup to validate legitimate VA users, it would be beneficial.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "integrations",
+        "software_dev"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Confirm Movius only needs to integrate with EntraID/AD (no other systems). Verify SSO and user lookup capabilities.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - System Integration)",
+      "notes": "SIMPLIFIED: Only need EntraID/AD integration. No complex multi-system integration required.",
+      "owner": "integrations",
+      "updated_at": "2025-10-30T11:51:07.178411",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Platform must integrate with EntraID production environment ONLY, no test environments.",
+      "links_to": [
+        "RFP-\u00a7B.4.6",
+        "D1-entraid"
+      ],
+      "drives_edits_in": [
+        "vol1_section2_entraid_integration",
+        "movius_entraid_question"
+      ],
+      "acceptance_criteria": "Action completed: Confirm Movius only needs to integrate with EntraID/AD (no other systems). Verify SSO and user lookup capabilities."
+    },
+    {
+      "qa_number": 43,
+      "pws_reference": "Ref. CLIN 008, Pg #6",
+      "question": "Does CLIN 008 indicate 20K->100K or additional 100K (20K to 120K)?",
+      "answer": "The VA intends to utilize 20K licenses initially with the ability to scale up to 120K.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "pricing",
+        "software_dev"
+      ],
+      "priority": "high",
+      "impact_area": "pricing",
+      "actionable": true,
+      "action_required": "Price for 20K base licenses with scalability to 120K TOTAL (not 120K additional). Get pricing from Movius for both tiers.",
+      "volumes_impacted": [
+        "III"
+      ],
+      "proposal_section": "Volume III: Price Schedule (CLIN 008 Options)",
+      "notes": "Start: 20K licenses. Scale to: 120K TOTAL (6x scaling). Price accordingly.",
+      "owner": "pricing",
+      "updated_at": "2025-10-30T11:51:07.178413",
+      "risk": "high",
+      "compliance_status": "impacts_pricing",
+      "va_position": "Pricing must support dynamic license scaling from 20K to 120K users.",
+      "links_to": [
+        "vol3_pricing",
+        "CLIN-0001",
+        "CLIN-0008",
+        "rpr_pricing"
+      ],
+      "drives_edits_in": [
+        "vol3_scaling_clins"
+      ],
+      "acceptance_criteria": "Action completed: Price for 20K base licenses with scalability to 120K TOTAL (not 120K additional). Get pricing from Movius for both tiers."
+    },
+    {
+      "qa_number": 44,
+      "pws_reference": "B4.1 Pg #16",
+      "question": "Text messaging (SMS) is not secure. Are we to assume text message is message in platform and not SMS?",
+      "answer": "The VA is seeking a secure messaging platform, not an SMS-based solution.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev"
+      ],
+      "priority": "critical",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Verify Movius platform is NOT SMS-based. Must be true secure messaging (encrypted, controlled). Confirm with Movius TODAY.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 1 (Technical Solution Overview)",
+      "notes": "DISQUALIFIER: SMS is NOT acceptable. Must be secure messaging platform with encryption and access controls.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178418",
+      "risk": "critical",
+      "compliance_status": "critical_blocker",
+      "va_position": "Solution must NOT be SMS-based messaging. Must use data-based mobile app.",
+      "links_to": [
+        "RFP-\u00a7B.4.1",
+        "D1-001",
+        "rpr_001"
+      ],
+      "drives_edits_in": [
+        "vol1_section1_platform_architecture",
+        "movius_not_sms_confirmation"
+      ],
+      "acceptance_criteria": "Action completed: Verify Movius platform is NOT SMS-based. Must be true secure messaging (encrypted, controlled). Confirm with Movius TODAY."
+    },
+    {
+      "qa_number": 45,
+      "pws_reference": "B4.1 Pg #16",
+      "question": "Data must exist for user to interact with messages. Is intent that there is no permanent data on device outside of operational usage?",
+      "answer": "The data's existence is directly tied to the system and app on Apple or Android device. When the user is done with a message or chat session, that data is not stored on the BYOD device to fulfill the system's operational requirements.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev",
+        "security"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Document how data exists ONLY during active sessions on BYOD. When session ends, data is purged from device. Explain technical implementation.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - BYOD Data Handling)",
+      "notes": "Data exists transiently during sessions only. After message/chat session, data purged from BYOD device.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178420",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "The data's existence is directly tied to the system and app on Apple or Android device. When the user is done with a message or chat session, that data is not stored on the BYOD device to fulfill the ...",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Document how data exists ONLY during active sessions on BYOD. When session ends, data is purged from device. Explain technical implementation."
+    },
+    {
+      "qa_number": 46,
+      "pws_reference": "B.4.3 Pg #20",
+      "question": "ATO involves many groups outside contract team. Is there timeline expected to complete ATO?",
+      "answer": "ATO approval can take anywhere from 9 months to a year. While VA employees will assist with process, a significant portion of application security responsibilities will fall under the vendor's SaaS environment and the mobile application.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "security",
+        "project_management"
+      ],
+      "priority": "high",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Plan for 9-12 month ATO timeline. Vendor responsible for 'significant portion' of app security. Document ATO approach in Volume I Section 6.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 6 (Implementation Approach - ATO Process)",
+      "notes": "ATO takes 9-12 months. VA assists but vendor owns most of app security responsibilities.",
+      "owner": "security",
+      "updated_at": "2025-10-30T11:51:07.178423",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "ATO approval can take anywhere from 9 months to a year. While VA employees will assist with process, a significant portion of application security responsibilities will fall under the vendor's SaaS en...",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Plan for 9-12 month ATO timeline. Vendor responsible for 'significant portion' of app security. Document ATO approach in Volume I Section 6."
+    },
+    {
+      "qa_number": 47,
+      "pws_reference": "B4.5 Pg #21",
+      "question": "Mobile device technology evolves quickly, might be impossible to guarantee compatibility with all devices.",
+      "answer": "Apple and Android are the only two brands currently being utilized.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev"
+      ],
+      "priority": "medium",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Focus ONLY on iOS and Android compatibility. No other platforms needed. Document minimum OS versions in Volume I.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 2 (D.1 Functionality - Device Compatibility)",
+      "notes": "SIMPLIFIED: Only Apple iOS and Android required. No Windows Mobile, BlackBerry, etc.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178449",
+      "risk": "medium",
+      "compliance_status": "needs_addressing",
+      "va_position": "Apple and Android are the only two brands currently being utilized.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Focus ONLY on iOS and Android compatibility. No other platforms needed. Document minimum OS versions in Volume I."
+    },
+    {
+      "qa_number": 48,
+      "pws_reference": "B4.5 Pg #22",
+      "question": "Government requested SaaS which contradicts statement. Is there equipment expected to be supported outside SaaS platform?",
+      "answer": "No",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev"
+      ],
+      "priority": "low",
+      "impact_area": "technical",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [],
+      "proposal_section": "N/A",
+      "notes": "Confirmed: Pure SaaS solution. No on-premise equipment to support.",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178453",
+      "risk": "medium",
+      "compliance_status": "not_relevant_to_proposal",
+      "va_position": "No",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 49,
+      "pws_reference": "B4.5 Pg #22",
+      "question": "GFE and BYOD called out. Can you elaborate on hardware provided or examples?",
+      "answer": "Government-furnished devices and bring-your-own devices (BYOD) will be used for testing the pager modernization solution by users. The system will be hosted on a SaaS platform (e.g., Office 365).",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "software_dev"
+      ],
+      "priority": "low",
+      "impact_area": "technical",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [],
+      "proposal_section": "N/A",
+      "notes": "GFE = VA-issued devices; BYOD = personal devices. System hosted on cloud SaaS (like O365).",
+      "owner": "software_dev",
+      "updated_at": "2025-10-30T11:51:07.178456",
+      "risk": "medium",
+      "compliance_status": "not_relevant_to_proposal",
+      "va_position": "Government-furnished devices and bring-your-own devices (BYOD) will be used for testing the pager modernization solution by users. The system will be hosted on a SaaS platform (e.g., Office 365).",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 50,
+      "pws_reference": "B4.9.2 Pg #29",
+      "question": "OS provided by manufacturer has some security control. Is intent to adhere within available controls of OS manufacturer?",
+      "answer": "The VA requires that only the mobile application and SaaS environment be secured. If there are limitations due to the operating system, the VA understands.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "security",
+        "software_dev"
+      ],
+      "priority": "medium",
+      "impact_area": "technical",
+      "actionable": true,
+      "action_required": "Document security controls for mobile app and SaaS environment. Note any OS limitations. VA understands OS constraints.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Section 5 (FIPS-199 Security)",
+      "notes": "Focus security on app and SaaS environment. VA acknowledges OS-level limitations may exist.",
+      "owner": "security",
+      "updated_at": "2025-10-30T11:51:07.178458",
+      "risk": "medium",
+      "compliance_status": "needs_addressing",
+      "va_position": "The VA requires that only the mobile application and SaaS environment be secured. If there are limitations due to the operating system, the VA understands.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Document security controls for mobile app and SaaS environment. Note any OS limitations. VA understands OS constraints."
+    },
+    {
+      "qa_number": 51,
+      "pws_reference": "Sec. D3",
+      "question": "Step 2 Evaluation in attachment only covers 4.8.2. SOW covers 4.14-4.14.7. Which scenarios for Step 2?",
+      "answer": "Attachment D.3 has been updated via amendment to the solicitation to align with the PWS for B.4.14. Offerors shall be prepared to address the scenarios in Attachment D.3.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing",
+        "product_delivery"
+      ],
+      "priority": "high",
+      "impact_area": "evaluation",
+      "actionable": true,
+      "action_required": "Use updated Attachment D.3 scenarios (aligned with B.4.14). Prepare test instructions for ALL D.3 use cases.",
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Step 2: Software Testing Instructions (D.3 Use Cases)",
+      "notes": "Use updated D.3 attachment (corrected to B.4.14). Prepare for all scenarios listed.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178460",
+      "risk": "high",
+      "compliance_status": "needs_addressing",
+      "va_position": "Attachment D.3 has been updated via amendment to the solicitation to align with the PWS for B.4.14. Offerors shall be prepared to address the scenarios in Attachment D.3.",
+      "links_to": [],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Action completed: Use updated Attachment D.3 scenarios (aligned with B.4.14). Prepare test instructions for ALL D.3 use cases."
+    },
+    {
+      "qa_number": 52,
+      "pws_reference": "RFP Pgs 92-93",
+      "question": "Confirm offerors include D.1/D.2 responses in Volume I PDF rather than Excel spreadsheet?",
+      "answer": "Attachments D.1 and D.2 are to be addressed in Volume 1, Phase 1 Technical. The VA declines to increase the page count.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "priority": "high",
+      "impact_area": "compliance",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [
+        "I"
+      ],
+      "proposal_section": "Volume I: Sections 2 and 3",
+      "notes": "CONFIRMED: D.1 and D.2 in Volume I narrative (NOT separate Excel). 35-page limit firm.",
+      "owner": "technical_writing",
+      "updated_at": "2025-10-30T11:51:07.178463",
+      "risk": "high",
+      "compliance_status": "addressed_in_proposal",
+      "va_position": "Volume I limited to 35 pages. Volume II limited to 10 pages. Volume III no limit.",
+      "links_to": [
+        "RFP-\u00a7L.2",
+        "vol1_page_limit",
+        "vol2_page_limit"
+      ],
+      "drives_edits_in": [
+        "page_count_management"
+      ],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    },
+    {
+      "qa_number": 53,
+      "pws_reference": "General",
+      "question": "Confirm if there was incumbent contractor? If so, total awarded contract amount?",
+      "answer": "No incumbent. This is a new requirement.",
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-21"
+      },
+      "affected_teams": [],
+      "priority": "low",
+      "impact_area": "business",
+      "actionable": false,
+      "action_required": null,
+      "volumes_impacted": [],
+      "proposal_section": "N/A",
+      "notes": "NEW requirement - no incumbent. Level playing field for all offerors.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:51:07.178465",
+      "risk": "medium",
+      "compliance_status": "not_relevant_to_proposal",
+      "va_position": "There is NO incumbent contractor. This is new requirement.",
+      "links_to": [
+        "RFP-\u00a7General"
+      ],
+      "drives_edits_in": [],
+      "acceptance_criteria": "Information noted and incorporated where applicable"
+    }
+  ],
+  "summary_statistics": {
+    "by_status": {
+      "critical_blocker": 6,
+      "needs_addressing": 18,
+      "addressed_in_proposal": 6,
+      "impacts_pricing": 3,
+      "not_relevant_to_proposal": 6,
+      "evaluation_guidance": 8
+    },
+    "by_priority": {
+      "critical": 6,
+      "high": 20,
+      "medium": 14,
+      "low": 7
+    },
+    "by_team": {
+      "software_dev": 20,
+      "security": 12,
+      "integrations": 7,
+      "product_delivery": 10,
+      "contracts": 8,
+      "pricing": 7,
+      "technical_writing": 14,
+      "project_management": 9,
+      "support_operations": 2
+    },
+    "actionable_items": 29,
+    "volumes_impacted": {
+      "volume_i": 32,
+      "volume_ii": 0,
+      "volume_iii": 5,
+      "volume_iv": 3,
+      "all_volumes": 2
+    }
+  },
+  "critical_blocking_items": [
+    "Q1: No funding available due to government shutdown",
+    "Q2: License costs count toward 50% SDVOSB self-performance requirement",
+    "Q15: Solution must be production-ready at proposal submission",
+    "Q18: FedRAMP Moderate certificate or In-Process letter required",
+    "Q40: Zero data storage on BYOD devices required",
+    "Q44: Must NOT be SMS-based solution"
+  ],
+  "top_movius_questions": [
+    "Q2: What is total cost (licenses + services) to ensure RPR Tech >50%?",
+    "Q40: Does platform support zero data storage on BYOD devices?",
+    "Q18: Can you provide FedRAMP Moderate certificate TODAY?",
+    "Q10: Do you support Microsoft InTune integration?",
+    "Q42: Can you integrate with EntraID production environment only?",
+    "Q44: Confirm platform is NOT SMS-based?"
+  ],
+  "last_updated": "2025-10-30T11:51:07.178286",
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "VA position normalized summaries added",
+    "Traceability links_to added to all Q&A",
+    "drives_edits_in fields added",
+    "Standard schema fields applied"
+  ],
+  "document_metadata": {
+    "version": "2.0",
+    "last_updated": "2025-10-30T11:51:07.178467",
+    "total_qa_enhanced": 44,
+    "enhancements": "v2.0 - VA position, traceability, drives_edits_in, standardized schema"
+  }
+}

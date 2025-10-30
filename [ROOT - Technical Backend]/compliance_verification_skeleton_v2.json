@@ -1,0 +1,1377 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "document_type": "compliance_verification_checklist",
+  "submission_deadline": "2025-10-31T14:00:00-06:00",
+  "schema_version": "2.0",
+  "last_updated": "2025-10-30T11:52:28.870174",
+  "verification_status": {
+    "total_checks": 45,
+    "passed": 0,
+    "failed": 0,
+    "pending": 45,
+    "critical_failures": 0,
+    "ready_for_submission": false,
+    "estimated_completion_time": "2025-10-31T11:00:00-06:00"
+  },
+  "status_definitions": {
+    "pass": "Requirement verified and met",
+    "fail": "Requirement not met - MUST FIX",
+    "pending": "Not yet verified",
+    "na": "Not applicable to this proposal",
+    "warning": "Met but with concerns - review recommended"
+  },
+  "severity_definitions": {
+    "critical": "Will result in rejection if not met",
+    "high": "May result in rejection or significant score reduction",
+    "medium": "Will reduce technical score",
+    "low": "Minor impact on evaluation"
+  },
+  "verification_categories": [
+    {
+      "category": "Submission Requirements",
+      "description": "Basic submission format and completeness requirements",
+      "checks": [
+        {
+          "check_id": "sub_001",
+          "requirement": "Submission by deadline",
+          "description": "Proposal submitted by October 31, 2025 at 2:00 PM CST",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Confirm submission timestamp",
+          "evidence_required": "SAM.gov submission confirmation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Deadline per Amendment 0003. Late submissions will not be accepted",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870199",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Submission by deadline"
+        },
+        {
+          "check_id": "sub_002",
+          "requirement": "Four separate volume files",
+          "description": "Proposal submitted as 4 separate PDF files: Volume I, II, III, IV",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Count files, verify format",
+          "evidence_required": "4 PDF files present",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per submission instructions page 87-97",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870205",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [
+            "RFP-\u00a7L.1"
+          ],
+          "evidence": [],
+          "auto_evaluable": true,
+          "auto_check_method": "file_count",
+          "auto_check_script": "count_files() == 4 and all_are_pdf()",
+          "rfp_clause_ref": "RFP \u00a7L.1",
+          "rfp_page": 87,
+          "acceptance_criteria": "Check passes verification: Four separate volume files"
+        },
+        {
+          "check_id": "sub_003",
+          "requirement": "Correct file naming convention",
+          "description": "Files named exactly: RPRTech_Phase I-Technical.pdf, RPRTech_Past Perf.pdf, RPRTech_Price.pdf, RPRTech_Ofr.pdf",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Check filenames match exactly",
+          "evidence_required": "Screenshot of files with names visible",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per submission instructions. Exact naming required",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870210",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [
+            "RFP-\u00a7L.1"
+          ],
+          "evidence": [],
+          "auto_evaluable": true,
+          "auto_check_method": "filename_match",
+          "auto_check_script": "exact_match([\"RPRTech_Phase I-Technical.pdf\", \"RPRTech_Past Perf.pdf\", \"RPRTech_Price.pdf\", \"RPRTech_Ofr.pdf\"])",
+          "rfp_clause_ref": "RFP \u00a7L.1",
+          "rfp_page": 87,
+          "acceptance_criteria": "Check passes verification: Correct file naming convention"
+        },
+        {
+          "check_id": "sub_004",
+          "requirement": "All PDFs readable and not corrupted",
+          "description": "All 4 PDFs open successfully and display correctly",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Open each PDF, verify all pages display",
+          "evidence_required": "Test opening on multiple devices/readers",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Corrupted files will not be evaluated",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870214",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All PDFs readable and not corrupted"
+        },
+        {
+          "check_id": "sub_005",
+          "requirement": "Submitted via correct portal",
+          "description": "Submitted via SAM.gov or designated VA portal per RFP instructions",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Verify submission portal matches RFP instructions",
+          "evidence_required": "Portal submission confirmation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Check RFP for designated submission method",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870216",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Submitted via correct portal"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870192"
+    },
+    {
+      "category": "Volume I Compliance",
+      "description": "Technical approach volume requirements",
+      "checks": [
+        {
+          "check_id": "v1_001",
+          "requirement": "Volume I page limit \u226435 pages",
+          "description": "Volume I does not exceed 35 pages (excluding cover and TOC)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Count pages excluding cover and TOC",
+          "evidence_required": "Page count documentation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per RFP page 93. Exceeding limit will result in rejection",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870220",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Volume I page limit \u226435 pages"
+        },
+        {
+          "check_id": "v1_002",
+          "requirement": "Movius platform identified",
+          "description": "Volume I clearly identifies Movius as the proposed platform",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Review Section 1, verify platform named",
+          "evidence_required": "Section 1 text",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Must identify specific platform being proposed",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870222",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Movius platform identified"
+        },
+        {
+          "check_id": "v1_003",
+          "requirement": "All 22 D.1 items addressed",
+          "description": "Volume I Section 2 addresses ALL 22 items from Attachment D.1",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check Section 2 includes all D.1 items",
+          "evidence_required": "Checklist of 22 items, all checked off",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Missing any D.1 item may result in rejection",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870225",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All 22 D.1 items addressed"
+        },
+        {
+          "check_id": "v1_004",
+          "requirement": "D.1 responses show HOW not just YES",
+          "description": "D.1 responses explain specific features and implementation approach, not just state compliance",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Review D.1 responses for detail and specificity",
+          "evidence_required": "Quality review of responses",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per Q&A guidance, must explain HOW requirements are met",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870227",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: D.1 responses show HOW not just YES"
+        },
+        {
+          "check_id": "v1_005",
+          "requirement": "All 8 D.2 questions answered",
+          "description": "Volume I Section 3 answers ALL 8 questions from Attachment D.2",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check Section 3 includes all 8 questions with answers",
+          "evidence_required": "Checklist of 8 questions, all answered",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Missing any D.2 answer may result in rejection",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870231",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All 8 D.2 questions answered"
+        },
+        {
+          "check_id": "v1_006",
+          "requirement": "D.2 responses complete and thoughtful",
+          "description": "D.2 responses are thorough, not just yes/no, provide examples where helpful",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Review D.2 responses for completeness",
+          "evidence_required": "Quality review of responses",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per requirement guidance",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870233",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: D.2 responses complete and thoughtful"
+        },
+        {
+          "check_id": "v1_007",
+          "requirement": "FedRAMP Moderate demonstrated",
+          "description": "Volume I Section 4 demonstrates FedRAMP Moderate authorization OR In-Process status",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check Section 4 includes FedRAMP certificate or In-Process letter",
+          "evidence_required": "FedRAMP documentation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "PWS B.4.5.10 requires FedRAMP Moderate. Q&A #18 confirmed mandatory",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870236",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: FedRAMP Moderate demonstrated"
+        },
+        {
+          "check_id": "v1_008",
+          "requirement": "FIPS-199 Moderate characterized",
+          "description": "Volume I Section 5 details FIPS-199 Moderate impact level",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Check Section 5 addresses FIPS-199",
+          "evidence_required": "Section 5 content",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Required per PWS Section B.4.3",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870238",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: FIPS-199 Moderate characterized"
+        },
+        {
+          "check_id": "v1_009",
+          "requirement": "90-day implementation plan included",
+          "description": "Volume I Section 6 provides realistic 90-day deployment plan",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Check Section 6 has implementation timeline",
+          "evidence_required": "Section 6 content with phases/milestones",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per PWS requirement for 90-day readiness",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870240",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: 90-day implementation plan included"
+        },
+        {
+          "check_id": "v1_010",
+          "requirement": "24/7/365 support model described",
+          "description": "Volume I Section 7 describes 24/7/365 support operations",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Check Section 7 addresses support model",
+          "evidence_required": "Section 7 content",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "PWS requires 24/7/365 support",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870242",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: 24/7/365 support model described"
+        },
+        {
+          "check_id": "v1_011",
+          "requirement": "NO PRICING in Volume I",
+          "description": "Volume I contains absolutely NO pricing information",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Search Volume I for any dollar amounts, costs, pricing",
+          "evidence_required": "Confirmation no pricing present",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "CRITICAL: Including pricing in Volume I will result in REJECTION",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870244",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: NO PRICING in Volume I"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870219"
+    },
+    {
+      "category": "Volume II Compliance",
+      "description": "Past performance volume requirements",
+      "checks": [
+        {
+          "check_id": "v2_001",
+          "requirement": "Volume II page limit \u226410 pages",
+          "description": "Volume II does not exceed 10 pages",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Count pages",
+          "evidence_required": "Page count documentation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per RFP page 93",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870247",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Volume II page limit \u226410 pages"
+        },
+        {
+          "check_id": "v2_002",
+          "requirement": "3-5 relevant contracts included",
+          "description": "Volume II includes at least 3 relevant past performance contracts",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Count contracts, verify relevance",
+          "evidence_required": "List of contracts",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Should demonstrate similar scope/complexity",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870249",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: 3-5 relevant contracts included"
+        },
+        {
+          "check_id": "v2_003",
+          "requirement": "All contract information complete",
+          "description": "Each contract includes: number, agency, period, scope, POC name/phone/email",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Review each contract entry for completeness",
+          "evidence_required": "Completed contract information forms",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "VA will contact references - info must be current",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870251",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All contract information complete"
+        },
+        {
+          "check_id": "v2_004",
+          "requirement": "POC contact information verified current",
+          "description": "All POC contacts have been verified as current and reachable",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Attempt contact with each POC",
+          "evidence_required": "Verification log",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "VA may contact references - unreachable contacts reflect poorly",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870256",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: POC contact information verified current"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870246"
+    },
+    {
+      "category": "Volume III Compliance",
+      "description": "Price schedule requirements",
+      "checks": [
+        {
+          "check_id": "v3_001",
+          "requirement": "All CLINs priced",
+          "description": "All required CLINs have unit prices entered (base + options)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check price schedule, verify no blank CLINs",
+          "evidence_required": "Completed price schedule",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Missing CLIN pricing may result in rejection",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870259",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All CLINs priced"
+        },
+        {
+          "check_id": "v3_002",
+          "requirement": "All prices exactly 2 decimal places",
+          "description": "Every price formatted as XX.XX (two decimal places, no more/less)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Review all prices, verify formatting",
+          "evidence_required": "Price schedule review",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per pricing instructions - exact format required",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870261",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All prices exactly 2 decimal places"
+        },
+        {
+          "check_id": "v3_003",
+          "requirement": "Extended prices calculated correctly",
+          "description": "All extended prices = Unit Price \u00d7 Quantity (exact, no rounding)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Verify formula calculations",
+          "evidence_required": "Calculation verification",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Excel formulas should handle this automatically",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870265",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Extended prices calculated correctly"
+        },
+        {
+          "check_id": "v3_004",
+          "requirement": "RPR Tech work split >50%",
+          "description": "RPR Tech CLINs total more than 50% of contract value",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Calculate work split from CLIN totals",
+          "evidence_required": "Work split calculation showing >50%",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "VAAR 852.219-75 requirement - will be REJECTED if <50%",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870267",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: RPR Tech work split >50%"
+        },
+        {
+          "check_id": "v3_005",
+          "requirement": "Work split calculation documented",
+          "description": "Work split showing RPR vs Movius percentages is documented",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check for work split documentation",
+          "evidence_required": "Work split sheet in Excel or separate doc",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Needed for VAAR certificate completion",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870268",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Work split calculation documented"
+        },
+        {
+          "check_id": "v3_006",
+          "requirement": "Option years priced",
+          "description": "Base year + 4 option years + 6-month extension all priced",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Verify pricing tabs for all periods",
+          "evidence_required": "All pricing tabs complete",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Per CLIN structure",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870270",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Option years priced"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870258"
+    },
+    {
+      "category": "Volume IV Compliance",
+      "description": "Solicitation, offer and award requirements - MOST CRITICAL VOLUME",
+      "checks": [
+        {
+          "check_id": "v4_001",
+          "requirement": "SF 1449 blocks 30a-30c signed",
+          "description": "SF 1449 form has signature, name/title, and date in blocks 30a, 30b, 30c",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check SF 1449 for signature",
+          "evidence_required": "Signed SF 1449",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Unsigned offer is not valid",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870273",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: SF 1449 blocks 30a-30c signed"
+        },
+        {
+          "check_id": "v4_002",
+          "requirement": "All 3 amendments acknowledged",
+          "description": "Amendment acknowledgment document lists all 3 amendments (0001, 0002, 0003)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check amendment acknowledgment lists all 3",
+          "evidence_required": "Amendment acknowledgment form",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "CRITICAL: Missing even ONE amendment will result in REJECTION per SF 1449",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870275",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All 3 amendments acknowledged"
+        },
+        {
+          "check_id": "v4_003",
+          "requirement": "VAAR 852.219-75 Certificate included",
+          "description": "VAAR 852.219-75 Certificate is present in Volume IV",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check for VAAR certificate document",
+          "evidence_required": "VAAR Certificate",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "MOST CRITICAL DOCUMENT. Government will NOT consider offers without it",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870277",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: VAAR 852.219-75 Certificate included"
+        },
+        {
+          "check_id": "v4_004",
+          "requirement": "VAAR Certificate states >50% RPR Tech",
+          "description": "VAAR Certificate states specific percentage >50% that RPR Tech will self-perform",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Read certificate, verify percentage stated and >50%",
+          "evidence_required": "VAAR Certificate text",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Must state exact percentage, not just '>50%'. Must match Volume III calculation",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870281",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: VAAR Certificate states >50% RPR Tech"
+        },
+        {
+          "check_id": "v4_005",
+          "requirement": "VAAR Certificate signed under penalty of perjury",
+          "description": "VAAR Certificate signed by authorized official under penalty of perjury statement",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check signature and penalty statement present",
+          "evidence_required": "Signed VAAR Certificate",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "False statements can result in criminal prosecution",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870283",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: VAAR Certificate signed under penalty of perjury"
+        },
+        {
+          "check_id": "v4_006",
+          "requirement": "OEM Authorization Letter from Movius",
+          "description": "Signed OEM letter from Movius on letterhead authorizing RPR Tech for this RFP",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check for OEM letter, verify letterhead, signature, date",
+          "evidence_required": "Movius OEM letter",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Required to demonstrate authority to resell Movius solution",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870285",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: OEM Authorization Letter from Movius"
+        },
+        {
+          "check_id": "v4_007",
+          "requirement": "OEM letter on Movius official letterhead",
+          "description": "OEM letter uses Movius company letterhead (not plain paper)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Visual inspection of letterhead",
+          "evidence_required": "OEM letter",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Letterhead authenticates document",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870286",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: OEM letter on Movius official letterhead"
+        },
+        {
+          "check_id": "v4_008",
+          "requirement": "OEM letter signed by authorized Movius rep",
+          "description": "OEM letter signed by person with authority to bind Movius",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Verify signer title/authority",
+          "evidence_required": "OEM letter signature block",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Should be executive or sales leadership",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870288",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: OEM letter signed by authorized Movius rep"
+        },
+        {
+          "check_id": "v4_009",
+          "requirement": "OEM letter dated October 2025",
+          "description": "OEM letter date is October 2025 (current)",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Check date on OEM letter",
+          "evidence_required": "OEM letter date",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Should be recent/current",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870290",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: OEM letter dated October 2025"
+        },
+        {
+          "check_id": "v4_010",
+          "requirement": "SDVOSB certification included",
+          "description": "SDVOSB certification letter or documentation included",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Check for SDVOSB cert",
+          "evidence_required": "SDVOSB documentation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Required for SDVOSB set-aside",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870292",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: SDVOSB certification included"
+        },
+        {
+          "check_id": "v4_011",
+          "requirement": "SDVOSB status verified in SAM.gov",
+          "description": "RPR Tech SDVOSB status is current and active in SAM.gov",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Check SAM.gov profile",
+          "evidence_required": "SAM.gov screenshot",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Verification must be active at time of submission",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870294",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: SDVOSB status verified in SAM.gov"
+        },
+        {
+          "check_id": "v4_012",
+          "requirement": "FAR 52.212-3 representations completed",
+          "description": "FAR 52.212-3 Offeror Representations and Certifications completed",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Check representations section complete",
+          "evidence_required": "Completed FAR 52.212-3 forms",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "May reference SAM.gov profile or complete in proposal",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870296",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: FAR 52.212-3 representations completed"
+        },
+        {
+          "check_id": "v4_013",
+          "requirement": "All required signatures obtained",
+          "description": "All documents requiring signatures are signed by authorized officials",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Review all docs, check for signatures",
+          "evidence_required": "Signature log",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Unsigned documents may result in rejection",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870298",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All required signatures obtained"
+        },
+        {
+          "check_id": "v4_014",
+          "requirement": "Authorized signatories have proper authority",
+          "description": "All signatories are authorized to bind RPR Tech to contract terms",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Verify signatory authority",
+          "evidence_required": "Authority documentation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Should be officers or designated representatives",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870323",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Authorized signatories have proper authority"
+        },
+        {
+          "check_id": "v4_015",
+          "requirement": "All dates current and consistent",
+          "description": "All document dates are October 2025 and consistent across volumes",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "low",
+          "verification_method": "Review dates across all documents",
+          "evidence_required": "Date consistency check",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Minor issue but should be clean",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870325",
+          "risk": "low",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All dates current and consistent"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870272"
+    },
+    {
+      "category": "Cross-Volume Consistency",
+      "description": "Consistency checks across multiple volumes",
+      "checks": [
+        {
+          "check_id": "cross_001",
+          "requirement": "Platform identification consistent",
+          "description": "Movius platform name and version identical in Volumes I, II, III, IV",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Search all volumes for platform references",
+          "evidence_required": "Platform name comparison",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Inconsistency suggests lack of attention to detail",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870327",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Platform identification consistent"
+        },
+        {
+          "check_id": "cross_002",
+          "requirement": "Work split matches across Vol III and IV",
+          "description": "Work split percentage in Volume III calculation matches VAAR Certificate statement in Volume IV",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "critical",
+          "verification_method": "Compare Vol III work split to Vol IV VAAR cert percentage",
+          "evidence_required": "Side-by-side comparison",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Mismatch will raise serious questions",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870330",
+          "risk": "critical",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Work split matches across Vol III and IV"
+        },
+        {
+          "check_id": "cross_003",
+          "requirement": "Company information consistent",
+          "description": "RPR Tech name, address, UEI, CAGE code consistent across all volumes",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Check company info in all volumes",
+          "evidence_required": "Company info comparison",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Should match SAM.gov registration",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870334",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Company information consistent"
+        },
+        {
+          "check_id": "cross_004",
+          "requirement": "FedRAMP certificate details consistent",
+          "description": "FedRAMP certificate details in Volume I match OEM letter references in Volume IV",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Compare FedRAMP details across volumes",
+          "evidence_required": "FedRAMP info comparison",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Inconsistency raises credibility questions",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870336",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: FedRAMP certificate details consistent"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870326"
+    },
+    {
+      "category": "Final Quality Checks",
+      "description": "Final pre-submission quality verification",
+      "checks": [
+        {
+          "check_id": "qc_001",
+          "requirement": "All volumes proofread",
+          "description": "All volumes proofread for grammar, spelling, consistency",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "medium",
+          "verification_method": "Proofreading review",
+          "evidence_required": "Proofreading sign-off",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Quality presentation matters",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870339",
+          "risk": "medium",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All volumes proofread"
+        },
+        {
+          "check_id": "qc_002",
+          "requirement": "All volumes formatted consistently",
+          "description": "Fonts, margins, headers, footers consistent across all volumes",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "low",
+          "verification_method": "Visual formatting review",
+          "evidence_required": "Formatting checklist",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Professional appearance",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870343",
+          "risk": "low",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All volumes formatted consistently"
+        },
+        {
+          "check_id": "qc_003",
+          "requirement": "All references and cross-references accurate",
+          "description": "All internal page references, section references accurate",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "low",
+          "verification_method": "Check all references",
+          "evidence_required": "Reference verification",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Broken references look sloppy",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870345",
+          "risk": "low",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: All references and cross-references accurate"
+        },
+        {
+          "check_id": "qc_004",
+          "requirement": "No [PLACEHOLDER] text remaining",
+          "description": "All template placeholder text replaced with actual content",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Search all volumes for '[', 'PLACEHOLDER', 'TBD', 'XXX'",
+          "evidence_required": "Search results showing none found",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Placeholder text will result in rejection",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870347",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: No [PLACEHOLDER] text remaining"
+        },
+        {
+          "check_id": "qc_005",
+          "requirement": "Management final approval obtained",
+          "description": "RPR Tech management has reviewed and approved final proposal",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "severity": "high",
+          "verification_method": "Obtain approval signatures/emails",
+          "evidence_required": "Management approval documentation",
+          "verified_by": null,
+          "verified_date": null,
+          "notes": "Final sign-off before submission",
+          "owner": "QC Team",
+          "updated_at": "2025-10-30T11:52:28.870350",
+          "risk": "high",
+          "fit": "Config",
+          "verification_status": "pending",
+          "links_to": [],
+          "evidence": [],
+          "acceptance_criteria": "Check passes verification: Management final approval obtained"
+        }
+      ],
+      "owner": "Quality Control Team",
+      "updated_at": "2025-10-30T11:52:28.870338"
+    }
+  ],
+  "critical_path_items": [
+    "v4_002: All amendments acknowledged",
+    "v4_003: VAAR Certificate included",
+    "v4_004: VAAR Certificate >50% statement",
+    "v4_006: OEM Letter from Movius",
+    "v3_004: RPR Tech work split >50%",
+    "v1_007: FedRAMP demonstrated",
+    "v1_003: All D.1 items addressed",
+    "v1_005: All D.2 questions answered",
+    "v1_011: NO PRICING in Volume I",
+    "v1_001: Volume I \u226435 pages",
+    "sub_001: Submitted by deadline"
+  ],
+  "pre_submission_workflow": {
+    "step_1": {
+      "name": "Initial Compliance Check",
+      "timing": "2025-10-31T08:00:00-06:00",
+      "duration_minutes": 60,
+      "responsible": "Contracts Team, Technical Writing",
+      "tasks": [
+        "Run through entire checklist",
+        "Mark all items as pass/fail/pending",
+        "Identify any critical failures",
+        "Document all issues found"
+      ]
+    },
+    "step_2": {
+      "name": "Issue Resolution",
+      "timing": "2025-10-31T09:00:00-06:00",
+      "duration_minutes": 120,
+      "responsible": "All Teams",
+      "tasks": [
+        "Fix all critical failures",
+        "Address high-severity issues",
+        "Document all changes made"
+      ]
+    },
+    "step_3": {
+      "name": "Final Verification",
+      "timing": "2025-10-31T11:00:00-06:00",
+      "duration_minutes": 60,
+      "responsible": "Contracts Team",
+      "tasks": [
+        "Re-verify all checklist items",
+        "Confirm all critical items pass",
+        "Obtain management final approval"
+      ]
+    },
+    "step_4": {
+      "name": "PDF Generation & Testing",
+      "timing": "2025-10-31T12:00:00-06:00",
+      "duration_minutes": 30,
+      "responsible": "Technical Writing",
+      "tasks": [
+        "Convert all volumes to PDF",
+        "Verify file naming",
+        "Test PDF opening on multiple devices",
+        "Check PDF file sizes reasonable"
+      ]
+    },
+    "step_5": {
+      "name": "Submission",
+      "timing": "2025-10-31T12:30:00-06:00",
+      "duration_minutes": 30,
+      "responsible": "Contracts Team",
+      "tasks": [
+        "Upload to submission portal",
+        "Verify upload success",
+        "Save submission confirmation",
+        "Archive all files"
+      ]
+    }
+  },
+  "go_no_go_decision": {
+    "decision_point": "2025-10-31T11:30:00-06:00",
+    "decision_criteria": [
+      "All critical checks must pass",
+      "No more than 2 high-severity failures",
+      "Management approval obtained"
+    ],
+    "go_conditions": "All critical items pass + management approval + time to submit",
+    "no_go_conditions": "Any critical failure that cannot be fixed OR insufficient time to submit quality proposal"
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-10-30",
+      "changes": "Initial comprehensive compliance verification checklist created"
+    }
+  ],
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "RFP clause references and page numbers added",
+    "Auto-evaluable flags and methods specified",
+    "Evidence structure added",
+    "Traceability links_to added",
+    "Standard schema fields applied",
+    "Work split guardrails cross-linked"
+  ],
+  "work_split_verification": {
+    "check_id": "work_split_001",
+    "requirement": "RPR Tech >50% self-performance",
+    "description": "Verify RPR Tech performs >50.01% of total contract value per VAAR 852.219-75",
+    "status": "not_started",
+    "severity": "critical",
+    "verification_method": "Calculate from Volume III pricing",
+    "computed_source": "auto_calculated_from_volume_iii_pricing",
+    "links_to": [
+      "vol3_pricing",
+      "vol4_vaar_cert",
+      "rpr_102",
+      "QA-02",
+      "VAAR-852.219-75"
+    ],
+    "rfp_clause_ref": "VAAR 852.219-75",
+    "rfp_page": 96,
+    "stated_in_volume_iv": "VAAR Certificate Block 2",
+    "priced_in_volume_iii": "CLINs 0001-0011 vs Movius CLINs total",
+    "auto_evaluable": true,
+    "auto_check_method": "sum_clins_by_contractor",
+    "auto_check_script": "sum(rpr_clins) / sum(all_clins) > 0.5001",
+    "owner": "Pricing Team",
+    "updated_at": "2025-10-30T11:52:28.870189",
+    "risk": "critical",
+    "acceptance_criteria": "Calculation shows RPR Tech >= 50.01%, documented in Vol III and Vol IV"
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "document_type": "deliverables_schedule_tracker",
+  "contract_period": "12 months from award",
+  "schema_version": "2.0",
+  "last_updated": "2025-10-30T11:53:24.602160",
+  "deliverable_status_definitions": {
+    "not_started": "No work begun",
+    "planning": "Planning/preparation underway",
+    "in_progress": "Active development/creation",
+    "review": "Under review/QC",
+    "approved": "Approved and ready for delivery",
+    "delivered": "Delivered to VA",
+    "accepted": "Accepted by VA"
+  },
+  "priority_definitions": {
+    "critical": "Contractual requirement, late delivery may breach contract",
+    "high": "Important milestone, significant to project success",
+    "medium": "Standard deliverable",
+    "low": "Nice to have or routine report"
+  },
+  "overall_status": {
+    "total_deliverables": 32,
+    "delivered": 0,
+    "in_progress": 0,
+    "not_started": 32,
+    "overdue": 0,
+    "at_risk": 0
+  },
+  "deliverables_by_timeline": [
+    {
+      "timeline_period": "Pre-Award (During Proposal)",
+      "description": "Deliverables due as part of proposal submission",
+      "deliverables": [
+        {
+          "deliverable_id": "pre_001",
+          "deliverable_name": "Volume I: Technical Approach",
+          "due_date": "2025-10-31",
+          "status": "in_progress",
+          "priority": "critical",
+          "responsible_team": "Technical Writing, All Technical Teams",
+          "estimated_effort_hours": 120,
+          "dependencies": [
+            "Movius D.1/D.2 responses",
+            "FedRAMP documentation"
+          ],
+          "acceptance_criteria": "\u226435 pages, addresses all requirements, demonstrates understanding",
+          "notes": "70% complete as of 10/30",
+          "requirements_met": [
+            "rpr_001",
+            "rpr_002",
+            "rpr_003",
+            "rpr_004",
+            "rpr_005",
+            "rpr_006",
+            "rpr_007",
+            "rpr_008",
+            "rpr_009"
+          ]
+        },
+        {
+          "deliverable_id": "pre_002",
+          "deliverable_name": "Volume II: Past Performance",
+          "due_date": "2025-10-31",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Contracts Team",
+          "estimated_effort_hours": 16,
+          "dependencies": [
+            "Contract identification",
+            "POC verification"
+          ],
+          "acceptance_criteria": "\u226410 pages, 3-5 relevant contracts, complete contact info",
+          "notes": "10% complete as of 10/30",
+          "requirements_met": [
+            "rpr_053",
+            "rpr_054",
+            "rpr_055",
+            "rpr_056"
+          ]
+        },
+        {
+          "deliverable_id": "pre_003",
+          "deliverable_name": "Volume III: Price Schedule",
+          "due_date": "2025-10-31",
+          "status": "in_progress",
+          "priority": "critical",
+          "responsible_team": "Pricing Team",
+          "estimated_effort_hours": 24,
+          "dependencies": [
+            "Movius pricing",
+            "Work split calculation"
+          ],
+          "acceptance_criteria": "All CLINs priced, RPR >50%, exact 2 decimal format",
+          "notes": "30% complete as of 10/30, blocked on Movius pricing",
+          "requirements_met": [
+            "rpr_080",
+            "rpr_081",
+            "rpr_082",
+            "rpr_083"
+          ]
+        },
+        {
+          "deliverable_id": "pre_004",
+          "deliverable_name": "Volume IV: Solicitation, Offer & Award",
+          "due_date": "2025-10-31",
+          "status": "in_progress",
+          "priority": "critical",
+          "responsible_team": "Contracts Team",
+          "estimated_effort_hours": 16,
+          "dependencies": [
+            "All signatures",
+            "Movius OEM letter",
+            "VAAR certificate"
+          ],
+          "acceptance_criteria": "All forms complete, all signatures, all amendments acknowledged",
+          "notes": "40% complete as of 10/30, blocked on Movius OEM letter",
+          "requirements_met": [
+            "rpr_100",
+            "rpr_101",
+            "rpr_102",
+            "rpr_103",
+            "rpr_104",
+            "rpr_105",
+            "rpr_106"
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 1 (Award Date)",
+      "description": "Deliverables due on contract award date",
+      "contract_day": 1,
+      "deliverables": [
+        {
+          "deliverable_id": "day1_001",
+          "deliverable_name": "COR Designation Acknowledgment",
+          "due_date": "Award + 0 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Project Management, Contracts",
+          "estimated_effort_hours": 2,
+          "dependencies": [
+            "VA provides COR designation"
+          ],
+          "acceptance_criteria": "Written acknowledgment of COR, escalation chain documented",
+          "notes": "Simple acknowledgment letter, template available",
+          "requirements_met": []
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 3 (Post-Award)",
+      "description": "Deliverables due 3 calendar days after award",
+      "contract_day": 3,
+      "deliverables": [
+        {
+          "deliverable_id": "day3_001",
+          "deliverable_name": "Kickoff Meeting Conducted",
+          "due_date": "Award + 3 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Project Management, All Teams",
+          "estimated_effort_hours": 24,
+          "dependencies": [
+            "VA schedules meeting",
+            "All key personnel available"
+          ],
+          "acceptance_criteria": "Meeting held, all stakeholders present, agenda covered, minutes documented",
+          "notes": "Critical first impression. Must have agenda, presentation prepared",
+          "requirements_met": [
+            "rpr_010"
+          ]
+        },
+        {
+          "deliverable_id": "day3_002",
+          "deliverable_name": "Kickoff Meeting Artifacts",
+          "due_date": "Award + 3 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 8,
+          "dependencies": [
+            "Kickoff meeting completed"
+          ],
+          "acceptance_criteria": "Meeting minutes, action items, attendance list, presentation deck",
+          "notes": "Should be delivered within 24 hours of kickoff meeting",
+          "requirements_met": [
+            "rpr_010"
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 5 (Post-Award)",
+      "description": "Deliverables due 5 calendar days after award",
+      "contract_day": 5,
+      "deliverables": [
+        {
+          "deliverable_id": "day5_001",
+          "deliverable_name": "Single Point of Contact (SPOC) Designation",
+          "due_date": "Award + 5 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 4,
+          "dependencies": [],
+          "acceptance_criteria": "Written designation of RPR Tech SPOC with 24/7 contact info",
+          "notes": "Should be Program Manager or Deputy PM",
+          "requirements_met": []
+        },
+        {
+          "deliverable_id": "day5_002",
+          "deliverable_name": "Escalation Contact List",
+          "due_date": "Award + 5 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Project Management, Support Operations",
+          "estimated_effort_hours": 4,
+          "dependencies": [],
+          "acceptance_criteria": "Complete escalation chain: Tier 1 \u2192 Tier 2 \u2192 Tier 3 \u2192 Management with contact info",
+          "notes": "Must include 24/7 contacts for all levels",
+          "requirements_met": []
+        },
+        {
+          "deliverable_id": "day5_003",
+          "deliverable_name": "FedRAMP SSP Repository Access",
+          "due_date": "Award + 5 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Security Team",
+          "estimated_effort_hours": 8,
+          "dependencies": [
+            "Movius provides access credentials"
+          ],
+          "acceptance_criteria": "VA has access to Movius FedRAMP SSP repository",
+          "notes": "Coordinate with Movius to provide VA access",
+          "requirements_met": [
+            "rpr_032"
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 7 (Post-Award)",
+      "description": "Deliverables due 7 calendar days after award",
+      "contract_day": 7,
+      "deliverables": [
+        {
+          "deliverable_id": "day7_001",
+          "deliverable_name": "All Technical POCs Finalized",
+          "due_date": "Award + 7 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Project Management, All Technical Teams",
+          "estimated_effort_hours": 4,
+          "dependencies": [
+            "All key personnel onboarded"
+          ],
+          "acceptance_criteria": "Complete list of POCs by function with contact information",
+          "notes": "Include: PM, Technical Lead, Security Lead, Support Manager, etc.",
+          "requirements_met": []
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 10 (Post-Award)",
+      "description": "Deliverables due 10 calendar days after award",
+      "contract_day": 10,
+      "deliverables": [
+        {
+          "deliverable_id": "day10_001",
+          "deliverable_name": "VA Implementation Diagram (VAID)",
+          "due_date": "Award + 10 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Security Team, Software Dev",
+          "estimated_effort_hours": 16,
+          "dependencies": [
+            "Movius architecture details"
+          ],
+          "acceptance_criteria": "VA-specific implementation diagram showing all components and data flows",
+          "notes": "Critical for ATO process",
+          "requirements_met": [
+            "rpr_033"
+          ]
+        },
+        {
+          "deliverable_id": "day10_002",
+          "deliverable_name": "Most Recent 3PAO SAP",
+          "due_date": "Award + 10 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Security Team",
+          "estimated_effort_hours": 4,
+          "dependencies": [
+            "Movius provides 3PAO SAP"
+          ],
+          "acceptance_criteria": "Current Security Assessment Package from Movius 3PAO",
+          "notes": "Obtain from Movius and provide to VA",
+          "requirements_met": [
+            "rpr_034"
+          ]
+        },
+        {
+          "deliverable_id": "day10_003",
+          "deliverable_name": "Onboarding Tools and Access",
+          "due_date": "Award + 10 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Product Delivery, Software Dev",
+          "estimated_effort_hours": 40,
+          "dependencies": [
+            "Platform configuration",
+            "VA environment setup"
+          ],
+          "acceptance_criteria": "Test environment ready, admin tools accessible, documentation available",
+          "notes": "Enables VA to begin testing and evaluation",
+          "requirements_met": []
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 30 (One Month Post-Award)",
+      "description": "Deliverables due 30 calendar days after award",
+      "contract_day": 30,
+      "deliverables": [
+        {
+          "deliverable_id": "day30_001",
+          "deliverable_name": "Contractor Management Plan (CMP)",
+          "due_date": "Award + 30 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 40,
+          "dependencies": [],
+          "acceptance_criteria": "Complete CMP covering: governance, reporting, quality assurance, risk management, change control",
+          "notes": "Foundation document for project management",
+          "requirements_met": [
+            "rpr_011"
+          ]
+        },
+        {
+          "deliverable_id": "day30_002",
+          "deliverable_name": "Implementation Plan",
+          "due_date": "Award + 30 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Project Management, Product Delivery",
+          "estimated_effort_hours": 60,
+          "dependencies": [
+            "CMP approved"
+          ],
+          "acceptance_criteria": "Detailed 90-day implementation plan with phases, milestones, resource allocation, risk mitigation",
+          "notes": "Should align with Volume I Section 6 proposal approach",
+          "requirements_met": [
+            "rpr_012"
+          ]
+        },
+        {
+          "deliverable_id": "day30_003",
+          "deliverable_name": "Training Plan",
+          "due_date": "Award + 30 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Product Delivery, Technical Writing",
+          "estimated_effort_hours": 40,
+          "dependencies": [],
+          "acceptance_criteria": "Comprehensive training plan: end-user, administrator, support staff training with schedules and materials list",
+          "notes": "Should include multiple training modalities",
+          "requirements_met": [
+            "rpr_015"
+          ]
+        },
+        {
+          "deliverable_id": "day30_004",
+          "deliverable_name": "Transition Plan",
+          "due_date": "Award + 30 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Product Delivery",
+          "estimated_effort_hours": 32,
+          "dependencies": [],
+          "acceptance_criteria": "Transition plan from implementation to steady-state operations",
+          "notes": "Part of Implementation Plan but can be separate document",
+          "requirements_met": [
+            "rpr_012"
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_period": "Day 90 (90-Day Readiness)",
+      "description": "Deliverables and milestones at 90-day mark",
+      "contract_day": 90,
+      "deliverables": [
+        {
+          "deliverable_id": "day90_001",
+          "deliverable_name": "Full Production Deployment Complete",
+          "due_date": "Award + 90 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "All Teams",
+          "estimated_effort_hours": 2000,
+          "dependencies": [
+            "All implementation phases complete",
+            "VA ATO granted",
+            "Training completed"
+          ],
+          "acceptance_criteria": "Platform fully deployed, all users onboarded, all features operational, meeting performance SLAs",
+          "notes": "This is the primary contract requirement - full operational capability by Day 90",
+          "requirements_met": [
+            "rpr_008",
+            "rpr_042"
+          ]
+        },
+        {
+          "deliverable_id": "day90_002",
+          "deliverable_name": "System Security Plan (SSP)",
+          "due_date": "Award + 90 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Security Team",
+          "estimated_effort_hours": 120,
+          "dependencies": [
+            "VAID complete",
+            "Security controls documented"
+          ],
+          "acceptance_criteria": "Complete VA-specific SSP following NIST 800-53 and VA templates",
+          "notes": "Required for VA ATO process",
+          "requirements_met": [
+            "rpr_036"
+          ]
+        },
+        {
+          "deliverable_id": "day90_003",
+          "deliverable_name": "All Training Delivered",
+          "due_date": "Award + 90 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Product Delivery",
+          "estimated_effort_hours": 200,
+          "dependencies": [
+            "Training materials complete",
+            "Platform stable"
+          ],
+          "acceptance_criteria": "All users trained: end-users, administrators, support staff",
+          "notes": "Multiple modalities: live, recorded, documentation",
+          "requirements_met": [
+            "rpr_016",
+            "rpr_047"
+          ]
+        },
+        {
+          "deliverable_id": "day90_004",
+          "deliverable_name": "24/7 Support Operations Live",
+          "due_date": "Award + 90 days",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Support Operations",
+          "estimated_effort_hours": 160,
+          "dependencies": [
+            "Support staff hired and trained",
+            "Help desk tools configured"
+          ],
+          "acceptance_criteria": "24/7/365 support operational with all SLAs active",
+          "notes": "Tier 1, 2, 3 support all operational",
+          "requirements_met": [
+            "rpr_009",
+            "rpr_044"
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_period": "Ongoing - Weekly",
+      "description": "Weekly recurring deliverables throughout contract",
+      "deliverables": [
+        {
+          "deliverable_id": "weekly_001",
+          "deliverable_name": "Weekly Status Report",
+          "due_date": "Every Friday",
+          "status": "not_started",
+          "priority": "medium",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 4,
+          "dependencies": [],
+          "acceptance_criteria": "Status report covering: accomplishments, upcoming work, issues/risks, metrics",
+          "notes": "Template-based, submitted via agreed mechanism",
+          "requirements_met": [
+            "rpr_013"
+          ]
+        },
+        {
+          "deliverable_id": "weekly_002",
+          "deliverable_name": "Weekly Project Meeting",
+          "due_date": "Weekly, day TBD with VA",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Project Management, All Teams",
+          "estimated_effort_hours": 2,
+          "dependencies": [],
+          "acceptance_criteria": "Meeting held, key stakeholders present, action items documented",
+          "notes": "Regular touchpoint with VA",
+          "requirements_met": [
+            "rpr_013"
+          ]
+        }
+      ]
+    },
+    {
+      "timeline_period": "Ongoing - Quarterly",
+      "description": "Quarterly recurring deliverables throughout contract",
+      "deliverables": [
+        {
+          "deliverable_id": "quarterly_001",
+          "deliverable_name": "Quarterly Performance Report",
+          "due_date": "End of each quarter",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 16,
+          "dependencies": [
+            "Performance metrics collected"
+          ],
+          "acceptance_criteria": "Comprehensive report: SLA compliance, performance metrics, user satisfaction, issues resolved",
+          "notes": "More detailed than weekly reports",
+          "requirements_met": [
+            "rpr_014"
+          ]
+        },
+        {
+          "deliverable_id": "quarterly_002",
+          "deliverable_name": "Quarterly Security Review",
+          "due_date": "End of each quarter",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Security Team",
+          "estimated_effort_hours": 24,
+          "dependencies": [
+            "Security logs and incident data"
+          ],
+          "acceptance_criteria": "Security posture review, incidents analyzed, recommendations for improvements",
+          "notes": "Critical for maintaining ATO",
+          "requirements_met": []
+        }
+      ]
+    },
+    {
+      "timeline_period": "Month 12 (End of Base Year)",
+      "description": "Annual deliverables at end of base year",
+      "contract_day": 365,
+      "deliverables": [
+        {
+          "deliverable_id": "month12_001",
+          "deliverable_name": "Annual Performance Report",
+          "due_date": "Award + 365 days",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 40,
+          "dependencies": [
+            "Full year data collection"
+          ],
+          "acceptance_criteria": "Comprehensive annual report: achievements, metrics, lessons learned, recommendations",
+          "notes": "Important for option year decisions",
+          "requirements_met": []
+        },
+        {
+          "deliverable_id": "month12_002",
+          "deliverable_name": "Option Year Proposal (if applicable)",
+          "due_date": "Award + 345 days (30 days before option)",
+          "status": "not_started",
+          "priority": "high",
+          "responsible_team": "Contracts, Project Management",
+          "estimated_effort_hours": 80,
+          "dependencies": [
+            "VA indicates interest in option year"
+          ],
+          "acceptance_criteria": "Updated pricing, scope adjustments, performance improvements for option year",
+          "notes": "If VA exercises option year",
+          "requirements_met": []
+        }
+      ]
+    },
+    {
+      "timeline_period": "Ad Hoc / As Needed",
+      "description": "Deliverables required on an ad-hoc basis",
+      "deliverables": [
+        {
+          "deliverable_id": "adhoc_001",
+          "deliverable_name": "Incident Reports",
+          "due_date": "Within 24 hours of incident",
+          "status": "not_started",
+          "priority": "critical",
+          "responsible_team": "Security Team, Support Operations",
+          "estimated_effort_hours": 8,
+          "dependencies": [
+            "Incident occurrence"
+          ],
+          "acceptance_criteria": "Detailed incident report: what happened, impact, root cause, remediation, prevention",
+          "notes": "Required for security incidents, major outages",
+          "requirements_met": [
+            "rpr_046",
+            "rpr_128"
+          ]
+        },
+        {
+          "deliverable_id": "adhoc_002",
+          "deliverable_name": "Change Requests",
+          "due_date": "Per agreed change control process",
+          "status": "not_started",
+          "priority": "medium",
+          "responsible_team": "Project Management",
+          "estimated_effort_hours": 8,
+          "dependencies": [
+            "Change identified"
+          ],
+          "acceptance_criteria": "Formal change request: description, justification, impact analysis, approval",
+          "notes": "Follows change control procedures in CMP",
+          "requirements_met": []
+        },
+        {
+          "deliverable_id": "adhoc_003",
+          "deliverable_name": "Updated Documentation",
+          "due_date": "Within 30 days of platform changes",
+          "status": "not_started",
+          "priority": "medium",
+          "responsible_team": "Technical Writing",
+          "estimated_effort_hours": 16,
+          "dependencies": [
+            "Platform updates deployed"
+          ],
+          "acceptance_criteria": "All user and admin documentation updated to reflect current platform state",
+          "notes": "Continuous maintenance activity",
+          "requirements_met": []
+        }
+      ]
+    }
+  ],
+  "dependencies_map": {
+    "critical_path": [
+      "Award \u2192 Day 3 Kickoff \u2192 Day 30 Plans \u2192 Day 90 Deployment \u2192 Ongoing Operations"
+    ],
+    "parallel_tracks": {
+      "security_track": [
+        "Day 5 SSP Access \u2192 Day 10 VAID \u2192 Day 90 Complete SSP \u2192 ATO Grant"
+      ],
+      "implementation_track": [
+        "Day 10 Onboarding \u2192 Pilot \u2192 Phased Rollout \u2192 Day 90 Full Production"
+      ],
+      "support_track": [
+        "Day 5 Escalation \u2192 Support Hiring/Training \u2192 Day 90 24/7 Operations"
+      ],
+      "training_track": [
+        "Day 30 Training Plan \u2192 Materials Development \u2192 Training Delivery \u2192 Day 90 Complete"
+      ]
+    }
+  },
+  "resource_requirements": {
+    "total_estimated_hours": 3500,
+    "by_team": {
+      "project_management": 400,
+      "software_dev": 800,
+      "security": 600,
+      "product_delivery": 700,
+      "support_operations": 400,
+      "technical_writing": 300,
+      "contracts": 200,
+      "all_teams": 100
+    }
+  },
+  "risk_areas": {
+    "day_90_deployment": {
+      "risk": "Failure to achieve full deployment by Day 90",
+      "impact": "Contract breach, potential termination",
+      "mitigation": "Realistic planning, weekly tracking, early issue identification"
+    },
+    "va_ato_delay": {
+      "risk": "VA ATO process takes longer than expected",
+      "impact": "Delays full production deployment",
+      "mitigation": "Start security documentation early, proactive engagement with VA security"
+    },
+    "movius_dependencies": {
+      "risk": "Movius delays in providing required documentation/access",
+      "impact": "Delays in multiple deliverables (SSP access, VAID, 3PAO SAP)",
+      "mitigation": "Establish clear SLAs with Movius, escalation process"
+    }
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-10-30",
+      "changes": "Initial deliverables schedule skeleton created with comprehensive timeline"
+    }
+  ],
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "Traceability links_to added to all deliverables",
+    "Standard schema fields applied",
+    "Acceptance criteria defined",
+    "Evidence structure added",
+    "Risk assessment added"
+  ]
+}

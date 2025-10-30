@@ -1,0 +1,1635 @@
+{
+  "skeleton_metadata": {
+    "skeleton_id": "development_timeline_user_stories",
+    "skeleton_name": "Development Timeline & User Stories Tracking",
+    "version": "1.0",
+    "created_date": "2025-10-30",
+    "last_updated": "2025-10-30T15:30:00Z",
+    "purpose": "Track Day 0-90 implementation timeline, user stories with acceptance criteria, VA interaction schedule, and team coordination",
+    "domain": "Development timeline, user stories, sprint planning, VA meetings, team roster",
+    "modifies_other_skeletons": false,
+    "read_only_references": [
+      "requirements_skeleton_v2",
+      "deliverables_schedule_skeleton_v2",
+      "movius_dependencies_skeleton_v2",
+      "volumes_completion_skeleton_v2"
+    ]
+  },
+
+  "contract_information": {
+    "rfp_number": "36C10A25R0002",
+    "contract_title": "VA Modernized Messaging SaaS",
+    "prime_contractor": "RPR Technologies, Inc.",
+    "subcontractor": "Movius (Infobip)",
+    "contract_type": "Firm-Fixed-Price",
+    "period_of_performance": "Base: 1 year + 4 option years",
+    "critical_milestone": "Day 90 Production Readiness"
+  },
+
+  "implementation_phases": {
+    "phase_1_foundation": {
+      "phase_id": "phase1",
+      "phase_name": "Foundation (Days 1-30)",
+      "days": "1-30",
+      "objective": "Establish leadership team, operational infrastructure, and foundation for deployment",
+      "target_end_date": "Award + 30 days",
+      
+      "key_milestones": [
+        {
+          "milestone_id": "m1_001",
+          "day": 1,
+          "milestone": "Contract Award & Kickoff",
+          "critical": true
+        },
+        {
+          "milestone_id": "m1_002",
+          "day": 3,
+          "milestone": "Project Kickoff Meeting Complete",
+          "deliverables": ["0002AA - Agenda", "0002AB - Minutes"]
+        },
+        {
+          "milestone_id": "m1_003",
+          "day": 7,
+          "milestone": "Contractor Management Plan Delivered",
+          "deliverables": ["0002AD - CMP"]
+        },
+        {
+          "milestone_id": "m1_004",
+          "day": 10,
+          "milestone": "Implementation Plan Delivered",
+          "deliverables": ["0002AE - Implementation Plan with Transition Plan"]
+        },
+        {
+          "milestone_id": "m1_005",
+          "day": 30,
+          "milestone": "Foundation Complete - Build Phase Begins",
+          "critical": true
+        }
+      ],
+
+      "staffing": {
+        "new_hires": 5,
+        "target_team_size": 5,
+        "roles": [
+          {
+            "role": "Program Manager",
+            "start_day": 1,
+            "quantity": 1,
+            "responsibilities": [
+              "VA coordination and COR engagement",
+              "Contract setup and compliance",
+              "Overall program oversight",
+              "Background investigation initiation"
+            ]
+          },
+          {
+            "role": "Help Desk Manager",
+            "start_day": 7,
+            "quantity": 1,
+            "responsibilities": [
+              "Contact center infrastructure planning",
+              "Help desk procedures development",
+              "Tier 1/2 staff recruiting"
+            ]
+          },
+          {
+            "role": "Implementation Manager",
+            "start_day": 7,
+            "quantity": 1,
+            "responsibilities": [
+              "Facility deployment planning (103-175 sites)",
+              "VA systems integration coordination",
+              "Technical requirements validation"
+            ]
+          },
+          {
+            "role": "Training Coordinator",
+            "start_day": 14,
+            "quantity": 1,
+            "responsibilities": [
+              "Training materials development",
+              "End-user curriculum design",
+              "Agent training program creation"
+            ]
+          },
+          {
+            "role": "QA/Compliance Manager",
+            "start_day": 14,
+            "quantity": 1,
+            "responsibilities": [
+              "VA 6500 compliance framework",
+              "FedRAMP coordination with Movius",
+              "Security documentation preparation"
+            ]
+          }
+        ]
+      },
+
+      "key_activities": [
+        "Submit Contractor Staff Roster (3 business days)",
+        "Initiate all personnel background investigations",
+        "Establish remote operations infrastructure",
+        "Deploy cloud-based contact center platform",
+        "Configure ticketing and knowledge base systems",
+        "Begin recruitment for Phase 2 positions",
+        "Project kickoff with VA",
+        "Contractor Management Plan development",
+        "Implementation Plan development",
+        "Training Plan development"
+      ],
+
+      "deliverables_links_to": [
+        "deliverables_schedule_skeleton_v2:day_1_3",
+        "deliverables_schedule_skeleton_v2:day_7",
+        "deliverables_schedule_skeleton_v2:day_10",
+        "deliverables_schedule_skeleton_v2:day_30"
+      ],
+
+      "weekly_breakdown": [
+        {
+          "week": 1,
+          "days": "1-7",
+          "focus": "Contract kickoff and initial setup",
+          "activities": [
+            "Contract award (Day 0)",
+            "Program Manager starts (Day 1)",
+            "Project kickoff meeting (Day 1-3)",
+            "Deliver kickoff agenda and minutes",
+            "Submit contractor staff roster to COR",
+            "Help Desk Manager starts (Day 7)",
+            "Implementation Manager starts (Day 7)",
+            "Begin CMP development"
+          ],
+          "deliverables_due": ["0002AA", "0002AB", "staff_roster"],
+          "meetings": ["kickoff_meeting"],
+          "user_stories_target": []
+        },
+        {
+          "week": 2,
+          "days": "8-14",
+          "focus": "Infrastructure and planning",
+          "activities": [
+            "Complete and deliver CMP (Day 7-10)",
+            "Begin Implementation Plan development",
+            "Training Coordinator starts (Day 14)",
+            "QA/Compliance Manager starts (Day 14)",
+            "Initiate background checks (OF 306, VA 0710)",
+            "Remote operations center setup",
+            "Contact center platform selection"
+          ],
+          "deliverables_due": ["0002AD - CMP"],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-001", "US-002"]
+        },
+        {
+          "week": 3,
+          "days": "15-21",
+          "focus": "Integration planning and tool setup",
+          "activities": [
+            "Complete Implementation Plan",
+            "VA environment assessment",
+            "Movius FedRAMP documentation review",
+            "Ticketing system configuration",
+            "Knowledge base setup initiated",
+            "Recruitment for Phase 2 staff"
+          ],
+          "deliverables_due": ["0002AE - Implementation Plan"],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-003", "US-004", "US-005"]
+        },
+        {
+          "week": 4,
+          "days": "22-30",
+          "focus": "Training plan and Phase 2 prep",
+          "activities": [
+            "Training Plan development and delivery",
+            "Vulnerability scans coordination (Day 30)",
+            "Incident Response Plan testing schedule",
+            "Continuous Monitoring meeting schedule",
+            "Phase 2 hiring pipeline established",
+            "Foundation phase retrospective"
+          ],
+          "deliverables_due": ["Training Plan", "Monthly vulns", "IRP testing", "CM schedule"],
+          "meetings": ["weekly_status", "cm_meeting_initial"],
+          "user_stories_target": ["US-006", "US-007"]
+        }
+      ],
+
+      "links_to": [
+        "requirements_skeleton_v2:rpr_011",
+        "requirements_skeleton_v2:rpr_012",
+        "requirements_skeleton_v2:rpr_015",
+        "deliverables_schedule_skeleton_v2:day_1_3",
+        "deliverables_schedule_skeleton_v2:day_30"
+      ]
+    },
+
+    "phase_2_build_and_train": {
+      "phase_id": "phase2",
+      "phase_name": "Build & Train (Days 31-60)",
+      "days": "31-60",
+      "objective": "Scale operational capacity, train help desk team, and prepare for pilot deployment",
+      "target_end_date": "Award + 60 days",
+      
+      "key_milestones": [
+        {
+          "milestone_id": "m2_001",
+          "day": 45,
+          "milestone": "Help Desk Team 70% Trained",
+          "critical": false
+        },
+        {
+          "milestone_id": "m2_002",
+          "day": 50,
+          "milestone": "Integration Testing Complete",
+          "critical": true
+        },
+        {
+          "milestone_id": "m2_003",
+          "day": 60,
+          "milestone": "Knowledge Base 80% Complete",
+          "critical": false
+        }
+      ],
+
+      "staffing": {
+        "new_hires": 12,
+        "target_team_size": 17,
+        "roles": [
+          {
+            "role": "Tier 1 Help Desk Agent",
+            "start_day": "31-45",
+            "quantity": 6,
+            "responsibilities": [
+              "Level 1 user support",
+              "Ticket creation and tracking",
+              "Password resets and basic troubleshooting"
+            ]
+          },
+          {
+            "role": "Tier 2 Help Desk Specialist",
+            "start_day": "31-45",
+            "quantity": 2,
+            "responsibilities": [
+              "Advanced troubleshooting",
+              "Escalation handling",
+              "Knowledge base content creation"
+            ]
+          },
+          {
+            "role": "Implementation Engineer",
+            "start_day": "35-40",
+            "quantity": 2,
+            "responsibilities": [
+              "Platform configuration",
+              "Integration development",
+              "Testing and validation"
+            ]
+          },
+          {
+            "role": "Systems Administrator",
+            "start_day": "40",
+            "quantity": 1,
+            "responsibilities": [
+              "Infrastructure management",
+              "Tool administration",
+              "Security monitoring"
+            ]
+          },
+          {
+            "role": "Documentation Specialist",
+            "start_day": "45",
+            "quantity": 1,
+            "responsibilities": [
+              "User documentation",
+              "Training materials",
+              "SOP documentation"
+            ]
+          }
+        ]
+      },
+
+      "key_activities": [
+        "Comprehensive Tier 1/2 agent training (80 hours total)",
+        "Movius platform training (40 hours)",
+        "VA systems and policies training (24 hours)",
+        "Security and compliance training (16 hours)",
+        "Knowledge base development (100+ articles)",
+        "Integration testing with VA Entra ID/Active Directory",
+        "SSO and SAML authentication validation",
+        "SOP and runbook creation",
+        "Pilot facility identification"
+      ],
+
+      "deliverables_links_to": [
+        "deliverables_schedule_skeleton_v2:within_90_days"
+      ],
+
+      "weekly_breakdown": [
+        {
+          "week": 5,
+          "days": "31-37",
+          "focus": "Help desk team onboarding",
+          "activities": [
+            "Tier 1 agents (6) start and begin training",
+            "Tier 2 specialists (2) start",
+            "Implementation Engineers (2) start",
+            "Training curriculum delivery begins"
+          ],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-008", "US-009"]
+        },
+        {
+          "week": 6,
+          "days": "38-44",
+          "focus": "Integration development",
+          "activities": [
+            "Systems Administrator starts (Day 40)",
+            "VA Entra ID integration configuration",
+            "SSO testing initiated",
+            "API endpoint configuration",
+            "Knowledge base article creation"
+          ],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-001", "US-010", "US-011"]
+        },
+        {
+          "week": 7,
+          "days": "45-51",
+          "focus": "Training completion and testing",
+          "activities": [
+            "Documentation Specialist starts (Day 45)",
+            "Agent training 70% complete",
+            "Integration testing with VA systems",
+            "Security documentation package (Phase 1)",
+            "Knowledge base 60% complete"
+          ],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-012", "US-013"]
+        },
+        {
+          "week": 8,
+          "days": "52-60",
+          "focus": "Pilot preparation",
+          "activities": [
+            "Pilot facility selection with VA",
+            "Knowledge base 80% complete",
+            "SOP documentation finalized",
+            "Phase 3 hiring initiated",
+            "Build phase retrospective"
+          ],
+          "meetings": ["weekly_status", "cm_meeting_monthly"],
+          "user_stories_target": ["US-014", "US-015"]
+        }
+      ],
+
+      "links_to": [
+        "requirements_skeleton_v2:rpr_009",
+        "requirements_skeleton_v2:rpr_022",
+        "requirements_skeleton_v2:rpr_026",
+        "movius_dependencies_skeleton_v2:movius_003"
+      ]
+    },
+
+    "phase_3_pilot_and_scale": {
+      "phase_id": "phase3",
+      "phase_name": "Pilot & Full Scale (Days 61-90)",
+      "days": "61-90",
+      "objective": "Complete staffing, pilot deployment, and validate full operational capability",
+      "target_end_date": "Award + 90 days",
+      
+      "key_milestones": [
+        {
+          "milestone_id": "m3_001",
+          "day": 75,
+          "milestone": "Pilot Deployment Begins",
+          "critical": true
+        },
+        {
+          "milestone_id": "m3_002",
+          "day": 85,
+          "milestone": "24/7 Coverage Validated",
+          "critical": true
+        },
+        {
+          "milestone_id": "m3_003",
+          "day": 90,
+          "milestone": "DAY 90 PRODUCTION READY",
+          "critical": true,
+          "acceptance_criteria": [
+            "Platform fully configured and tested",
+            "All 26 FTE operational",
+            "24/7/365 support capability validated",
+            "Knowledge base 100% complete",
+            "Pilot deployment successful (1-3 facilities, ~1000 users)",
+            "All training materials finalized",
+            "Security documentation complete",
+            "Go/No-Go for enterprise rollout"
+          ]
+        }
+      ],
+
+      "staffing": {
+        "new_hires": 9,
+        "target_team_size": 26,
+        "roles": [
+          {
+            "role": "Tier 1 Help Desk Agent",
+            "start_day": "61-75",
+            "quantity": 4,
+            "responsibilities": ["24/7 coverage, Level 1 support"]
+          },
+          {
+            "role": "Tier 2 Help Desk Specialist",
+            "start_day": "61-75",
+            "quantity": 2,
+            "responsibilities": ["24/7 coverage, escalation handling"]
+          },
+          {
+            "role": "Implementation Engineer",
+            "start_day": "65",
+            "quantity": 1,
+            "responsibilities": ["Pilot deployment support"]
+          },
+          {
+            "role": "Documentation Specialist",
+            "start_day": "70",
+            "quantity": 1,
+            "responsibilities": ["Training materials finalization"]
+          },
+          {
+            "role": "QA Analyst",
+            "start_day": "70",
+            "quantity": 1,
+            "responsibilities": ["Quality assurance, embedded in help desk"]
+          }
+        ]
+      },
+
+      "key_activities": [
+        "Pilot deployment (1-3 facilities, ~1000 users)",
+        "24/7/365 coverage testing and validation",
+        "SLA compliance validation",
+        "Full knowledge base completion (100%)",
+        "User training materials finalized",
+        "Enterprise-wide deployment readiness review",
+        "Security documentation package finalized",
+        "Go/No-Go decision for enterprise rollout"
+      ],
+
+      "weekly_breakdown": [
+        {
+          "week": 9,
+          "days": "61-67",
+          "focus": "Final team scaling",
+          "activities": [
+            "Additional Tier 1 agents (4) start",
+            "Additional Tier 2 specialists (2) start",
+            "Implementation Engineer starts (Day 65)",
+            "Pilot site readiness assessment"
+          ],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-016", "US-017"]
+        },
+        {
+          "week": 10,
+          "days": "68-74",
+          "focus": "Pilot preparation finalization",
+          "activities": [
+            "Documentation Specialist starts (Day 70)",
+            "QA Analyst starts (Day 70)",
+            "Pilot user training begins",
+            "Final platform configuration",
+            "24/7 shift testing"
+          ],
+          "meetings": ["weekly_status"],
+          "user_stories_target": ["US-018", "US-019"]
+        },
+        {
+          "week": 11,
+          "days": "75-81",
+          "focus": "Pilot deployment",
+          "activities": [
+            "Pilot go-live (Day 75)",
+            "Real-time support monitoring",
+            "Issue tracking and resolution",
+            "User feedback collection",
+            "Knowledge base refinement"
+          ],
+          "meetings": ["weekly_status", "daily_standup_during_pilot"],
+          "user_stories_target": ["US-020"]
+        },
+        {
+          "week": 12,
+          "days": "82-90",
+          "focus": "Validation and readiness",
+          "activities": [
+            "24/7 coverage validation (Day 85)",
+            "SLA compliance assessment",
+            "Pilot success metrics review",
+            "Knowledge base 100% complete",
+            "Final security documentation",
+            "Go/No-Go readiness review (Day 88-89)",
+            "Day 90: PRODUCTION READY milestone"
+          ],
+          "meetings": ["weekly_status", "cm_meeting_monthly", "go_no_go_review"],
+          "user_stories_target": []
+        }
+      ],
+
+      "links_to": [
+        "requirements_skeleton_v2:rpr_008",
+        "requirements_skeleton_v2:rpr_042",
+        "requirements_skeleton_v2:rpr_044",
+        "deliverables_schedule_skeleton_v2:day_90_001",
+        "deliverables_schedule_skeleton_v2:day_90_004"
+      ]
+    }
+  },
+
+  "user_stories_backlog": {
+    "epic_001_platform_configuration": {
+      "epic_id": "epic_001",
+      "epic_name": "VA Environment Platform Configuration",
+      "epic_description": "Configure Movius MultiLine platform for VA environment with all required integrations",
+      "priority": "critical",
+      "target_phases": ["phase1", "phase2"],
+      "owner": "Implementation Team",
+      
+      "user_stories": [
+        {
+          "story_id": "US-001",
+          "story_name": "VA Entra ID Integration",
+          "as_a": "VA System Administrator",
+          "i_want_to": "integrate Movius platform with VA Entra ID (Azure Active Directory)",
+          "so_that": "users can authenticate with their VA credentials using SSO",
+          "acceptance_criteria": [
+            "SAML 2.0 SSO configured between Movius and VA Entra ID",
+            "Test users can successfully log in using VA credentials",
+            "User provisioning automated from VA directory",
+            "User attributes (name, email, department) sync correctly",
+            "Multi-factor authentication (MFA) works if required by VA"
+          ],
+          "priority": "critical",
+          "estimated_effort_hours": 40,
+          "assigned_to": "Implementation Engineers",
+          "sprint": "sprint_2",
+          "status": "not_started",
+          "dependencies": [
+            "movius_dependencies_skeleton_v2:movius_003",
+            "VA Entra ID access credentials"
+          ],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_022",
+            "requirements_skeleton_v2:rpr_026"
+          ],
+          "blocked": false,
+          "blocker_reason": null,
+          "testing_required": true,
+          "test_cases": [
+            "TC-001: Successful SSO login with VA credentials",
+            "TC-002: Failed login with invalid credentials",
+            "TC-003: User provisioning from directory",
+            "TC-004: MFA flow if enabled"
+          ]
+        },
+
+        {
+          "story_id": "US-002",
+          "story_name": "Ticketing System Configuration",
+          "as_a": "Help Desk Manager",
+          "i_want_to": "deploy and configure a ticketing system for help desk operations",
+          "so_that": "all user issues are tracked, assigned, and resolved systematically",
+          "acceptance_criteria": [
+            "Ticketing system deployed and accessible to all help desk staff",
+            "Ticket categories configured (Technical, Account, Training, etc.)",
+            "Escalation workflows defined and automated",
+            "Email-to-ticket and phone-to-ticket integration working",
+            "SLA timers configured (4-hour response for critical issues)",
+            "Reporting dashboards configured for metrics"
+          ],
+          "priority": "high",
+          "estimated_effort_hours": 24,
+          "assigned_to": "Help Desk Manager, Systems Administrator",
+          "sprint": "sprint_1",
+          "status": "not_started",
+          "dependencies": [],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_009",
+            "requirements_skeleton_v2:rpr_044"
+          ],
+          "blocked": false,
+          "testing_required": true
+        },
+
+        {
+          "story_id": "US-003",
+          "story_name": "Knowledge Base Setup",
+          "as_a": "Help Desk Agent",
+          "i_want_to": "have a searchable knowledge base with troubleshooting articles",
+          "so_that": "I can quickly resolve common user issues",
+          "acceptance_criteria": [
+            "Knowledge base platform deployed and accessible",
+            "Initial 50 articles created covering common scenarios",
+            "Search functionality working and relevant",
+            "Article templates created for consistent formatting",
+            "Feedback mechanism for article helpfulness",
+            "Integration with ticketing system (suggest articles based on ticket)"
+          ],
+          "priority": "high",
+          "estimated_effort_hours": 60,
+          "assigned_to": "Documentation Specialist, Tier 2 Specialists",
+          "sprint": "sprint_2",
+          "status": "not_started",
+          "dependencies": ["US-002"],
+          "links_to": ["requirements_skeleton_v2:rpr_045"],
+          "blocked": false,
+          "testing_required": false
+        },
+
+        {
+          "story_id": "US-004",
+          "story_name": "Mobile Device Management (MDM) Integration",
+          "as_a": "VA Security Administrator",
+          "i_want_to": "integrate Movius with VA's MDM solution for GFE devices",
+          "so_that": "government-furnished devices can be provisioned and managed centrally",
+          "acceptance_criteria": [
+            "Movius mobile app available in VA MDM app catalog",
+            "Silent app deployment working (no user interaction required)",
+            "Device compliance policies enforced (encryption, PIN, etc.)",
+            "Remote wipe capability tested and working",
+            "App configuration pushed automatically to devices"
+          ],
+          "priority": "high",
+          "estimated_effort_hours": 32,
+          "assigned_to": "Implementation Engineers, Security Team",
+          "sprint": "sprint_3",
+          "status": "not_started",
+          "dependencies": [
+            "movius_dependencies_skeleton_v2:movius_004",
+            "VA MDM team coordination"
+          ],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_024",
+            "requirements_skeleton_v2:rpr_025"
+          ],
+          "blocked": false,
+          "testing_required": true
+        },
+
+        {
+          "story_id": "US-005",
+          "story_name": "BYOD Separation Configuration",
+          "as_a": "VA User",
+          "i_want_to": "use my personal mobile device for work messaging without VA accessing my personal data",
+          "so_that": "I maintain privacy while meeting work communication needs",
+          "acceptance_criteria": [
+            "Movius app installed on personal devices creates separate work profile",
+            "Work and personal data completely segregated",
+            "VA cannot access personal apps, contacts, or data",
+            "Remote wipe only affects work profile, not personal data",
+            "User can easily switch between personal and work contexts"
+          ],
+          "priority": "critical",
+          "estimated_effort_hours": 16,
+          "assigned_to": "Implementation Engineers",
+          "sprint": "sprint_2",
+          "status": "not_started",
+          "dependencies": ["movius_dependencies_skeleton_v2:movius_003"],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_023",
+            "requirements_skeleton_v2:rpr_040"
+          ],
+          "blocked": false,
+          "testing_required": true
+        }
+      ]
+    },
+
+    "epic_002_security_compliance": {
+      "epic_id": "epic_002",
+      "epic_name": "Security & Compliance Implementation",
+      "epic_description": "Implement all VA security requirements including FedRAMP, ATO, FIPS, HIPAA",
+      "priority": "critical",
+      "target_phases": ["phase1", "phase2", "phase3"],
+      "owner": "Security Team",
+      
+      "user_stories": [
+        {
+          "story_id": "US-006",
+          "story_name": "System Security Plan (SSP) Development",
+          "as_a": "QA/Compliance Manager",
+          "i_want_to": "develop a complete VA-specific System Security Plan",
+          "so_that": "we can obtain VA ATO within 12 months",
+          "acceptance_criteria": [
+            "SSP follows NIST 800-53 control framework",
+            "All required VA security controls documented",
+            "Control implementation details provided",
+            "Movius FedRAMP SSP incorporated by reference",
+            "VA security team reviews and approves draft SSP"
+          ],
+          "priority": "critical",
+          "estimated_effort_hours": 120,
+          "assigned_to": "QA/Compliance Manager, Security Team",
+          "sprint": "sprint_4",
+          "status": "not_started",
+          "dependencies": [
+            "movius_dependencies_skeleton_v2:movius_003",
+            "US-007 (VAID complete)"
+          ],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_036",
+            "requirements_skeleton_v2:rpr_121",
+            "deliverables_schedule_skeleton_v2:day90_002"
+          ],
+          "blocked": false,
+          "testing_required": false
+        },
+
+        {
+          "story_id": "US-007",
+          "story_name": "VA Implementation Diagram (VAID) Creation",
+          "as_a": "System Architect",
+          "i_want_to": "create a comprehensive VA Implementation Diagram showing all system components and data flows",
+          "so_that": "VA security can understand the system architecture for ATO approval",
+          "acceptance_criteria": [
+            "VAID shows all system components (platform, APIs, databases, etc.)",
+            "Data flows clearly illustrated with direction arrows",
+            "Trust boundaries identified (VA network, cloud, endpoints)",
+            "Security controls mapped to architecture components",
+            "Diagram follows VA template and standards",
+            "Delivered by Day 10 per contract requirement"
+          ],
+          "priority": "critical",
+          "estimated_effort_hours": 24,
+          "assigned_to": "Implementation Engineers, Security Team",
+          "sprint": "sprint_1",
+          "status": "not_started",
+          "dependencies": ["movius_dependencies_skeleton_v2:movius_003"],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_027",
+            "deliverables_schedule_skeleton_v2:day_10"
+          ],
+          "blocked": false,
+          "testing_required": false
+        }
+      ]
+    },
+
+    "epic_003_support_operations": {
+      "epic_id": "epic_003",
+      "epic_name": "24/7 Support Operations",
+      "epic_description": "Establish and operationalize 24/7/365 help desk and support operations",
+      "priority": "critical",
+      "target_phases": ["phase2", "phase3"],
+      "owner": "Help Desk Manager",
+      
+      "user_stories": [
+        {
+          "story_id": "US-008",
+          "story_name": "Tier 1 Agent Training Program",
+          "as_a": "Help Desk Manager",
+          "i_want_to": "train all Tier 1 agents on Movius platform, VA systems, and support procedures",
+          "so_that": "agents can provide high-quality Level 1 support to VA users",
+          "acceptance_criteria": [
+            "Training curriculum developed (80 hours total)",
+            "Movius platform training complete (40 hours)",
+            "VA systems and policies training complete (24 hours)",
+            "Security and compliance training complete (16 hours)",
+            "All agents pass certification assessment (>80% score)",
+            "Hands-on practice with test environment completed"
+          ],
+          "priority": "critical",
+          "estimated_effort_hours": 160,
+          "assigned_to": "Training Coordinator, Help Desk Manager",
+          "sprint": "sprint_2",
+          "status": "not_started",
+          "dependencies": ["US-002", "US-003"],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_016",
+            "requirements_skeleton_v2:rpr_047"
+          ],
+          "blocked": false,
+          "testing_required": true
+        },
+
+        {
+          "story_id": "US-009",
+          "story_name": "24/7 Shift Coverage Setup",
+          "as_a": "Help Desk Manager",
+          "i_want_to": "establish 24/7/365 shift coverage with proper staffing levels",
+          "so_that": "VA users always have access to support regardless of time or day",
+          "acceptance_criteria": [
+            "Shift schedule created for 24/7/365 coverage",
+            "Minimum staffing levels defined for each shift",
+            "Weekend and holiday coverage planned",
+            "Backup coverage identified for absences",
+            "On-call rotation established for Tier 2/3 escalations",
+            "Shift handoff procedures documented"
+          ],
+          "priority": "critical",
+          "estimated_effort_hours": 40,
+          "assigned_to": "Help Desk Manager",
+          "sprint": "sprint_3",
+          "status": "not_started",
+          "dependencies": ["Phase 2 hiring complete"],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_009",
+            "requirements_skeleton_v2:rpr_044",
+            "deliverables_schedule_skeleton_v2:day90_004"
+          ],
+          "blocked": false,
+          "testing_required": true
+        }
+      ]
+    },
+
+    "epic_004_training_and_adoption": {
+      "epic_id": "epic_004",
+      "epic_name": "User Training & Change Management",
+      "epic_description": "Develop training materials and change management strategy for VA user adoption",
+      "priority": "high",
+      "target_phases": ["phase2", "phase3"],
+      "owner": "Training Coordinator",
+      
+      "user_stories": [
+        {
+          "story_id": "US-010",
+          "story_name": "End-User Training Materials Development",
+          "as_a": "Training Coordinator",
+          "i_want_to": "develop comprehensive training materials for VA end-users",
+          "so_that": "users can learn to use Movius MultiLine effectively",
+          "acceptance_criteria": [
+            "Online training modules created (4-6 modules, 15-20 min each)",
+            "Video tutorials produced (<2 min each, 10+ topics)",
+            "Quick reference cards designed (printable, laminated)",
+            "Administrator guide created (platform configuration, user management)",
+            "Training materials branded for VA",
+            "Materials available in multiple formats (video, PDF, interactive)"
+          ],
+          "priority": "high",
+          "estimated_effort_hours": 80,
+          "assigned_to": "Training Coordinator, Documentation Specialist",
+          "sprint": "sprint_3",
+          "status": "not_started",
+          "dependencies": ["Movius training materials from partner"],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_016",
+            "requirements_skeleton_v2:rpr_047",
+            "deliverables_schedule_skeleton_v2:day90_003"
+          ],
+          "blocked": false,
+          "testing_required": false
+        }
+      ]
+    }
+  },
+
+  "sprint_planning": {
+    "sprint_duration_days": 14,
+    "total_sprints_day_0_90": 6,
+    
+    "sprints": [
+      {
+        "sprint_id": "sprint_1",
+        "sprint_name": "Foundation Sprint",
+        "start_day": 1,
+        "end_day": 14,
+        "phase": "phase1",
+        "sprint_goal": "Establish technical foundation, complete initial deliverables, and set up core infrastructure",
+        "user_stories": ["US-002", "US-007"],
+        "story_points_planned": 12,
+        "story_points_completed": 0,
+        "capacity_hours": 200,
+        "team_size": 5,
+        "team_members": [
+          "Program Manager",
+          "Help Desk Manager",
+          "Implementation Manager",
+          "Training Coordinator",
+          "QA/Compliance Manager"
+        ],
+        "deliverables": [
+          "Project Kickoff Agenda/Minutes",
+          "Contractor Staff Roster",
+          "CMP",
+          "VAID"
+        ],
+        "status": "not_started",
+        "retrospective_notes": null
+      },
+      {
+        "sprint_id": "sprint_2",
+        "sprint_name": "Integration Sprint",
+        "start_day": 15,
+        "end_day": 30,
+        "phase": "phase1",
+        "sprint_goal": "Complete VA system integrations and begin knowledge base development",
+        "user_stories": ["US-001", "US-003", "US-005"],
+        "story_points_planned": 18,
+        "story_points_completed": 0,
+        "capacity_hours": 240,
+        "team_size": 5,
+        "deliverables": [
+          "Implementation Plan",
+          "Training Plan",
+          "Monthly vulnerability scans",
+          "IRP testing results"
+        ],
+        "status": "not_started",
+        "retrospective_notes": null
+      },
+      {
+        "sprint_id": "sprint_3",
+        "sprint_name": "Team Scaling Sprint",
+        "start_day": 31,
+        "end_day": 45,
+        "phase": "phase2",
+        "sprint_goal": "Onboard and train help desk team, continue integration development",
+        "user_stories": ["US-004", "US-008", "US-010"],
+        "story_points_planned": 22,
+        "story_points_completed": 0,
+        "capacity_hours": 400,
+        "team_size": 17,
+        "deliverables": [],
+        "status": "not_started",
+        "retrospective_notes": null
+      },
+      {
+        "sprint_id": "sprint_4",
+        "sprint_name": "Security Documentation Sprint",
+        "start_day": 46,
+        "end_day": 60,
+        "phase": "phase2",
+        "sprint_goal": "Complete security documentation and prepare for pilot",
+        "user_stories": ["US-006", "US-009"],
+        "story_points_planned": 20,
+        "story_points_completed": 0,
+        "capacity_hours": 450,
+        "team_size": 17,
+        "deliverables": ["SSP (draft)"],
+        "status": "not_started",
+        "retrospective_notes": null
+      },
+      {
+        "sprint_id": "sprint_5",
+        "sprint_name": "Pilot Preparation Sprint",
+        "start_day": 61,
+        "end_day": 75,
+        "phase": "phase3",
+        "sprint_goal": "Finalize pilot preparation and begin pilot deployment",
+        "user_stories": [],
+        "story_points_planned": 15,
+        "story_points_completed": 0,
+        "capacity_hours": 600,
+        "team_size": 26,
+        "deliverables": ["Pilot go-live"],
+        "status": "not_started",
+        "retrospective_notes": null
+      },
+      {
+        "sprint_id": "sprint_6",
+        "sprint_name": "Production Readiness Sprint",
+        "start_day": 76,
+        "end_day": 90,
+        "phase": "phase3",
+        "sprint_goal": "Complete pilot, validate 24/7 operations, achieve Day 90 production readiness",
+        "user_stories": [],
+        "story_points_planned": 10,
+        "story_points_completed": 0,
+        "capacity_hours": 650,
+        "team_size": 26,
+        "deliverables": [
+          "Day 90 Production Ready milestone",
+          "SSP complete",
+          "All training delivered",
+          "24/7 support operational"
+        ],
+        "status": "not_started",
+        "retrospective_notes": null
+      }
+    ]
+  },
+
+  "va_interaction_schedule": {
+    "recurring_meetings": [
+      {
+        "meeting_id": "meet_weekly_status",
+        "meeting_name": "Weekly Project Status Meeting",
+        "frequency": "weekly",
+        "day_of_week": "Friday (or TBD with VA)",
+        "time": "TBD with VA",
+        "duration_minutes": 60,
+        "start_date": "Day 7",
+        "end_date": "Throughout contract",
+        
+        "attendees": {
+          "rpr_team": [
+            "Program Manager (required)",
+            "Technical Lead / Implementation Manager (required)",
+            "Help Desk Manager (as needed)",
+            "Security Lead / QA Compliance Manager (as needed)"
+          ],
+          "movius_team": [
+            "Account Manager (monthly or as needed)",
+            "Technical Support Lead (as needed for escalations)"
+          ],
+          "va_team": [
+            "COR - Contracting Officer Representative (required)",
+            "Project Manager (required)",
+            "Technical SME (required)",
+            "Security Representative (as needed)"
+          ]
+        },
+        
+        "agenda_template": [
+          "1. Previous week accomplishments review (10 min)",
+          "2. Current week planned activities (10 min)",
+          "3. Issues and risks discussion (15 min)",
+          "4. Action items review from previous meeting (10 min)",
+          "5. Upcoming milestones and deliverables (10 min)",
+          "6. Q&A and open discussion (5 min)"
+        ],
+        
+        "deliverable": "Weekly Status Report (0002F)",
+        "deliverable_due": "24 hours before meeting",
+        
+        "links_to": [
+          "deliverables_schedule_skeleton_v2:recurring_weekly",
+          "requirements_skeleton_v2:rpr_013"
+        ]
+      },
+
+      {
+        "meeting_id": "meet_cm_monthly",
+        "meeting_name": "Monthly Continuous Monitoring Meeting",
+        "frequency": "monthly",
+        "day_of_month": "TBD with VA (typically last week)",
+        "time": "TBD with VA",
+        "duration_minutes": 90,
+        "start_date": "Day 30",
+        "end_date": "Throughout contract",
+        
+        "attendees": {
+          "rpr_team": [
+            "Program Manager (required)",
+            "QA/Compliance Manager (required)",
+            "Security Lead (required)",
+            "Systems Administrator (as needed)"
+          ],
+          "movius_team": [
+            "Security Team Representative (required)",
+            "Compliance Lead (required)"
+          ],
+          "va_team": [
+            "VA Security Team (required)",
+            "FedRAMP PMO Representative (required after ATO)",
+            "COR (required)"
+          ]
+        },
+        
+        "agenda_template": [
+          "1. POA&M status update and review (20 min)",
+          "2. Monthly vulnerability scan results (15 min)",
+          "3. Incident reports and lessons learned (15 min)",
+          "4. Security control validation updates (20 min)",
+          "5. FedRAMP continuous monitoring artifacts (10 min)",
+          "6. Upcoming assessments and audits (10 min)"
+        ],
+        
+        "deliverables": [
+          "Monthly POA&M update",
+          "Monthly vulnerability scans",
+          "Incident reports (if any)",
+          "Security artifacts updates"
+        ],
+        
+        "links_to": [
+          "requirements_skeleton_v2:rpr_036",
+          "requirements_skeleton_v2:rpr_037",
+          "deliverables_schedule_skeleton_v2:day_30"
+        ]
+      },
+
+      {
+        "meeting_id": "meet_quarterly_review",
+        "meeting_name": "Quarterly Business Review",
+        "frequency": "quarterly",
+        "time": "TBD with VA",
+        "duration_minutes": 120,
+        "start_date": "Month 3",
+        "end_date": "Throughout contract",
+        
+        "attendees": {
+          "rpr_team": [
+            "Program Manager (required)",
+            "All Team Leads (required)",
+            "Executive Sponsor (quarterly)"
+          ],
+          "movius_team": [
+            "Account Executive (required)",
+            "Technical Director (as needed)"
+          ],
+          "va_team": [
+            "COR (required)",
+            "Project Manager (required)",
+            "VA Leadership (as available)",
+            "All VA stakeholders invited"
+          ]
+        },
+        
+        "agenda_template": [
+          "1. Quarter in review - accomplishments (20 min)",
+          "2. Key metrics and KPIs review (20 min)",
+          "3. User satisfaction and feedback (15 min)",
+          "4. Issues resolved and lessons learned (15 min)",
+          "5. Upcoming quarter roadmap (20 min)",
+          "6. Strategic initiatives discussion (20 min)",
+          "7. Q&A and feedback (10 min)"
+        ],
+        
+        "deliverable": "Quarterly Usage Report (0002AG)",
+        
+        "links_to": [
+          "deliverables_schedule_skeleton_v2:recurring_quarterly",
+          "requirements_skeleton_v2:rpr_014"
+        ]
+      }
+    ],
+
+    "one_time_meetings": [
+      {
+        "meeting_id": "meet_kickoff",
+        "meeting_name": "Project Kickoff Meeting",
+        "scheduled_day": "Day 1 or Day 3 (within 3 business days of award)",
+        "time": "TBD with VA",
+        "duration_minutes": 120,
+        
+        "attendees": {
+          "rpr_team": [
+            "Program Manager (required)",
+            "All Leadership Team (required)",
+            "Executive Sponsor (recommended)"
+          ],
+          "movius_team": [
+            "Account Executive (required)",
+            "Implementation Lead (required)",
+            "Technical Director (recommended)"
+          ],
+          "va_team": [
+            "COR (required)",
+            "CO - Contracting Officer (recommended)",
+            "Project Manager (required)",
+            "Technical SMEs (required)",
+            "Security Team (required)",
+            "End-user representatives (recommended)"
+          ]
+        },
+        
+        "agenda_template": [
+          "1. Introductions and team member roles (15 min)",
+          "2. Contract overview and objectives (10 min)",
+          "3. Communication protocols and escalation (10 min)",
+          "4. 90-day implementation plan review (20 min)",
+          "5. Key milestones and deliverables (15 min)",
+          "6. VA environment and integration requirements (20 min)",
+          "7. Security and compliance approach (15 min)",
+          "8. Questions and next steps (15 min)"
+        ],
+        
+        "deliverables_from_meeting": [
+          "Project Kickoff Meeting Agenda (0002AA) - delivered Day 1",
+          "Project Kickoff Meeting Minutes (0002AB) - delivered Day 3"
+        ],
+        
+        "links_to": [
+          "deliverables_schedule_skeleton_v2:day_1_3",
+          "requirements_skeleton_v2:rpr_010"
+        ]
+      },
+
+      {
+        "meeting_id": "meet_go_no_go",
+        "meeting_name": "Day 90 Go/No-Go Readiness Review",
+        "scheduled_day": "Day 88-89",
+        "time": "TBD with VA",
+        "duration_minutes": 180,
+        
+        "attendees": {
+          "rpr_team": [
+            "Program Manager (required)",
+            "All Team Leads (required)",
+            "QA/Compliance Manager (required)",
+            "Executive Sponsor (required)"
+          ],
+          "movius_team": [
+            "Account Executive (required)",
+            "Technical Director (required)"
+          ],
+          "va_team": [
+            "COR (required)",
+            "Project Manager (required)",
+            "Decision Authority for Go-Live (required)",
+            "All stakeholders"
+          ]
+        },
+        
+        "agenda_template": [
+          "1. Pilot deployment results review (30 min)",
+          "2. 24/7 support capability validation (20 min)",
+          "3. Security and compliance status (30 min)",
+          "4. Training completion status (15 min)",
+          "5. Technical readiness assessment (30 min)",
+          "6. Risk review and mitigation (20 min)",
+          "7. Go/No-Go decision discussion (30 min)",
+          "8. Next steps and enterprise rollout planning (15 min)"
+        ],
+        
+        "decision_criteria": [
+          "Platform fully functional and stable",
+          "24/7/365 support operational and validated",
+          "Pilot successful (1-3 facilities, ~1000 users)",
+          "All training materials complete",
+          "Security documentation package complete",
+          "No critical unresolved issues",
+          "VA stakeholder approval obtained"
+        ],
+        
+        "possible_outcomes": [
+          "GO - Proceed with enterprise rollout",
+          "CONDITIONAL GO - Proceed with specific conditions/limitations",
+          "NO-GO - Defer rollout pending issue resolution"
+        ],
+        
+        "links_to": [
+          "requirements_skeleton_v2:rpr_008",
+          "requirements_skeleton_v2:rpr_042",
+          "deliverables_schedule_skeleton_v2:day_90_001"
+        ]
+      }
+    ],
+
+    "ad_hoc_meetings": {
+      "description": "Additional meetings scheduled as needed based on issues, risks, or VA requests",
+      "examples": [
+        "Technical deep-dive sessions",
+        "Issue resolution meetings",
+        "User feedback sessions",
+        "Security assessment coordination",
+        "Training planning workshops"
+      ]
+    }
+  },
+
+  "team_roster": {
+    "rpr_tech_team": {
+      "leadership": [
+        {
+          "role": "Program Manager",
+          "name": "TBD",
+          "start_day": 1,
+          "full_time": true,
+          "responsibilities": [
+            "Overall program management",
+            "VA coordination and COR relationship",
+            "Contract compliance",
+            "Team leadership",
+            "Deliverable oversight"
+          ],
+          "meeting_attendance": [
+            "meet_weekly_status",
+            "meet_cm_monthly",
+            "meet_quarterly_review",
+            "meet_kickoff",
+            "meet_go_no_go"
+          ],
+          "links_to": ["requirements_skeleton_v2:rpr_010"]
+        },
+        {
+          "role": "Help Desk Manager",
+          "name": "TBD",
+          "start_day": 7,
+          "full_time": true,
+          "responsibilities": [
+            "Help desk operations management",
+            "24/7 coverage planning",
+            "Team hiring and training",
+            "SLA compliance",
+            "Quality assurance"
+          ],
+          "meeting_attendance": [
+            "meet_weekly_status",
+            "meet_quarterly_review",
+            "meet_kickoff"
+          ],
+          "links_to": ["requirements_skeleton_v2:rpr_009"]
+        },
+        {
+          "role": "Implementation Manager",
+          "name": "TBD",
+          "start_day": 7,
+          "full_time": true,
+          "responsibilities": [
+            "Technical implementation",
+            "Facility deployment coordination",
+            "Integration management",
+            "Technical team leadership"
+          ],
+          "meeting_attendance": [
+            "meet_weekly_status",
+            "meet_kickoff",
+            "meet_go_no_go"
+          ],
+          "links_to": ["requirements_skeleton_v2:rpr_042"]
+        },
+        {
+          "role": "QA/Compliance Manager",
+          "name": "TBD",
+          "start_day": 14,
+          "full_time": true,
+          "responsibilities": [
+            "VA 6500 compliance",
+            "FedRAMP coordination",
+            "Security documentation",
+            "Quality assurance processes"
+          ],
+          "meeting_attendance": [
+            "meet_cm_monthly",
+            "meet_kickoff",
+            "meet_go_no_go"
+          ],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_036",
+            "requirements_skeleton_v2:rpr_121"
+          ]
+        },
+        {
+          "role": "Training Coordinator",
+          "name": "TBD",
+          "start_day": 14,
+          "full_time": true,
+          "responsibilities": [
+            "Training materials development",
+            "Training delivery coordination",
+            "Agent training program",
+            "User onboarding"
+          ],
+          "meeting_attendance": ["meet_kickoff"],
+          "links_to": [
+            "requirements_skeleton_v2:rpr_015",
+            "requirements_skeleton_v2:rpr_016"
+          ]
+        }
+      ],
+
+      "technical_team": [
+        {
+          "role": "Implementation Engineer",
+          "quantity": 3,
+          "start_days": [35, 40, 65],
+          "full_time": true,
+          "responsibilities": [
+            "Platform configuration",
+            "Integration development",
+            "Testing and validation",
+            "Technical troubleshooting"
+          ]
+        },
+        {
+          "role": "Systems Administrator",
+          "quantity": 1,
+          "start_day": 40,
+          "full_time": true,
+          "responsibilities": [
+            "Infrastructure management",
+            "Tool administration",
+            "Security monitoring",
+            "Backup and disaster recovery"
+          ]
+        },
+        {
+          "role": "Documentation Specialist",
+          "quantity": 2,
+          "start_days": [45, 70],
+          "full_time": true,
+          "responsibilities": [
+            "User documentation",
+            "Training materials",
+            "SOP documentation",
+            "Knowledge base content"
+          ]
+        },
+        {
+          "role": "QA Analyst",
+          "quantity": 1,
+          "start_day": 70,
+          "full_time": true,
+          "responsibilities": [
+            "Quality assurance testing",
+            "Help desk quality monitoring",
+            "Process improvement",
+            "Metrics and reporting"
+          ]
+        }
+      ],
+
+      "support_team": [
+        {
+          "role": "Tier 1 Help Desk Agent",
+          "quantity": 10,
+          "start_days": "31-75 (staggered)",
+          "full_time": true,
+          "responsibilities": [
+            "Level 1 user support",
+            "Ticket creation and tracking",
+            "Password resets",
+            "Basic troubleshooting"
+          ]
+        },
+        {
+          "role": "Tier 2 Help Desk Specialist",
+          "quantity": 4,
+          "start_days": "31-75 (staggered)",
+          "full_time": true,
+          "responsibilities": [
+            "Advanced troubleshooting",
+            "Escalation handling",
+            "Knowledge base authoring",
+            "Tier 1 mentoring"
+          ]
+        }
+      ],
+
+      "total_fte": 26
+    },
+
+    "movius_team": {
+      "contacts": [
+        {
+          "role": "Account Executive",
+          "name": "TBD",
+          "responsibilities": [
+            "Partnership management",
+            "Executive escalations",
+            "Strategic planning"
+          ],
+          "meeting_attendance": [
+            "meet_kickoff",
+            "meet_quarterly_review",
+            "meet_go_no_go"
+          ]
+        },
+        {
+          "role": "Technical Account Manager",
+          "name": "TBD",
+          "responsibilities": [
+            "Technical support coordination",
+            "Platform updates communication",
+            "Issue escalation"
+          ],
+          "meeting_attendance": ["meet_weekly_status (as needed)"]
+        },
+        {
+          "role": "Implementation Lead",
+          "name": "TBD",
+          "responsibilities": [
+            "Implementation guidance",
+            "Best practices sharing",
+            "Configuration support"
+          ],
+          "meeting_attendance": ["meet_kickoff"]
+        },
+        {
+          "role": "Security/Compliance Lead",
+          "name": "TBD",
+          "responsibilities": [
+            "FedRAMP artifacts",
+            "Security documentation",
+            "Compliance coordination"
+          ],
+          "meeting_attendance": ["meet_cm_monthly"]
+        }
+      ]
+    },
+
+    "va_team": {
+      "key_stakeholders": [
+        {
+          "role": "COR (Contracting Officer Representative)",
+          "name": "TBD by VA",
+          "responsibilities": [
+            "Contract oversight",
+            "Deliverable acceptance",
+            "Performance monitoring",
+            "Primary VA interface"
+          ],
+          "meeting_attendance": [
+            "meet_weekly_status",
+            "meet_cm_monthly",
+            "meet_quarterly_review",
+            "meet_kickoff",
+            "meet_go_no_go"
+          ]
+        },
+        {
+          "role": "CO (Contracting Officer)",
+          "name": "Mary B. Accomando",
+          "responsibilities": [
+            "Contract administration",
+            "Legal authority",
+            "Modifications and changes"
+          ],
+          "meeting_attendance": ["meet_kickoff (recommended)"]
+        },
+        {
+          "role": "Project Manager",
+          "name": "TBD by VA",
+          "responsibilities": [
+            "Day-to-day coordination",
+            "Requirements clarification",
+            "User community liaison"
+          ],
+          "meeting_attendance": [
+            "meet_weekly_status",
+            "meet_quarterly_review",
+            "meet_kickoff",
+            "meet_go_no_go"
+          ]
+        },
+        {
+          "role": "Technical SME",
+          "name": "TBD by VA",
+          "responsibilities": [
+            "Technical guidance",
+            "Integration coordination",
+            "Testing support"
+          ],
+          "meeting_attendance": [
+            "meet_weekly_status",
+            "meet_kickoff"
+          ]
+        },
+        {
+          "role": "Security Team Representative",
+          "name": "TBD by VA",
+          "responsibilities": [
+            "Security requirements",
+            "ATO process guidance",
+            "Security assessment coordination"
+          ],
+          "meeting_attendance": [
+            "meet_cm_monthly",
+            "meet_kickoff"
+          ]
+        }
+      ]
+    }
+  },
+
+  "resource_allocation": {
+    "total_estimated_hours_day_0_90": 4500,
+    
+    "by_team": {
+      "project_management": 450,
+      "implementation_team": 900,
+      "security_team": 700,
+      "help_desk_operations": 1500,
+      "training_and_documentation": 500,
+      "quality_assurance": 300,
+      "support_functions": 150
+    },
+
+    "by_phase": {
+      "phase1_days_1_30": 800,
+      "phase2_days_31_60": 1500,
+      "phase3_days_61_90": 2200
+    }
+  },
+
+  "dashboard_summary": {
+    "overall_status": "planned",
+    "days_until_day_90": null,
+    "phases_complete": 0,
+    "phases_in_progress": 0,
+    "phases_not_started": 3,
+    "user_stories_complete": 0,
+    "user_stories_in_progress": 0,
+    "user_stories_total": 10,
+    "sprints_complete": 0,
+    "sprints_total": 6,
+    "team_size_current": 0,
+    "team_size_target": 26,
+    "meetings_scheduled": 0,
+    "critical_path_on_track": true,
+    "blockers": [],
+    "last_updated": "2025-10-30T15:30:00Z"
+  },
+
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-10-30",
+      "changes": "Initial development timeline and user stories skeleton created with comprehensive Day 0-90 planning, user stories, and VA interaction schedule"
+    }
+  ]
+}

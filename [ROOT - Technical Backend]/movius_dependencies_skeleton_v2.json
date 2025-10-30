@@ -1,0 +1,1154 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "document_type": "movius_dependencies_tracker",
+  "partner_name": "Movius (Platform) / Infobip (Infrastructure)",
+  "last_updated": "2025-10-30T11:51:43.036400",
+  "schema_version": "2.0",
+  "meeting_scheduled": {
+    "date": "2025-10-30",
+    "time": "TBD",
+    "duration_minutes": 90,
+    "attendees": [
+      "RPR Tech Team",
+      "Movius Representatives"
+    ],
+    "agenda_priorities": [
+      "TIER 1: Critical blocking items (FedRAMP, pricing, OEM letter)",
+      "TIER 2: D.1/D.2 gap clarifications",
+      "TIER 3: Technical architecture details",
+      "TIER 4: Past performance references"
+    ]
+  },
+  "status_definitions": {
+    "not_requested": "Have not yet requested from Movius",
+    "requested": "Requested from Movius, awaiting response",
+    "received": "Received from Movius, ready to use",
+    "received_needs_work": "Received but needs revision/rewriting",
+    "partial": "Partially received, missing components",
+    "blocked": "Movius unable to provide, need workaround",
+    "not_needed": "Determined not necessary for proposal"
+  },
+  "tier_definitions": {
+    "tier_1_critical_blocking": "Cannot submit proposal without these - absolute blockers",
+    "tier_2_major_impact": "Critical for winning, significant impact on technical score",
+    "tier_3_moderate_impact": "Important for completeness and quality",
+    "tier_4_nice_to_have": "Helpful but can proceed without"
+  },
+  "overall_status": {
+    "tier_1_items_complete": 0,
+    "tier_1_items_total": 5,
+    "tier_2_items_complete": 2,
+    "tier_2_items_total": 6,
+    "blocking_items_remaining": 5,
+    "proposal_blocked": true,
+    "estimated_resolution_date": "2025-10-30",
+    "confidence_level": "medium"
+  },
+  "dependencies": [
+    {
+      "dependency_id": "movius_001",
+      "tier": "tier_1_critical_blocking",
+      "category": "Legal/Contractual",
+      "item": "Partnership/Teaming Agreement",
+      "description": "Signed partnership or teaming agreement establishing formal relationship between RPR Tech and Movius for this proposal",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Contracts Team",
+      "movius_contact": "TBD",
+      "volumes_affected": [
+        "IV"
+      ],
+      "requirements_blocked": [
+        "rpr_103"
+      ],
+      "priority": "critical",
+      "blocking": true,
+      "workaround_available": false,
+      "notes": "Essential to establish prime-subcontractor relationship. May be simple teaming letter or full subcontractor agreement",
+      "action_items": [
+        "Confirm format needed (teaming letter vs full agreement)",
+        "Get Movius authorized signatory identified",
+        "Expedite signature process"
+      ],
+      "owner": "Contracts Team",
+      "updated_at": "2025-10-30T11:51:43.036437",
+      "risk": "critical",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_Teaming_Agreement_Signed.pdf",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": null
+        }
+      ],
+      "links_to": [
+        "rpr_103",
+        "rpr_103",
+        "vol4_oem_letter",
+        "RFP-\u00a7L.5.2"
+      ],
+      "acceptance_criteria": "Signed teaming agreement or letter on Movius letterhead with authorized signatory, dated October 2025"
+    },
+    {
+      "dependency_id": "movius_002",
+      "tier": "tier_1_critical_blocking",
+      "category": "Pricing",
+      "item": "Complete CLIN Pricing Breakdown",
+      "description": "Detailed pricing for all Movius-provided CLINs: 0001 (licenses base), 0003 (licenses premium), 0005 (web portal), 0006 (OMS&E Tier 3), plus optional CLINs",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Pricing Team",
+      "movius_contact": "TBD",
+      "volumes_affected": [
+        "III",
+        "IV"
+      ],
+      "requirements_blocked": [
+        "rpr_080",
+        "rpr_081",
+        "rpr_082",
+        "rpr_083",
+        "rpr_102"
+      ],
+      "priority": "critical",
+      "blocking": true,
+      "workaround_available": false,
+      "notes": "CRITICAL: Pricing must result in RPR Tech performing >50% of contract value per VAAR 852.219-75. If Movius pricing too high, may need to renegotiate or adjust RPR Tech scope",
+      "action_items": [
+        "Request breakdown by CLIN",
+        "Verify pricing includes all costs (no hidden fees)",
+        "Calculate work split immediately upon receipt",
+        "Adjust if RPR Tech <50%"
+      ],
+      "pricing_clins": [
+        "0001: Messaging Platform License - Basic Tier (12 months)",
+        "0003: Messaging Platform License - Premium Tier (12 months)",
+        "0005: Web Portal Access (12 months)",
+        "0006: OMS&E Tier 3 Support (12 months)",
+        "Plus option years and 6-month extension"
+      ],
+      "owner": "Pricing Team",
+      "updated_at": "2025-10-30T11:51:43.036451",
+      "risk": "critical",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_Pricing_Breakdown_Final.xlsx",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Pricing Team"
+        }
+      ],
+      "links_to": [
+        "rpr_080",
+        "rpr_081",
+        "rpr_082",
+        "rpr_083",
+        "rpr_102",
+        "vol3_pricing",
+        "CLIN-ALL",
+        "QA-02",
+        "QA-39",
+        "QA-43",
+        "rpr_pricing"
+      ],
+      "acceptance_criteria": "Complete CLIN pricing for base + 4 option years + 6-month extension, broken down by license, infrastructure, support"
+    },
+    {
+      "dependency_id": "movius_003",
+      "tier": "tier_1_critical_blocking",
+      "category": "Compliance",
+      "item": "FedRAMP Moderate Authorization Certificate",
+      "description": "Copy of current FedRAMP Moderate authorization certificate OR letter showing In-Process designation from FedRAMP PMO",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Security Team",
+      "movius_contact": "TBD - Security/Compliance Officer",
+      "volumes_affected": [
+        "I",
+        "IV"
+      ],
+      "requirements_blocked": [
+        "rpr_005",
+        "rpr_030",
+        "rpr_031"
+      ],
+      "priority": "critical",
+      "blocking": true,
+      "workaround_available": false,
+      "notes": "PWS B.4.5.10 REQUIRES FedRAMP Moderate. If Movius lacks this, proposal is non-compliant and will be rejected. Q&A #18 confirmed this is mandatory",
+      "action_items": [
+        "Verify current authorization status",
+        "If authorized: obtain certificate copy with authorization date, 3PAO, package ID",
+        "If in-process: obtain letter from FedRAMP PMO with timeline",
+        "If neither: MAJOR PROBLEM - consider alternative platforms"
+      ],
+      "alternative_if_missing": "Without FedRAMP, must pivot to different platform or withdraw proposal",
+      "owner": "Security Team",
+      "updated_at": "2025-10-30T11:51:43.036460",
+      "risk": "critical",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_FedRAMP_ATO_Letter.pdf",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Security Team",
+          "required": true
+        },
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_FedRAMP_SSP_Summary.pdf",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Security Team",
+          "required": true
+        },
+        {
+          "type": "url",
+          "ref": "TBD - https://marketplace.fedramp.gov/products/...",
+          "verified_date": null,
+          "verified_by": "Security Team",
+          "required": true
+        },
+        {
+          "type": "screenshot",
+          "ref": "TBD - FedRAMP_Marketplace_Screenshot.png",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Security Team",
+          "required": true
+        },
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_3PAO_SAR.pdf",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Security Team",
+          "required": false
+        }
+      ],
+      "links_to": [
+        "rpr_005",
+        "rpr_030",
+        "rpr_031",
+        "rpr_005",
+        "rpr_030",
+        "rpr_115",
+        "rpr_116",
+        "vol1_section4",
+        "QA-18",
+        "RFP-\u00a7B.4.5.10"
+      ],
+      "acceptance_criteria": "ALL required FedRAMP artifacts received and verified as Moderate level",
+      "required_artifacts": [
+        "FedRAMP Authorization to Operate (ATO) Letter - signed by authorizing official",
+        "System Security Plan (SSP) - full or executive summary",
+        "FedRAMP Marketplace listing URL and screenshot",
+        "3PAO System Assessment Report (SAR)",
+        "Plan of Action & Milestones (POA&M) if applicable",
+        "Continuous Monitoring artifacts"
+      ]
+    },
+    {
+      "dependency_id": "movius_004",
+      "tier": "tier_1_critical_blocking",
+      "category": "Legal/Contractual",
+      "item": "OEM Authorization Letter",
+      "description": "Signed letter on Movius official letterhead specifically authorizing RPR Tech to resell/provide Movius platform for RFP 36C10A25R0002",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Contracts Team",
+      "movius_contact": "TBD - Executive or Sales Leadership",
+      "volumes_affected": [
+        "IV"
+      ],
+      "requirements_blocked": [
+        "rpr_103"
+      ],
+      "priority": "critical",
+      "blocking": true,
+      "workaround_available": false,
+      "notes": "Required to demonstrate RPR Tech has authority to resell/implement Movius solution. Template provided to Movius. Must be on letterhead, signed by authorized rep, dated October 2025",
+      "action_items": [
+        "Send template to Movius",
+        "Identify authorized signatory at Movius",
+        "Confirm letterhead will be used",
+        "Get executed letter scanned as PDF"
+      ],
+      "template_provided": true,
+      "template_location": "/mnt/project/OEM_Authorization_Letter_Template.docx",
+      "owner": "Contracts Team",
+      "updated_at": "2025-10-30T11:51:43.036469",
+      "risk": "critical",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_OEM_Authorization_Letter.pdf",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Contracts Team",
+          "required": true
+        }
+      ],
+      "links_to": [
+        "rpr_103",
+        "rpr_103",
+        "vol4_oem_letter",
+        "RFP-\u00a7L.5.2"
+      ],
+      "acceptance_criteria": "Letter on Movius letterhead explicitly authorizing RPR Tech to resell/provide Movius MultiLine platform for this RFP"
+    },
+    {
+      "dependency_id": "movius_005",
+      "tier": "tier_1_critical_blocking",
+      "category": "Compliance",
+      "item": "FedRAMP Security Package Documentation",
+      "description": "Access to FedRAMP SSP repository, recent 3PAO SAP report, and VA Implementation Diagram (VAID)",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Security Team",
+      "movius_contact": "TBD - Security Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_032",
+        "rpr_033",
+        "rpr_034"
+      ],
+      "priority": "critical",
+      "blocking": true,
+      "workaround_available": true,
+      "notes": "These are Day 5 and Day 10 contract deliverables, but showing access/awareness in proposal strengthens technical approach. Can reference availability rather than including full details",
+      "action_items": [
+        "Request SSP repository URL or access confirmation",
+        "Request copy of most recent 3PAO SAP",
+        "Request sample VAID or confirm can be provided post-award"
+      ],
+      "workaround": "Can state 'will be provided within X days post-award per PWS requirement' if not available for proposal",
+      "owner": "Security Team",
+      "updated_at": "2025-10-30T11:51:43.036480",
+      "risk": "critical",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_D1_Functionality_Matrix.xlsx",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Software Development Team"
+        }
+      ],
+      "links_to": [
+        "rpr_032",
+        "rpr_033",
+        "rpr_034",
+        "D1-ALL",
+        "vol1_section2",
+        "QA-07",
+        "QA-10"
+      ],
+      "acceptance_criteria": "Detailed response to all D.1 functionality items with specific Movius feature names and capabilities"
+    },
+    {
+      "dependency_id": "movius_006",
+      "tier": "tier_2_major_impact",
+      "category": "Technical",
+      "item": "D.1 Functionality Responses - Gap Resolution",
+      "description": "Clarification and additional detail for 4 critical gaps in D.1 functionality checklist responses",
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": "2025-10-29",
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Technical Writing, Software Dev",
+      "movius_contact": "TBD - Product/Technical Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_003",
+        "rpr_022",
+        "rpr_023",
+        "rpr_024",
+        "rpr_025"
+      ],
+      "priority": "high",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Movius provided D.1 CSV with 87/100 quality score. 4 items need additional detail. Responses need rewriting in RPR voice showing HOW, not just stating features",
+      "action_items": [
+        "Review gaps with Movius: D.1.9 (templates), D.1.11 (audit logs), D.1.15 (encryption), D.1.20 (performance)",
+        "Get specific feature names, screen references, technical details",
+        "Rewrite all 22 responses in RPR voice with implementation approach"
+      ],
+      "critical_gaps": [
+        {
+          "d1_item": "D.1.9",
+          "requirement": "Message templates and signatures",
+          "gap": "Response unclear on signature capability",
+          "needed": "Confirm if platform supports custom signatures and automated message templates"
+        },
+        {
+          "d1_item": "D.1.11",
+          "requirement": "Audit log retention and search",
+          "gap": "No mention of retention period or search capabilities",
+          "needed": "Specify retention period, search interface, export capabilities"
+        },
+        {
+          "d1_item": "D.1.15",
+          "requirement": "End-to-end encryption architecture",
+          "gap": "High-level only, lacks technical specifics",
+          "needed": "Encryption algorithms, key management, at-rest vs in-transit details"
+        },
+        {
+          "d1_item": "D.1.20",
+          "requirement": "Performance monitoring and metrics",
+          "gap": "Generic response, no specific monitoring tools mentioned",
+          "needed": "What monitoring tools/dashboards exist? Real-time alerting?"
+        }
+      ],
+      "workaround": "Can write technical approach based on standard platform capabilities if Movius unable to provide specifics, but weakens response",
+      "owner": "Technical Writing, Software Dev",
+      "updated_at": "2025-10-30T11:51:43.036489",
+      "risk": "high",
+      "fit": "OOTB",
+      "delivery_status": "received_needs_work",
+      "evidence": [
+        {
+          "type": "doc",
+          "ref": "TBD - Movius_D2_Service_Model_Responses.docx",
+          "location": "/mnt/user-data/uploads/",
+          "received_date": null,
+          "verified_by": "Product Delivery Team"
+        }
+      ],
+      "links_to": [
+        "rpr_003",
+        "rpr_022",
+        "rpr_023",
+        "rpr_024",
+        "rpr_025",
+        "D2-ALL",
+        "vol1_section3",
+        "QA-08"
+      ],
+      "acceptance_criteria": "Complete answers to all D.2 questions about service delivery model"
+    },
+    {
+      "dependency_id": "movius_007",
+      "tier": "tier_2_major_impact",
+      "category": "Technical",
+      "item": "D.2 Service Model - Question 7 Answer",
+      "description": "Answer to D.2 Question 7 about implementation timeline and phases - only missing item from D.2 questionnaire",
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": "2025-10-29",
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Technical Writing, Project Management",
+      "movius_contact": "TBD - Implementation Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_004",
+        "rpr_028"
+      ],
+      "priority": "high",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Movius provided 7 of 8 D.2 answers. Q7 about implementation phases is critical for Volume I Section 6 alignment",
+      "action_items": [
+        "Get Q7 answer from Movius during meeting",
+        "Align Movius implementation timeline with RPR 90-day plan",
+        "Ensure no conflicts between Movius approach and RPR approach"
+      ],
+      "workaround": "Can write implementation section based on RPR Tech's approach and assume Movius will support, but prefer alignment",
+      "owner": "Technical Writing, Project Management",
+      "updated_at": "2025-10-30T11:51:43.036495",
+      "risk": "high",
+      "fit": "OOTB",
+      "delivery_status": "partial",
+      "evidence": [],
+      "links_to": [
+        "rpr_004",
+        "rpr_028"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_008",
+      "tier": "tier_2_major_impact",
+      "category": "Technical",
+      "item": "In-App Messaging Capability Confirmation",
+      "description": "CRITICAL VALIDATION: Confirm Movius platform has TRUE in-app secure messaging, not just SMS relay. Q&A #44 confirmed VA does NOT want SMS-based solution",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Software Dev, Technical Writing",
+      "movius_contact": "TBD - Product Management",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_002",
+        "rpr_003"
+      ],
+      "priority": "critical",
+      "blocking": false,
+      "workaround_available": false,
+      "notes": "Q&A #44 response: 'It's not SMS, it's a secure messaging platform with in-app messaging'. MUST VERIFY Movius actually has this. If Movius is primarily SMS-based, we have wrong platform",
+      "action_items": [
+        "Get explicit confirmation Movius has in-app messaging",
+        "Request screenshots/demo of in-app messaging interface",
+        "Confirm messages are NOT delivered via SMS",
+        "If Movius lacks this capability, MAJOR PIVOT REQUIRED"
+      ],
+      "risk_level": "high",
+      "go_no_go_decision": true,
+      "owner": "Software Dev, Technical Writing",
+      "updated_at": "2025-10-30T11:51:43.036500",
+      "risk": "high",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [
+        "rpr_002",
+        "rpr_003"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_009",
+      "tier": "tier_2_major_impact",
+      "category": "Technical",
+      "item": "BYOD Zero-Data Confirmation",
+      "description": "Explicit confirmation that Movius platform stores ZERO data on BYOD devices per Q&A #40 requirement",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Security Team, Software Dev",
+      "movius_contact": "TBD - Security/Product Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_002"
+      ],
+      "priority": "high",
+      "blocking": false,
+      "workaround_available": false,
+      "notes": "Q&A #40: 'The requirement is for true BYOD with no data stored on personal devices'. Need confirmation Movius architecture supports this",
+      "action_items": [
+        "Get technical architecture diagram showing data flow",
+        "Confirm no message content cached on devices",
+        "Confirm no contacts/metadata stored locally",
+        "Understand data residency (cloud-only)"
+      ],
+      "risk_level": "high",
+      "owner": "Security Team, Software Dev",
+      "updated_at": "2025-10-30T11:51:43.036504",
+      "risk": "high",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [
+        "rpr_002"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_010",
+      "tier": "tier_2_major_impact",
+      "category": "Integration",
+      "item": "Microsoft InTune Integration Details",
+      "description": "Detailed information about Movius integration with Microsoft InTune MDM (VA's preferred MDM per Q&A #10)",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Integrations Team",
+      "movius_contact": "TBD - Integrations Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_002"
+      ],
+      "priority": "high",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Q&A #10: VA prefers InTune. Need to show how Movius integrates with InTune for device management, policy enforcement, remote wipe",
+      "action_items": [
+        "Get InTune integration documentation",
+        "Understand API connections",
+        "Confirm supported InTune policies",
+        "Get integration effort estimate"
+      ],
+      "workaround": "Can propose InTune integration as implementation task if not pre-built",
+      "owner": "Integrations Team",
+      "updated_at": "2025-10-30T11:51:43.036508",
+      "risk": "high",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [
+        "rpr_002"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_011",
+      "tier": "tier_3_moderate_impact",
+      "category": "Integration",
+      "item": "EntraID/Azure AD Integration Architecture",
+      "description": "Detailed architecture showing how Movius integrates with Microsoft EntraID (Azure AD) for authentication and authorization",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Integrations Team, Security Team",
+      "movius_contact": "TBD - Integrations Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_002"
+      ],
+      "priority": "medium",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Q&A #42: Integration possible in production environment only. Need details on SAML/OAuth2 setup, user provisioning, group sync",
+      "action_items": [
+        "Request EntraID integration guide",
+        "Understand SSO flow",
+        "Confirm SAML 2.0 or OAuth2 support",
+        "Get user provisioning approach (SCIM?)"
+      ],
+      "workaround": "Can describe standard EntraID integration patterns if Movius docs limited",
+      "owner": "Integrations Team, Security Team",
+      "updated_at": "2025-10-30T11:51:43.036514",
+      "risk": "medium",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [
+        "rpr_002"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_012",
+      "tier": "tier_3_moderate_impact",
+      "category": "Technical",
+      "item": "Technical Architecture Documentation",
+      "description": "High-level and detailed technical architecture diagrams showing platform components, data flows, security boundaries, AWS infrastructure",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Software Dev, Technical Writing",
+      "movius_contact": "TBD - Solutions Architecture",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [],
+      "priority": "medium",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Helpful for Volume I Section 1 and for understanding platform for implementation planning",
+      "action_items": [
+        "Request architecture diagrams",
+        "Request AWS service usage details",
+        "Request security architecture diagram",
+        "Request data flow diagrams"
+      ],
+      "workaround": "Can create diagrams based on general knowledge of similar platforms if Movius unable to share detailed docs",
+      "owner": "Software Dev, Technical Writing",
+      "updated_at": "2025-10-30T11:51:43.036518",
+      "risk": "medium",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_013",
+      "tier": "tier_3_moderate_impact",
+      "category": "Technical",
+      "item": "Performance Metrics and SLA Documentation",
+      "description": "Historical performance data, availability statistics, response time metrics to support RFP performance requirements (99.95% availability, 100ms response, 4hr TTR)",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Software Dev",
+      "movius_contact": "TBD - Operations Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [
+        "rpr_017",
+        "rpr_051",
+        "rpr_052"
+      ],
+      "priority": "medium",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "PWS requires 99.95% availability, 100ms response time, 4hr trouble ticket resolution. Need evidence Movius can meet these",
+      "action_items": [
+        "Request uptime reports from past 12 months",
+        "Request response time measurements",
+        "Request TTR metrics",
+        "Understand SLA structure"
+      ],
+      "workaround": "Can commit to metrics based on platform capabilities and RPR support structure even without historical data",
+      "owner": "Software Dev",
+      "updated_at": "2025-10-30T11:51:43.036522",
+      "risk": "medium",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [
+        "rpr_017",
+        "rpr_051",
+        "rpr_052"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_014",
+      "tier": "tier_4_nice_to_have",
+      "category": "Past Performance",
+      "item": "Movius Government Contract References",
+      "description": "2-3 relevant government contracts where Movius provided messaging platform, for inclusion in Volume II Past Performance",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Contracts Team",
+      "movius_contact": "TBD - Contracts/Sales",
+      "volumes_affected": [
+        "II"
+      ],
+      "requirements_blocked": [
+        "rpr_060"
+      ],
+      "priority": "medium",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Helpful to show Movius has government experience, but RPR Tech can submit with just own contracts if needed",
+      "action_items": [
+        "Request 2-3 government contract references",
+        "Need: contract number, agency, period of performance, scope, POC contact info",
+        "Prefer federal contracts, but state/local acceptable"
+      ],
+      "workaround": "Volume II can focus on RPR Tech contracts only",
+      "owner": "Contracts Team",
+      "updated_at": "2025-10-30T11:51:43.036525",
+      "risk": "medium",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [
+        "rpr_060"
+      ],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_015",
+      "tier": "tier_4_nice_to_have",
+      "category": "Technical",
+      "item": "Training Materials and Documentation Samples",
+      "description": "Sample training materials, user guides, admin documentation to inform Volume I training approach",
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-29"
+      },
+      "date_requested": "2025-10-29",
+      "date_received": null,
+      "date_needed": "2025-10-30",
+      "assigned_to_rpr": "Technical Writing, Product Delivery",
+      "movius_contact": "TBD - Training/Documentation Team",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [],
+      "priority": "low",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "Helpful to understand what Movius provides vs what RPR needs to create",
+      "action_items": [
+        "Request sample training deck",
+        "Request sample user guide",
+        "Request admin documentation",
+        "Understand what Movius provides off-the-shelf"
+      ],
+      "workaround": "RPR can develop all training materials if needed",
+      "owner": "Technical Writing, Product Delivery",
+      "updated_at": "2025-10-30T11:51:43.036529",
+      "risk": "medium",
+      "fit": "OOTB",
+      "delivery_status": "requested",
+      "evidence": [],
+      "links_to": [],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    },
+    {
+      "dependency_id": "movius_016",
+      "tier": "tier_4_nice_to_have",
+      "category": "Technical",
+      "item": "API Documentation for Custom Development",
+      "description": "API documentation for any custom integration or development work RPR might need to do",
+      "status": {
+        "state": "not_started",
+        "last_changed": null
+      },
+      "date_requested": null,
+      "date_received": null,
+      "date_needed": "2025-10-31",
+      "assigned_to_rpr": "Software Dev",
+      "movius_contact": "TBD - Developer Relations",
+      "volumes_affected": [
+        "I"
+      ],
+      "requirements_blocked": [],
+      "priority": "low",
+      "blocking": false,
+      "workaround_available": true,
+      "notes": "May be needed for custom integrations, but not critical for proposal",
+      "action_items": [
+        "Request API documentation",
+        "Understand REST vs SOAP",
+        "Understand rate limits",
+        "Understand authentication methods"
+      ],
+      "workaround": "Can state 'will leverage Movius APIs as needed' without specifics",
+      "owner": "Software Dev",
+      "updated_at": "2025-10-30T11:51:43.036533",
+      "risk": "medium",
+      "fit": "OOTB",
+      "delivery_status": "not_requested",
+      "evidence": [],
+      "links_to": [],
+      "acceptance_criteria": "Deliverable received, verified, and incorporated into proposal"
+    }
+  ],
+  "summary_by_tier": {
+    "tier_1_critical_blocking": {
+      "total": 5,
+      "completed": 0,
+      "in_progress": 5,
+      "items": [
+        "movius_001: Partnership Agreement",
+        "movius_002: Pricing Breakdown",
+        "movius_003: FedRAMP Certificate",
+        "movius_004: OEM Letter",
+        "movius_005: FedRAMP Documentation"
+      ]
+    },
+    "tier_2_major_impact": {
+      "total": 6,
+      "completed": 0,
+      "in_progress": 6,
+      "items": [
+        "movius_006: D.1 Gap Resolution",
+        "movius_007: D.2 Question 7",
+        "movius_008: In-App Messaging Confirmation",
+        "movius_009: BYOD Zero-Data Confirmation",
+        "movius_010: InTune Integration",
+        "movius_011: EntraID Integration"
+      ]
+    },
+    "tier_3_moderate_impact": {
+      "total": 3,
+      "completed": 0,
+      "in_progress": 3,
+      "items": [
+        "movius_012: Technical Architecture",
+        "movius_013: Performance Metrics",
+        "movius_014: Government References"
+      ]
+    },
+    "tier_4_nice_to_have": {
+      "total": 2,
+      "completed": 0,
+      "in_progress": 1,
+      "items": [
+        "movius_015: Training Materials",
+        "movius_016: API Documentation"
+      ]
+    }
+  },
+  "meeting_agenda": {
+    "section_1_critical_blockers": {
+      "duration_minutes": 30,
+      "items": [
+        {
+          "item": "Partnership Agreement",
+          "questions": [
+            "What format: teaming letter or full subcontractor agreement?",
+            "Who is authorized signatory at Movius?",
+            "Can we get this signed today/tomorrow?"
+          ]
+        },
+        {
+          "item": "Pricing",
+          "questions": [
+            "What is total cost for all Movius CLINs?",
+            "Breakdown by: licenses, infrastructure, support, web portal?",
+            "Can pricing be adjusted if work split calculation shows RPR <50%?"
+          ]
+        },
+        {
+          "item": "FedRAMP",
+          "questions": [
+            "Do you have FedRAMP Moderate authorization?",
+            "If yes: can we get certificate copy today?",
+            "If no: do you have In-Process designation? When will you be authorized?",
+            "If neither: this is proposal killer - need alternative platform"
+          ]
+        },
+        {
+          "item": "OEM Letter",
+          "questions": [
+            "We sent template - can you execute on letterhead?",
+            "Who will sign?",
+            "Can we get signed PDF by tomorrow?"
+          ]
+        }
+      ]
+    },
+    "section_2_technical_validation": {
+      "duration_minutes": 30,
+      "items": [
+        {
+          "item": "In-App Messaging Capability",
+          "questions": [
+            "CRITICAL: Does Movius have TRUE in-app messaging (not SMS)?",
+            "Can you show us the in-app messaging interface?",
+            "How are messages delivered? (must NOT be SMS)",
+            "This is go/no-go for proposal"
+          ]
+        },
+        {
+          "item": "BYOD Zero-Data Architecture",
+          "questions": [
+            "Does Movius store any data on BYOD devices?",
+            "Where are messages/contacts stored? (must be cloud-only)",
+            "Show us data flow diagram"
+          ]
+        },
+        {
+          "item": "D.1 Functionality Gaps",
+          "questions": [
+            "D.1.9: Does platform support message templates and custom signatures?",
+            "D.1.11: What is audit log retention period? Search capabilities?",
+            "D.1.15: What encryption algorithms? Key management approach?",
+            "D.1.20: What performance monitoring tools/dashboards exist?"
+          ]
+        },
+        {
+          "item": "D.2 Question 7",
+          "questions": [
+            "What is your standard implementation timeline?",
+            "Can you support our 90-day deployment plan?",
+            "What are implementation phases from your perspective?"
+          ]
+        }
+      ]
+    },
+    "section_3_integrations": {
+      "duration_minutes": 20,
+      "items": [
+        {
+          "item": "Microsoft InTune",
+          "questions": [
+            "Do you integrate with InTune?",
+            "If yes: how? API? What policies supported?",
+            "If no: can we build integration? Effort estimate?"
+          ]
+        },
+        {
+          "item": "EntraID/Azure AD",
+          "questions": [
+            "Do you support SAML 2.0 or OAuth2 SSO?",
+            "User provisioning approach?",
+            "Group-based access control?"
+          ]
+        }
+      ]
+    },
+    "section_4_documentation": {
+      "duration_minutes": 10,
+      "items": [
+        {
+          "item": "Supporting Documentation",
+          "questions": [
+            "Can you share architecture diagrams?",
+            "Do you have performance/uptime reports?",
+            "Past government contract references?",
+            "Training materials samples?"
+          ]
+        }
+      ]
+    }
+  },
+  "decision_tree": {
+    "scenario_1": {
+      "condition": "Movius has FedRAMP + pricing + OEM letter + in-app messaging confirmed",
+      "decision": "PROCEED with proposal",
+      "confidence": "high",
+      "actions": [
+        "Complete Volume III pricing",
+        "Write Volume I Sections 2-3",
+        "Finalize Volume IV documents",
+        "Submit by deadline"
+      ]
+    },
+    "scenario_2": {
+      "condition": "Movius has FedRAMP + pricing + OEM letter BUT no true in-app messaging",
+      "decision": "PIVOT to alternative platform OR WITHDRAW",
+      "confidence": "low",
+      "actions": [
+        "Evaluate alternative platforms (time may not allow)",
+        "Or recommend withdrawal to management"
+      ]
+    },
+    "scenario_3": {
+      "condition": "Movius NO FedRAMP authorization",
+      "decision": "Cannot proceed - WITHDRAW proposal",
+      "confidence": "certain",
+      "actions": [
+        "Notify management immediately",
+        "Document decision rationale",
+        "Consider future opportunities if Movius obtains FedRAMP"
+      ]
+    },
+    "scenario_4": {
+      "condition": "Movius pricing results in RPR Tech <50% work split",
+      "decision": "Renegotiate or restructure scope",
+      "confidence": "medium",
+      "actions": [
+        "Negotiate lower Movius pricing",
+        "Or increase RPR Tech scope (more services)",
+        "Or withdraw if cannot achieve >50%"
+      ]
+    }
+  },
+  "risk_assessment": {
+    "overall_risk": "high",
+    "key_risks": [
+      {
+        "risk": "Movius lacks FedRAMP Moderate",
+        "probability": "low",
+        "impact": "critical",
+        "mitigation": "Verify immediately in meeting - no workaround available"
+      },
+      {
+        "risk": "Movius platform is primarily SMS-based, not true in-app messaging",
+        "probability": "medium",
+        "impact": "critical",
+        "mitigation": "Validate in meeting with demo - may need to pivot platforms"
+      },
+      {
+        "risk": "Movius pricing too high, results in RPR <50% work split",
+        "probability": "medium",
+        "impact": "critical",
+        "mitigation": "Negotiate pricing or increase RPR scope"
+      },
+      {
+        "risk": "Movius unable to provide OEM letter in time",
+        "probability": "low",
+        "impact": "high",
+        "mitigation": "Expedite signature process, escalate to Movius leadership"
+      },
+      {
+        "risk": "Movius gaps in D.1/D.2 responses weaken proposal",
+        "probability": "medium",
+        "impact": "medium",
+        "mitigation": "RPR Tech can fill gaps with technical approach and workarounds"
+      }
+    ]
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-10-30",
+      "changes": "Initial skeleton created with comprehensive Movius dependency tracking"
+    }
+  ],
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "Evidence structure formalized with type/ref/location",
+    "FedRAMP proof chain artifacts specified",
+    "Traceability links_to added",
+    "Standard schema fields applied",
+    "Acceptance criteria defined"
+  ]
+}

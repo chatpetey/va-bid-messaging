@@ -1,0 +1,1976 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "document_type": "rfp_complete_document",
+  "total_pages": 124,
+  "amendment_number": "0003",
+  "effective_date": "2025-10-20",
+  "submission_deadline": "2025-10-31T14:00:00-06:00",
+  "schema_version": "2.0",
+  "status_definitions": {
+    "completed": "Requirement fully addressed, documented, and ready for submission",
+    "in_progress": "Work underway, partial completion",
+    "pending_movius": "Blocked pending Movius/partner deliverables",
+    "not_started": "No work begun on this requirement",
+    "statutory_boilerplate": "Standard FAR/VAAR clause, no action required beyond acknowledgment",
+    "already_addressed": "Covered in existing proposal content or project documentation",
+    "review_required": "Needs careful review to ensure compliance",
+    "critical_blocker": "Must be completed or proposal will be rejected"
+  },
+  "team_definitions": {
+    "contracts": "Teaming agreements, OEM letters, past performance, legal compliance, amendments",
+    "technical_writing": "Volume I narrative, Volume II, documentation, page management, formatting",
+    "software_dev": "Platform features, technical capabilities, mobile apps, D.1 functionality responses",
+    "security": "FedRAMP, ATO, FIPS-199, encryption, data protection, VA security requirements",
+    "integrations": "EntraID, Active Directory, MDM, SSO, APIs, interoperability",
+    "project_management": "Timeline, milestones, coordination, deliverables schedule, kickoff planning",
+    "product_delivery": "Implementation, 90-day rollout, training, change management, go-live",
+    "support_operations": "Help desk, 24/7 support model, SLAs, user support, OMS&E",
+    "pricing": "CLIN structure, license costs, work split calculation, Volume III completion",
+    "compliance": "FAR/VAAR requirements, certifications, representations, SDVOSB verification",
+    "finance": "Invoicing, payment terms, accounting, appropriation data"
+  },
+  "rfp_sections": [
+    {
+      "section_id": "cover_page",
+      "section_name": "Cover Page",
+      "pages": "1",
+      "description": "SF 1449 Cover Sheet - Solicitation/Contract/Order for Commercial Products and Services",
+      "data_required": "yes",
+      "affected_teams": [
+        "contracts",
+        "compliance"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Must be completed and signed for Volume IV",
+      "requirements": [
+        "Complete blocks 17a (Contractor/Offeror information)",
+        "Include UEI number",
+        "Include CAGE code",
+        "Include telephone and fax numbers",
+        "Complete blocks 30a-30c (Signature, name/title, date) for Volume IV"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Critical for Volume IV submission. Must be signed by authorized representative. Do NOT sign until ready to submit.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092892",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [
+        "rpr_100",
+        "rpr_101",
+        "vol4_sf1449"
+      ],
+      "acceptance_criteria": "All requirements from Cover Page addressed in appropriate volume"
+    },
+    {
+      "section_id": "toc",
+      "section_name": "Table of Contents",
+      "pages": "2-3",
+      "description": "RFP document structure and navigation",
+      "data_required": "no",
+      "affected_teams": [],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "Reference only - helps navigate RFP structure",
+      "requirements": [],
+      "statutory_requirement": false,
+      "already_addressed": true,
+      "notes": "No action required. Use for reference to find specific sections.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092918",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "already_addressed",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_b_schedule",
+      "section_name": "Section B - Schedule of Supplies and Services",
+      "pages": "4-11",
+      "description": "CLINs structure, quantities, units, pricing framework",
+      "data_required": "yes",
+      "affected_teams": [
+        "pricing",
+        "contracts",
+        "project_management"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Forms basis of Volume III Price Schedule. Must understand work split.",
+      "requirements": [
+        "CLIN 0001: Messaging Software Application (20,000 NTE licenses)",
+        "CLIN 0002: Project Management",
+        "CLIN 0003: FedRAMP Requirements",
+        "CLIN 0004: Authority to Operate",
+        "CLIN 0005: Application Solution",
+        "CLIN 0006: Cloud Infrastructure",
+        "CLIN 0007: OMS&E Support (103 sites)",
+        "CLINs 0008-0010: Optional CLINs",
+        "Embedded deliverables 0002AA through 0007AA (NSP)",
+        "Option years structure (Years 2-5)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "CRITICAL: License costs count toward 50% SDVOSB self-performance calculation per Q&A #2. RPR Tech must perform >50% of TOTAL contract value including all CLINs and option years.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092931",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from Section B - Schedule of Supplies and Services addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_b_governing_law",
+      "section_name": "B.2 Governing Law",
+      "pages": "12",
+      "description": "Legal framework and dispute resolution",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No proposal response required - contract terms only",
+      "requirements": [
+        "Governed by Federal law",
+        "Contract Disputes Act applies"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Standard boilerplate. No action required for proposal.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092940",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_b_software_license",
+      "section_name": "B.3 Software License, Maintenance and Technical Support",
+      "pages": "13-14",
+      "description": "License grant terms, maintenance requirements, support obligations",
+      "data_required": "yes",
+      "affected_teams": [
+        "contracts",
+        "support_operations",
+        "software_dev"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Informs Volume I support model and Volume III licensing terms",
+      "requirements": [
+        "Grant perpetual license if hosted on-premise (N/A for SaaS)",
+        "Provide maintenance and technical support for base + options",
+        "24/7 support required",
+        "Software updates and patches at no additional cost",
+        "Security updates within timeframes per PWS"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "SaaS model means perpetual license clause is N/A per Q&A responses. Focus on support model in Volume I Section 7.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092946",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [
+        "CLIN-0001",
+        "CLIN-0003",
+        "QA-02",
+        "QA-39"
+      ],
+      "acceptance_criteria": "All requirements from B.3 Software License, Maintenance and Technical Support addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_background",
+      "section_name": "B.4.1 Performance Work Statement - Background",
+      "pages": "15-16",
+      "description": "VA context, current pager system limitations, modernization drivers",
+      "data_required": "no",
+      "affected_teams": [
+        "technical_writing"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "medium",
+      "proposal_impact": "Use to demonstrate understanding in Volume I Executive Summary and Section 1",
+      "requirements": [
+        "Understand VA operates 103 VISN medical facilities",
+        "Current pager system limitations (one-way, no security, aging infrastructure)",
+        "Need for modern two-way secure messaging",
+        "HIPAA compliance requirements",
+        "Integration with existing VA systems"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Demonstrate deep understanding of VA's challenges in Volume I. Reference Q&A #53 - this is a NEW requirement with no incumbent.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092951",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "already_addressed",
+      "links_to": [
+        "rpr_001",
+        "rpr_002",
+        "vol1_section1"
+      ],
+      "acceptance_criteria": "Section reviewed and understood"
+    },
+    {
+      "section_id": "pws_applicable_documents",
+      "section_name": "B.4.2 Applicable Documents",
+      "pages": "16-19",
+      "description": "Reference standards, VA handbooks, security requirements, compliance frameworks",
+      "data_required": "yes",
+      "affected_teams": [
+        "security",
+        "compliance",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must reference compliance with these standards in Volume I Sections 4 & 5",
+      "requirements": [
+        "VA Handbook 6500: Information Security Program",
+        "VA Directive 6004: Network and Perimeter Security",
+        "VA Directive 6513: Vulnerability and Patch Management",
+        "NIST SP 800-53: Security Controls",
+        "NIST SP 800-171: Protecting CUI",
+        "FedRAMP Moderate baseline",
+        "FIPS 140-2/140-3: Cryptographic modules",
+        "FIPS 199: Security categorization",
+        "HIPAA Security Rule",
+        "VA Directive 6045: Cloud Computing",
+        "Section 508 accessibility requirements"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "Critical compliance framework. Volume I Sections 4 and 5 must explicitly address compliance with each applicable standard. Use VA_Security_Compliance_Reference_Guide.md for details.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092956",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.2 Applicable Documents addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_scope",
+      "section_name": "B.4.3 Scope of Work",
+      "pages": "19",
+      "description": "High-level scope, up to 20,000 licenses, 103 sites, SaaS delivery model",
+      "data_required": "yes",
+      "affected_teams": [
+        "technical_writing",
+        "project_management"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Foundation for entire Volume I technical approach",
+      "requirements": [
+        "Deliver SaaS modernized messaging solution",
+        "Support up to 20,000 end users",
+        "Deploy across 103 VA medical facilities",
+        "Replace legacy pager infrastructure",
+        "Provide secure two-way messaging",
+        "Integrate with VA infrastructure (EntraID, AD)",
+        "Support GFE and BYOD devices",
+        "Meet FedRAMP Moderate and FIPS-199 Moderate"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": true,
+      "notes": "Core scope well understood. Addressed in Volume I Executive Summary and Section 1.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092962",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "already_addressed",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.3 Scope of Work addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b441_messaging",
+      "section_name": "B.4.4.1 Messaging Capabilities",
+      "pages": "19-21",
+      "description": "Core messaging features: individual, group, broadcast, priority routing",
+      "data_required": "yes",
+      "affected_teams": [
+        "software_dev",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Must address in Volume I Section 2 (D.1 Functionality Checklist)",
+      "requirements": [
+        "One-to-one messaging with delivery confirmation",
+        "Group messaging with dynamic groups",
+        "Broadcast messaging to multiple users/groups",
+        "Priority/urgent message routing",
+        "Message templates and quick responses",
+        "File/image attachments (within HIPAA bounds)",
+        "Message recall/editing capabilities",
+        "Read receipts and delivery status",
+        "Message threading and conversation history",
+        "Search and filter message history"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "PENDING: Movius platform feature specifications needed to complete D.1 responses. Per Q&A #44, solution must NOT be SMS-based.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092969",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.1 Messaging Capabilities addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b442_security",
+      "section_name": "B.4.4.2 Security and Privacy Features",
+      "pages": "21-22",
+      "description": "Encryption, authentication, audit logging, HIPAA compliance",
+      "data_required": "yes",
+      "affected_teams": [
+        "security",
+        "software_dev",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Core of Volume I Sections 4 & 5 (FedRAMP and FIPS-199)",
+      "requirements": [
+        "End-to-end encryption (data in transit and at rest)",
+        "FIPS 140-2/140-3 validated cryptographic modules",
+        "Multi-factor authentication (MFA)",
+        "Integration with VA EntraID/Active Directory",
+        "Role-based access control (RBAC)",
+        "Comprehensive audit logging (who, what, when, where)",
+        "HIPAA Security Rule compliance",
+        "PHI/PII protection mechanisms",
+        "Zero data storage on BYOD devices (Q&A #40)",
+        "Automatic session timeout",
+        "Device wipe capability",
+        "Certificate-based authentication support"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "CRITICAL per Q&A #40: Solution MUST support zero data storage on BYOD devices. This is a hard requirement that must be explicitly addressed in Volume I.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092974",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.2 Security and Privacy Features addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b443_integration",
+      "section_name": "B.4.4.3 Integration and Interoperability",
+      "pages": "22-23",
+      "description": "VA systems integration, APIs, SSO, directory services",
+      "data_required": "yes",
+      "affected_teams": [
+        "integrations",
+        "software_dev",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Volume I Section 1 and D.1 responses must detail integration approach",
+      "requirements": [
+        "Microsoft EntraID (Azure AD) integration (Q&A #42: production only)",
+        "Active Directory Federation Services (ADFS) support",
+        "Single Sign-On (SSO) via SAML 2.0",
+        "Microsoft InTune MDM integration (Q&A #10)",
+        "RESTful APIs for third-party integrations",
+        "VA clinical systems integration potential",
+        "On-call/schedule system integration",
+        "LDAP/AD user provisioning and de-provisioning",
+        "Group sync from VA directory",
+        "Bulk user import/export capabilities"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Per Q&A #10: Microsoft InTune integration required. Per Q&A #42: EntraID integration in production environment ONLY (no sandbox).",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092980",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.3 Integration and Interoperability addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b444_admin",
+      "section_name": "B.4.4.4 Administrative and Management Functions",
+      "pages": "23-25",
+      "description": "User management, reporting, analytics, policy enforcement",
+      "data_required": "yes",
+      "affected_teams": [
+        "software_dev",
+        "technical_writing",
+        "support_operations"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Address in Volume I Section 2 (D.1) and Section 7 (Operations)",
+      "requirements": [
+        "Web-based administrative portal (PWS B.4.8.7)",
+        "User provisioning and de-provisioning",
+        "Role and permission management",
+        "Group creation and management",
+        "Policy configuration and enforcement",
+        "License management and allocation",
+        "Usage reporting and analytics",
+        "System health monitoring dashboards",
+        "Compliance reporting (audit logs, access reports)",
+        "Bulk operations support",
+        "Delegated admin capabilities per site/region"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "PWS Section B.4.8.7 specifically requires web-based portal for license issuance and renewal. Must be addressed in D.1 responses.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092986",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.4 Administrative and Management Functions addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b445_mobile",
+      "section_name": "B.4.4.5 Mobile Device Support",
+      "pages": "25-26",
+      "description": "iOS and Android support, GFE and BYOD compatibility",
+      "data_required": "yes",
+      "affected_teams": [
+        "software_dev",
+        "technical_writing",
+        "security"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Core requirement for Volume I Section 2 and Step 2 testing",
+      "requirements": [
+        "Native iOS app (per Q&A #47: Apple iOS only)",
+        "Native Android app (per Q&A #47: Android only)",
+        "Support for GFE (Government-Furnished Equipment)",
+        "Support for BYOD (Bring Your Own Device)",
+        "Zero data storage on BYOD (Q&A #40)",
+        "MDM integration (InTune per Q&A #10)",
+        "Remote wipe capability",
+        "Offline messaging capability (store and forward)",
+        "Push notifications",
+        "Device compatibility across versions",
+        "App store distribution (Apple App Store, Google Play)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Per Q&A #47: ONLY Apple iOS and Android required (no Windows Mobile, BlackBerry, etc.). Per Q&A #40: Zero BYOD data storage is MANDATORY. Step 2 testing will use both platforms per Q&A #5.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092992",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [
+        "CLIN-0001",
+        "CLIN-0003",
+        "QA-02",
+        "QA-39"
+      ],
+      "acceptance_criteria": "All requirements from B.4.4.5 Mobile Device Support addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b446_reporting",
+      "section_name": "B.4.4.6 Reporting and Analytics",
+      "pages": "26-27",
+      "description": "Usage metrics, compliance reports, system health, customizable reporting",
+      "data_required": "yes",
+      "affected_teams": [
+        "software_dev",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "medium",
+      "proposal_impact": "Address in Volume I Section 2 (D.1) and Section 7",
+      "requirements": [
+        "Usage statistics (messages sent, users active, peak times)",
+        "License utilization reports",
+        "Compliance reports (audit logs, access attempts)",
+        "System performance metrics",
+        "User adoption analytics",
+        "Custom report creation",
+        "Scheduled report generation",
+        "Export capabilities (CSV, PDF, Excel)",
+        "Real-time dashboards",
+        "Historical trending analysis"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Links to deliverables 0002F (Weekly Progress Report) and 0002AG (Quarterly Usage Report).",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.092997",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.6 Reporting and Analytics addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b447_accessibility",
+      "section_name": "B.4.4.7 Accessibility Requirements",
+      "pages": "27",
+      "description": "Section 508 compliance, WCAG 2.0 AA standards",
+      "data_required": "yes",
+      "affected_teams": [
+        "software_dev",
+        "technical_writing",
+        "compliance"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must explicitly address Section 508 compliance in Volume I",
+      "requirements": [
+        "Section 508 compliance for web interfaces",
+        "WCAG 2.0 Level AA compliance",
+        "Screen reader compatibility",
+        "Keyboard navigation support",
+        "Alternative text for images",
+        "Color contrast requirements",
+        "Closed captioning for video (if applicable)",
+        "Accessible mobile apps"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "Federal requirement. Must demonstrate compliance in Volume I. Consider requesting VPAT (Voluntary Product Accessibility Template) from Movius.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093003",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.7 Accessibility Requirements addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b448_deployment",
+      "section_name": "B.4.4.8 Deployment and Implementation",
+      "pages": "27-28",
+      "description": "Phased rollout approach, timeline, change management",
+      "data_required": "yes",
+      "affected_teams": [
+        "project_management",
+        "product_delivery",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "in_progress",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Foundation of Volume I Section 6 (Implementation Approach)",
+      "requirements": [
+        "90-day production readiness requirement",
+        "Phased rollout plan (pilot, waves, full deployment)",
+        "Change management strategy",
+        "Communications plan for end users",
+        "Training plan and materials (PWS B.4.12)",
+        "Migration from legacy pagers",
+        "Pilot site selection and success criteria",
+        "Go/No-Go decision criteria",
+        "Rollback plan if needed",
+        "Post-deployment support",
+        "Deliverable 0002AC: Go-Live Artifacts (10 EA)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "90-day timeline is aggressive. Volume I Section 6 must show realistic yet ambitious plan. Reference VA_Resource_Estimate for staffing during implementation.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093012",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "in_progress",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.4.8 Deployment and Implementation addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b4412_training",
+      "section_name": "B.4.12 Training Requirements",
+      "pages": "28-29",
+      "description": "End-user training, admin training, materials, delivery methods",
+      "data_required": "yes",
+      "affected_teams": [
+        "product_delivery",
+        "technical_writing",
+        "support_operations"
+      ],
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must detail comprehensive training approach in Volume I Section 6",
+      "requirements": [
+        "End-user training plan (multiple modalities)",
+        "Administrator training",
+        "Super-user/champion training",
+        "Training materials (guides, videos, job aids)",
+        "Train-the-trainer approach",
+        "On-site and remote training options",
+        "Self-paced eLearning modules",
+        "Hands-on practice sessions",
+        "Security and privacy training content",
+        "Training effectiveness measurement",
+        "Deliverable 0005AD: Training Plan"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Training is critical for user adoption. Plan for 20,000 potential users across 103 sites. Must include security best practices per PWS B.4.12.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093018",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "not_started",
+      "links_to": [
+        "rpr_043",
+        "rpr_113",
+        "vol1_section6"
+      ],
+      "acceptance_criteria": "All requirements from B.4.12 Training Requirements addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b4416_support",
+      "section_name": "B.4.16 Operations, Maintenance, Sustainment, and Engineering (OMS&E)",
+      "pages": "29-30",
+      "description": "24/7/365 support model, help desk, incident management, SLAs",
+      "data_required": "yes",
+      "affected_teams": [
+        "support_operations",
+        "technical_writing",
+        "project_management"
+      ],
+      "status": {
+        "state": "in_progress",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Core of Volume I Section 7 (Operations and Support)",
+      "requirements": [
+        "24/7/365 support coverage",
+        "Multi-channel support (phone, email, chat, portal)",
+        "Tiered support model (Tier 1, 2, 3)",
+        "Incident management and tracking",
+        "Problem management processes",
+        "Change management procedures",
+        "Service Level Agreements (SLAs)",
+        "Escalation procedures and contacts",
+        "Knowledge base and self-service portal",
+        "Proactive monitoring and alerting",
+        "Application Monitoring Plan (Deliverable 0007AA)",
+        "103-site OMS&E support (CLIN 0007)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": true,
+      "notes": "26 FTE steady-state model defined in VA_Resource_Estimate_RPR_Tech_COMPLETE.md. RPR Tech Tier 1/2, Movius Tier 3. Addresses CLIN 0007 requirement.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093023",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "in_progress",
+      "links_to": [
+        "rpr_049",
+        "rpr_050",
+        "vol1_section7",
+        "QA-23"
+      ],
+      "acceptance_criteria": "All requirements from B.4.16 Operations, Maintenance, Sustainment, and Engineering (OMS&E) addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b4419_personnel",
+      "section_name": "B.4.19 Contractor Personnel",
+      "pages": "30-31",
+      "description": "Staffing requirements, key personnel, background checks, VA credentials",
+      "data_required": "yes",
+      "affected_teams": [
+        "project_management",
+        "compliance",
+        "contracts"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must identify key personnel and credential process in Volume I",
+      "requirements": [
+        "Key personnel identification (PM, Technical Lead, Security Lead)",
+        "Resume requirements for key personnel",
+        "VA credential process (PIV card, SIC fingerprinting)",
+        "Background investigation requirements",
+        "Personnel security forms (OF 306, VA 0710)",
+        "Staff roster delivery (Day 3 deliverable)",
+        "Replacement approval process for key personnel",
+        "On-site presence requirements (if any)",
+        "Citizenship and clearance requirements",
+        "VAAR 852.237-75 Key Personnel clause"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "Day 3 deliverable: Contractor Staff Roster. Day 5 deliverable: OF 306 and VA 0710 forms for all staff. Must plan for VA credential process delays.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093028",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from B.4.19 Contractor Personnel addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b45_fedramp",
+      "section_name": "B.4.5 FedRAMP Requirements",
+      "pages": "31-37",
+      "description": "FedRAMP Moderate authorization, continuous monitoring, ATO process",
+      "data_required": "yes",
+      "affected_teams": [
+        "security",
+        "technical_writing",
+        "contracts"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Volume I Section 4 must demonstrate FedRAMP compliance path",
+      "requirements": [
+        "FedRAMP Moderate authorization OR In-Process letter (Q&A #18)",
+        "System Security Plan (SSP)",
+        "3PAO Security Assessment Report (SAR)",
+        "Plan of Action and Milestones (POA&M)",
+        "Continuous Monitoring strategy",
+        "NIST SP 800-53 Rev 5 Moderate baseline controls",
+        "Monthly vulnerability scanning",
+        "Incident Response Plan (IRP)",
+        "Configuration Management",
+        "Change Control Board (CCB) process",
+        "FedRAMP SSP Repository Access (Day 5 deliverable)",
+        "ATO Package Document (12-month deliverable 0004AA)",
+        "Deliverable 0003AA: FedRAMP Requirements Artifacts"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "CRITICAL BLOCKER per Q&A #18: Must provide FedRAMP Moderate certificate OR In-Process letter. Without this, cannot submit proposal. Movius must provide TODAY.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093037",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [
+        "rpr_005",
+        "rpr_030",
+        "vol1_section4",
+        "QA-18",
+        "movius_003"
+      ],
+      "acceptance_criteria": "All requirements from B.4.5 FedRAMP Requirements addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_b46_fips199",
+      "section_name": "B.4.6 FIPS-199 Security Categorization",
+      "pages": "37-38",
+      "description": "FIPS-199 Moderate categorization, CIA triad analysis",
+      "data_required": "yes",
+      "affected_teams": [
+        "security",
+        "technical_writing"
+      ],
+      "status": {
+        "state": "in_progress",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Volume I Section 5 must provide complete FIPS-199 analysis",
+      "requirements": [
+        "FIPS-199 Moderate categorization",
+        "Confidentiality impact: MODERATE (PHI/PII present)",
+        "Integrity impact: MODERATE (clinical communications)",
+        "Availability impact: MODERATE (24/7 healthcare operations)",
+        "Security controls tailored to Moderate baseline",
+        "Justification for categorization levels",
+        "Risk assessment and mitigation strategies"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "FIPS-199 Moderate is required per PWS B.4.6. Volume I Section 5 must provide detailed CIA triad analysis and security controls implementation.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093044",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "in_progress",
+      "links_to": [
+        "rpr_006",
+        "rpr_035",
+        "vol1_section5",
+        "QA-19"
+      ],
+      "acceptance_criteria": "All requirements from B.4.6 FIPS-199 Security Categorization addressed in appropriate volume"
+    },
+    {
+      "section_id": "pws_deliverables_summary",
+      "section_name": "B.4.5 Deliverables Summary",
+      "pages": "31-37",
+      "description": "Complete schedule of all deliverables from Day 1 to Month 12+",
+      "data_required": "yes",
+      "affected_teams": [
+        "project_management",
+        "all_teams"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Must commit to all deliverables and demonstrate capability to meet deadlines",
+      "requirements": [
+        "Day 1: Contract kickoff",
+        "Day 3: Staff roster, kickoff agenda/minutes (0002AA, 0002AB)",
+        "Day 5: Personnel forms, FedRAMP SSP access",
+        "Day 7: Contractor Management Plan (0002AD)",
+        "Day 10: Implementation Plan, VA Diagram, 3PAO SAP (0002AE)",
+        "Day 30: Vulnerability scans, IRP testing, CM meetings",
+        "Day 90: Production readiness milestone",
+        "Month 12: Complete ATO Package (0004AA)",
+        "Weekly: Progress Reports (0002F) - 52 per year",
+        "Quarterly: Usage Reports (0002AG) - 4 per year",
+        "As needed: Go-Live Artifacts (0002AC) - 10 EA",
+        "Continuous: POA&M updates, artifact maintenance"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": true,
+      "notes": "Deliverables schedule documented in requirements_skeleton.json. Aggressive timeline requires strong project management and coordination between RPR Tech and Movius.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093048",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "already_addressed",
+      "links_to": [
+        "CLIN-ALL",
+        "vol3_pricing",
+        "rpr_pricing"
+      ],
+      "acceptance_criteria": "All requirements from B.4.5 Deliverables Summary addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_b_admin_data",
+      "section_name": "B.5 Contract Administration Data",
+      "pages": "55",
+      "description": "COR designation, invoice submission, administrative contacts",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts",
+        "finance"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No proposal response required - contract administration only",
+      "requirements": [
+        "Contracting Officer's Representative (COR) will be designated",
+        "COR authorities per VAAR 852.201-70",
+        "Invoice submission to address in Block 18a",
+        "Electronic invoice submission required (VAAR 852.232-72)"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Post-award administration. No proposal action required.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093051",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [
+        "vol1_all",
+        "vol2_all",
+        "vol3_all",
+        "vol4_all",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_b_accounting",
+      "section_name": "B.6 Accounting and Appropriation Data",
+      "pages": "56",
+      "description": "Government accounting codes and funding information",
+      "data_required": "no",
+      "affected_teams": [
+        "finance"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No proposal response required - government use only",
+      "requirements": [
+        "Government accounting codes",
+        "Appropriation data for payment"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Government internal use only. No proposal action required. Note Q&A #1: Funding not currently available due to government shutdown.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093056",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_c_far_52212_4",
+      "section_name": "C.1 FAR 52.212-4 Contract Terms and Conditions",
+      "pages": "57-62",
+      "description": "Standard commercial contract terms: inspection, payment, warranties, disputes",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No proposal response required - standard FAR terms apply",
+      "requirements": [
+        "Inspection and acceptance procedures",
+        "Payment terms (Net 30 after acceptance)",
+        "Risk of loss provisions",
+        "Taxes",
+        "Warranty provisions",
+        "Limitation of liability",
+        "Disputes resolution (Contract Disputes Act)",
+        "Excusable delays"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Standard FAR commercial terms. Read for awareness but no proposal action required.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093061",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_c_far_52212_4_addendum",
+      "section_name": "C.1.1 Addendum to FAR 52.212-4",
+      "pages": "62-63",
+      "description": "VA-specific modifications to standard FAR terms",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "medium",
+      "proposal_impact": "Review for VA-specific requirements but no proposal response needed",
+      "requirements": [
+        "VA-specific invoice requirements",
+        "Electronic payment mandate",
+        "VA-specific inspection procedures",
+        "Additional VA terms"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "VA modifications to standard terms. Review for awareness.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093067",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_c_incorporated_clauses",
+      "section_name": "C.1.2 FAR 52.252-2 Clauses Incorporated by Reference",
+      "pages": "63",
+      "description": "List of additional FAR clauses incorporated by reference",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts",
+        "compliance"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No proposal response required - standard clauses apply by reference",
+      "requirements": [
+        "Multiple FAR clauses incorporated",
+        "Full text available on acquisition.gov"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Standard incorporation by reference. Full clause text available online if needed.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093072",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [
+        "FAR-52.212-4",
+        "FAR-52.212-5",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_c_options",
+      "section_name": "C.1.3-C.1.5 Option Clauses",
+      "pages": "63-64",
+      "description": "FAR option clauses for quantities and contract extension",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "medium",
+      "proposal_impact": "Understand option structure for Volume III pricing",
+      "requirements": [
+        "FAR 52.217-7: Option for increased quantity",
+        "FAR 52.217-8: Option to extend services",
+        "FAR 52.217-9: Option to extend term (4 option years)"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Informs Volume III pricing structure. Base year + 4 option years. Must price all option years.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093077",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [
+        "FAR-52.212-4",
+        "FAR-52.212-5",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_c_vaar_clauses",
+      "section_name": "C.1.7-C.1.15 VAAR Clauses",
+      "pages": "65-77",
+      "description": "VA-specific contract clauses: security, COR, key personnel, payment",
+      "data_required": "yes",
+      "affected_teams": [
+        "security",
+        "compliance",
+        "contracts",
+        "project_management"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Multiple VAAR clauses require specific proposal responses",
+      "requirements": [
+        "VAAR 852.201-70: COR designation and authority",
+        "VAAR 852.239-70: Security requirements for IT resources",
+        "VAAR 852.239-72: Information system design and development",
+        "VAAR 852.239-73: Information system hosting/operation/maintenance",
+        "VAAR 852.219-73: VA notice of SDVOSB total set-aside",
+        "VAAR 852.219-75: Limitations on subcontracting certificate (CRITICAL)",
+        "VAAR 852.232-72: Electronic submission of payment requests",
+        "VAAR 852.237-75: Key personnel designation",
+        "VAAR 852.242-71: Administrative Contracting Officer"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "CRITICAL: VAAR 852.219-75 requires certificate in Volume IV stating RPR Tech performs >50% of work. This is a MANDATORY requirement. Without it, offer will be REJECTED.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093081",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [
+        "FAR-52.212-4",
+        "FAR-52.212-5",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "All requirements from C.1.7-C.1.15 VAAR Clauses addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_c_mandatory_disclosures",
+      "section_name": "C.1.16 Mandatory Written Disclosures",
+      "pages": "77",
+      "description": "Requirement to disclose violations of law or conflicts of interest",
+      "data_required": "yes",
+      "affected_teams": [
+        "contracts",
+        "compliance"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must disclose any applicable violations or conflicts",
+      "requirements": [
+        "Disclose violations of Federal criminal law",
+        "Disclose civil False Claims Act violations",
+        "Disclose conflicts of interest",
+        "Disclose other integrity/ethics violations"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "If RPR Tech has no violations to disclose, no action needed. If violations exist, must disclose in writing per the clause.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093086",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from C.1.16 Mandatory Written Disclosures addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_c_far_52212_5",
+      "section_name": "C.2 FAR 52.212-5 Required Statutes and Executive Orders",
+      "pages": "77-86",
+      "description": "Clauses implementing statutes/EOs: labor standards, preferences, prohibitions",
+      "data_required": "yes",
+      "affected_teams": [
+        "compliance",
+        "contracts"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "medium",
+      "proposal_impact": "Must comply with all listed requirements - some require proposal certifications",
+      "requirements": [
+        "Equal opportunity clauses",
+        "Affirmative action for protected veterans",
+        "Employment of individuals with disabilities",
+        "Prohibition on certain telecommunications equipment (Section 889)",
+        "Combating trafficking in persons",
+        "Whistleblower rights",
+        "Small business subcontracting plan (if applicable)",
+        "Buy American Act requirements",
+        "Trade agreements compliance"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "Section 889 prohibition on Huawei, ZTE, etc. is critical. Must certify compliance in representations. Most are standard compliance requirements.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093091",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [
+        "FAR-52.212-4",
+        "FAR-52.212-5",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "All requirements from C.2 FAR 52.212-5 Required Statutes and Executive Orders addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_d_attachments",
+      "section_name": "Section D - Contract Documents, Exhibits, Attachments",
+      "pages": "86",
+      "description": "Pointer to attachments D.1, D.2, D.3 (functionality, questions, test cases)",
+      "data_required": "yes",
+      "affected_teams": [
+        "technical_writing",
+        "software_dev"
+      ],
+      "status": {
+        "state": "blocked",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "D.1 and D.2 MUST be addressed in Volume I narrative per Q&A #7",
+      "requirements": [
+        "Attachment D.1: Functionality Checklist - address ALL items in Volume I Section 2",
+        "Attachment D.2: Service Model Questions - answer ALL questions in Volume I Section 3",
+        "Attachment D.3: Step 2 Use Cases - prepare test instructions for Step 2 (if invited)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Per Q&A #7: D.1 and D.2 must be addressed in Volume I NARRATIVE (not Excel). Excel file S06__36C10A25R0002_0003_Attachments_D1D_3.xlsx needs to be extracted and incorporated into proposal. 35-page limit is FIRM per Q&A.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093096",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "pending_movius",
+      "links_to": [
+        "D1-ALL",
+        "rpr_003",
+        "vol1_section2",
+        "QA-07"
+      ],
+      "acceptance_criteria": "All requirements from Section D - Contract Documents, Exhibits, Attachments addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_e_far_52212_1",
+      "section_name": "E.1 FAR 52.212-1 Instructions to Offerors",
+      "pages": "87-97",
+      "description": "Comprehensive instructions for proposal preparation and submission",
+      "data_required": "yes",
+      "affected_teams": [
+        "all_teams"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "GOVERNS ENTIRE PROPOSAL - must follow all instructions exactly",
+      "requirements": [
+        "Submission deadline: October 31, 2025 at 2:00 PM CST",
+        "Submission method: Electronic via email or portal",
+        "Volume I: Technical (Phase 1) - 35 page limit, PDF format",
+        "Volume II: Past Performance - 10 page limit, PDF format",
+        "Volume III: Price Schedule - Excel format (provided template)",
+        "Volume IV: Solicitation/Contract/Order - SF 1449 + certificates",
+        "File naming conventions: RPRTech_[volume name].pdf",
+        "Page size: 8.5\" x 11\"",
+        "Font: 12-point, Times New Roman or similar",
+        "Margins: 1 inch all sides",
+        "Amendment acknowledgment REQUIRED (all 3 amendments)",
+        "Representations and certifications REQUIRED (FAR 52.212-3)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "CRITICAL: ALL formatting requirements must be followed exactly. Failure to acknowledge amendments will result in REJECTION. File naming must be exact.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093100",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [
+        "vol1_all",
+        "vol2_all",
+        "vol3_all",
+        "vol4_all",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "All requirements from E.1 FAR 52.212-1 Instructions to Offerors addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_e_addendum_52212_1",
+      "section_name": "E.1.1 Addendum to FAR 52.212-1",
+      "pages": "97",
+      "description": "VA-specific modifications to submission instructions",
+      "data_required": "yes",
+      "affected_teams": [
+        "technical_writing",
+        "contracts"
+      ],
+      "status": {
+        "state": "draft_complete",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "Additional VA-specific submission requirements",
+      "requirements": [
+        "Two-phase evaluation: Step 1 (written), Step 2 (testing)",
+        "Step 1 must receive 'Acceptable' to proceed to Step 2",
+        "Step 2: 6 trial licenses and written test instructions (if invited)",
+        "Proposal volumes as specified in base FAR 52.212-1",
+        "Additional VA-specific certifications required"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": false,
+      "notes": "Two-phase evaluation is unique. Must score 'Acceptable' or higher on Volume I to be invited to Step 2. Per Q&A #5: Step 2 testing on Apple and Android devices.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093105",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "review_required",
+      "links_to": [
+        "vol1_all",
+        "vol2_all",
+        "vol3_all",
+        "vol4_all",
+        "compliance_verification"
+      ],
+      "acceptance_criteria": "All requirements from E.1.1 Addendum to FAR 52.212-1 addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_e_incorporated_provisions",
+      "section_name": "E.1.2 FAR 52.252-1 Solicitation Provisions Incorporated by Reference",
+      "pages": "97",
+      "description": "Additional FAR provisions incorporated",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No action required - provisions incorporated by reference",
+      "requirements": [
+        "Standard FAR provisions apply"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "Standard incorporation by reference.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093110",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_e_telecommunications_rep",
+      "section_name": "E.1.3 FAR 52.204-24 Telecommunications Representation",
+      "pages": "97-100",
+      "description": "Representation regarding prohibited telecommunications equipment",
+      "data_required": "yes",
+      "affected_teams": [
+        "compliance",
+        "contracts"
+      ],
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "MUST certify no prohibited equipment in Volume IV representations",
+      "requirements": [
+        "Represent whether offering prohibited equipment/services",
+        "Prohibited: Huawei, ZTE, Hytera, Hikvision, Dahua",
+        "Section 889 Part B prohibition (as of August 13, 2020)",
+        "Must identify any covered equipment in offer"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "CRITICAL: Must certify compliance with Section 889 prohibition. Coordinate with Movius to ensure their platform does not use any prohibited equipment.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093115",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "not_started",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from E.1.3 FAR 52.204-24 Telecommunications Representation addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_e_supply_chain_rep",
+      "section_name": "E.1.4 FAR 52.204-29 Supply Chain Security Representation",
+      "pages": "100-101",
+      "description": "FASCSA (Federal Acquisition Supply Chain Security Act) representations",
+      "data_required": "yes",
+      "affected_teams": [
+        "compliance",
+        "security",
+        "contracts"
+      ],
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must represent supply chain security compliance in Volume IV",
+      "requirements": [
+        "Represent whether subject to FASCSA orders",
+        "Disclose any excluded parties in supply chain",
+        "Identify covered articles if present",
+        "Supply chain risk management compliance"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "Coordinate with Movius on supply chain security. Must disclose if any components are subject to FASCSA exclusions.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093120",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "not_started",
+      "links_to": [
+        "rpr_105",
+        "vol4_certifications",
+        "FAR-52.212-3"
+      ],
+      "acceptance_criteria": "All requirements from E.1.4 FAR 52.204-29 Supply Chain Security Representation addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_e_responsibility_rep",
+      "section_name": "E.1.5 FAR 52.209-7 Responsibility Matters",
+      "pages": "101-103",
+      "description": "Information regarding responsibility matters and integrity",
+      "data_required": "yes",
+      "affected_teams": [
+        "compliance",
+        "contracts"
+      ],
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "high",
+      "proposal_impact": "Must provide responsibility representations in Volume IV",
+      "requirements": [
+        "Provide information on criminal proceedings",
+        "Disclose civil proceedings and administrative actions",
+        "Report any suspension/debarment actions",
+        "Report bankruptcy proceedings",
+        "Report tax delinquencies",
+        "Continuous disclosure obligation"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "If no adverse actions, state 'None' for each category. Must be truthful and complete to avoid False Statements Act violations.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093126",
+      "risk": "high",
+      "fit": "Customization",
+      "rfp_status": "not_started",
+      "links_to": [],
+      "acceptance_criteria": "All requirements from E.1.5 FAR 52.209-7 Responsibility Matters addressed in appropriate volume"
+    },
+    {
+      "section_id": "section_e_contract_type",
+      "section_name": "E.1.6 FAR 52.216-1 Type of Contract",
+      "pages": "103",
+      "description": "Identifies contract as Firm Fixed Price (FFP)",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts",
+        "pricing"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "medium",
+      "proposal_impact": "Confirms FFP contract type for pricing strategy",
+      "requirements": [
+        "Contract type: Firm Fixed Price (FFP)"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": true,
+      "notes": "Firm Fixed Price means no price adjustments except for options or modifications. Price must include all costs.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093131",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "already_addressed",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_e_protest_procedures",
+      "section_name": "E.1.7-E.1.8 Protest Procedures",
+      "pages": "103-104",
+      "description": "Procedures for filing protests (FAR and VA alternate procedures)",
+      "data_required": "no",
+      "affected_teams": [
+        "contracts"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "low",
+      "proposal_impact": "No action required - protest procedures if needed post-award",
+      "requirements": [
+        "Service of protest per FAR 52.233-2",
+        "VA alternate protest procedure per VAAR 852.233-71"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": true,
+      "notes": "For reference only if protest needed. No proposal action required.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093136",
+      "risk": "medium",
+      "fit": "Customization",
+      "rfp_status": "statutory_boilerplate",
+      "links_to": [],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_e_evaluation_criteria",
+      "section_name": "E.2 FAR 52.212-2 Evaluation Criteria",
+      "pages": "104-108",
+      "description": "DETAILED evaluation criteria - how VA will evaluate proposals",
+      "data_required": "no",
+      "affected_teams": [
+        "all_teams"
+      ],
+      "status": {
+        "state": "approved",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "GOVERNS how proposal will be evaluated - write to these criteria",
+      "requirements": [
+        "Factor 1: Technical Approach (Most Important)",
+        "  Sub-Factor 1: Written Technical Approach (Volume I Phase 1)",
+        "    - Understanding of the problem",
+        "    - Feasibility of approach",
+        "  Sub-Factor 2: Software Testing (Step 2 if invited)",
+        "    - Understanding demonstrated through testing",
+        "    - Feasibility of solution",
+        "Factor 2: Past Performance (More Important than Price)",
+        "  - Relevant contracts from past 3 years",
+        "  - Performance ratings and references",
+        "Factor 3: Price (Least Important)",
+        "  - Price reasonableness",
+        "  - Price realism",
+        "Evaluation ratings: Outstanding, Good, Acceptable, Marginal, Unacceptable",
+        "GATE: Must receive 'Acceptable' or higher on Step 1 to proceed to Step 2"
+      ],
+      "statutory_requirement": false,
+      "already_addressed": true,
+      "notes": "CRITICAL: Technical Approach is MOST important. Past Performance is MORE important than Price. Price is LEAST important. This means focus on demonstrating understanding and feasibility in Volume I. Must achieve 'Acceptable' minimum rating.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093141",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "already_addressed",
+      "links_to": [
+        "RFP-\u00a7M",
+        "step1_eval",
+        "step2_eval"
+      ],
+      "acceptance_criteria": "Acknowledged and tracked, no action required"
+    },
+    {
+      "section_id": "section_e_representations",
+      "section_name": "E.12 FAR 52.212-3 Representations and Certifications",
+      "pages": "108-124",
+      "description": "Comprehensive offeror representations and certifications",
+      "data_required": "yes",
+      "affected_teams": [
+        "compliance",
+        "contracts"
+      ],
+      "status": {
+        "state": "not_started",
+        "last_changed": "2025-10-30"
+      },
+      "priority": "critical",
+      "proposal_impact": "MUST complete all representations in Volume IV - many are mandatory",
+      "requirements": [
+        "Certification regarding debarment/suspension",
+        "SDVOSB status certification",
+        "Small business size standards certification",
+        "Buy American Act certification",
+        "Telecommunications equipment certification (Section 889)",
+        "Tax ID number (TIN) and CAGE code",
+        "Unique Entity Identifier (UEI)",
+        "Business type certifications",
+        "Country of origin representations",
+        "Parent company information",
+        "Executive compensation disclosure (if applicable)",
+        "Other required certifications per FAR 52.212-3"
+      ],
+      "statutory_requirement": true,
+      "already_addressed": false,
+      "notes": "CRITICAL: SDVOSB status must be verified in SBA VetCert database and SAM.gov. False certification can result in criminal penalties. All certifications must be accurate and complete.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093146",
+      "risk": "critical",
+      "fit": "Customization",
+      "rfp_status": "not_started",
+      "links_to": [
+        "rpr_105",
+        "vol4_certifications",
+        "FAR-52.212-3"
+      ],
+      "acceptance_criteria": "All requirements from E.12 FAR 52.212-3 Representations and Certifications addressed in appropriate volume"
+    }
+  ],
+  "summary_statistics": {
+    "total_sections": 39,
+    "by_status": {
+      "completed": 0,
+      "in_progress": 4,
+      "pending_movius": 9,
+      "not_started": 8,
+      "statutory_boilerplate": 9,
+      "already_addressed": 7,
+      "review_required": 11,
+      "critical_blocker": 1
+    },
+    "by_priority": {
+      "critical": 21,
+      "high": 11,
+      "medium": 4,
+      "low": 3
+    },
+    "by_team": {
+      "contracts": 21,
+      "technical_writing": 16,
+      "compliance": 14,
+      "security": 12,
+      "software_dev": 11,
+      "project_management": 9,
+      "product_delivery": 6,
+      "support_operations": 6,
+      "integrations": 5,
+      "pricing": 4,
+      "finance": 2
+    },
+    "statutory_requirements": 16,
+    "proposal_action_required": 28,
+    "no_action_required": 11
+  },
+  "critical_sections_requiring_immediate_attention": [
+    {
+      "section": "E.2 Evaluation Criteria",
+      "priority": "UNDERSTAND FIRST",
+      "action": "Read pages 104-108 carefully - this is HOW VA will judge your proposal",
+      "note": "Technical Approach is MOST important. Must score 'Acceptable' to advance to Step 2.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093153",
+      "risk": "critical"
+    },
+    {
+      "section": "Section D Attachments (D.1, D.2, D.3)",
+      "priority": "EXTRACT IMMEDIATELY",
+      "action": "Extract D.1 Functionality Checklist and D.2 Service Model Questions from Excel file",
+      "note": "Per Q&A #7: Must address ALL D.1 and D.2 items in Volume I narrative, NOT in Excel",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093156",
+      "risk": "critical"
+    },
+    {
+      "section": "VAAR 852.219-75 Certificate",
+      "priority": "CALCULATE NOW",
+      "action": "Calculate exact work split to ensure RPR Tech >50% of total contract value",
+      "note": "MANDATORY certificate required in Volume IV. Without it, offer will be REJECTED.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093158",
+      "risk": "critical"
+    },
+    {
+      "section": "B.4.5 FedRAMP Requirements",
+      "priority": "MOVIUS DELIVERABLE",
+      "action": "Obtain FedRAMP Moderate certificate OR In-Process letter from Movius TODAY",
+      "note": "Critical blocker per Q&A #18. Cannot proceed without this.",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093159",
+      "risk": "critical"
+    },
+    {
+      "section": "Amendment Acknowledgment",
+      "priority": "DO NOT FORGET",
+      "action": "Acknowledge ALL 3 amendments (0001, 0002, 0003) in Volume IV",
+      "note": "Failure to acknowledge = automatic REJECTION per SF 1449 instructions",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093161",
+      "risk": "critical"
+    },
+    {
+      "section": "E.1 Submission Instructions",
+      "priority": "READ CAREFULLY",
+      "action": "Review pages 87-97 for all formatting, file naming, and submission requirements",
+      "note": "Must follow ALL instructions exactly - improper format can result in rejection",
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:53:53.093162",
+      "risk": "critical"
+    }
+  ],
+  "volume_mapping": {
+    "volume_i_technical": {
+      "page_limit": 35,
+      "rfp_sections_to_address": [
+        "B.4.1 Background (demonstrate understanding)",
+        "B.4.3 Scope (show technical approach)",
+        "B.4.4.1 Messaging Capabilities (address in D.1)",
+        "B.4.4.2 Security Features (address in D.1 and Section 5)",
+        "B.4.4.3 Integration (address in D.1 and Section 1)",
+        "B.4.4.4 Admin Functions (address in D.1)",
+        "B.4.4.5 Mobile Support (address in D.1)",
+        "B.4.4.6 Reporting (address in D.1)",
+        "B.4.4.7 Accessibility (address in D.1)",
+        "B.4.4.8 Deployment (Section 6 Implementation)",
+        "B.4.12 Training (Section 6)",
+        "B.4.16 Support (Section 7 Operations)",
+        "B.4.19 Personnel (identify key personnel)",
+        "B.4.5 FedRAMP (Section 4)",
+        "B.4.6 FIPS-199 (Section 5)",
+        "Section D Attachment D.1 (Section 2 - ALL functionality items)",
+        "Section D Attachment D.2 (Section 3 - ALL service model questions)"
+      ],
+      "status": "blocked",
+      "notes": "35-page limit is FIRM per Q&A #7. Must address EVERY D.1 and D.2 requirement. Evaluation focuses on Understanding and Feasibility."
+    },
+    "volume_ii_past_performance": {
+      "page_limit": 10,
+      "rfp_sections_to_address": [
+        "E.1 Instructions paragraph III (Past Performance requirements)",
+        "E.2 Evaluation Factor 2 (Past Performance criteria)"
+      ],
+      "status": "not_started",
+      "notes": "Up to 5 relevant contracts from past 3 years. RPR Tech (prime) first, then Movius (sub). Relevant = similar messaging/SaaS implementations."
+    },
+    "volume_iii_price": {
+      "format": "Excel",
+      "rfp_sections_to_address": [
+        "B.1 Schedule of Supplies and Services (CLINs 0001-0010)",
+        "Option years structure",
+        "Work split calculation (RPR Tech >50%)"
+      ],
+      "status": "blocked",
+      "notes": "CRITICAL: Per Q&A #2, license costs COUNT toward 50% calculation. Must ensure RPR Tech performs >50% of TOTAL value."
+    },
+    "volume_iv_solicitation": {
+      "documents_required": [
+        "SF 1449 blocks 30a-30c completed and signed",
+        "Amendment acknowledgment (ALL 3 amendments)",
+        "VAAR 852.219-75 Certificate (RPR Tech >50% work)",
+        "OEM Authorization Letter from Movius",
+        "SDVOSB certification",
+        "FAR 52.212-3 Representations and Certifications (complete)",
+        "FAR 52.204-24 Telecommunications representation",
+        "FAR 52.204-29 Supply chain security representation",
+        "FAR 52.209-7 Responsibility matters"
+      ],
+      "rfp_sections_to_address": [
+        "Section A (SF 1449)",
+        "C.1.12 VAAR 852.219-75 (Certificate MANDATORY)",
+        "E.1.3 Telecommunications representation",
+        "E.1.4 Supply chain representation",
+        "E.1.5 Responsibility information",
+        "E.12 FAR 52.212-3 All representations"
+      ],
+      "status": "not_started",
+      "notes": "Without VAAR certificate and amendment acknowledgment, offer will be REJECTED. OEM letter from Movius is REQUIRED."
+    },
+    "step_2_testing": {
+      "condition": "Only if invited after Step 1 scores 'Acceptable' or higher",
+      "deliverables": [
+        "6 trial licenses (3 iOS recommended, 3 Android recommended per Q&A #5)",
+        "Written step-by-step test instructions (50 page max)",
+        "Instructions for ALL D.3 use cases",
+        "Credentials (can be sent separately per Q&A #6)"
+      ],
+      "rfp_sections_to_address": [
+        "Section D Attachment D.3 (Use Cases)",
+        "E.1.1 Addendum Phase 2 requirements",
+        "E.2 Evaluation Sub-Factor 2 (Software Testing)"
+      ],
+      "status": "not_started",
+      "notes": "Prepare test instructions NOW even though submission is conditional. Evaluators will use Apple and Android devices per Q&A #5."
+    }
+  },
+  "next_actions_prioritized": [
+    {
+      "priority": 1,
+      "action": "Obtain FedRAMP Moderate certificate OR In-Process letter from Movius",
+      "blocking": true,
+      "deadline": "IMMEDIATELY",
+      "consequence_if_not_done": "Cannot submit proposal - critical blocker per Q&A #18"
+    },
+    {
+      "priority": 2,
+      "action": "Extract Attachment D.1 Functionality Checklist from Excel file",
+      "blocking": true,
+      "deadline": "Today",
+      "consequence_if_not_done": "Cannot complete Volume I Section 2 - addresses every required capability"
+    },
+    {
+      "priority": 3,
+      "action": "Extract Attachment D.2 Service Model Questions from Excel file",
+      "blocking": true,
+      "deadline": "Today",
+      "consequence_if_not_done": "Cannot complete Volume I Section 3 - must answer ALL questions per Q&A #7"
+    },
+    {
+      "priority": 4,
+      "action": "Calculate work split and complete VAAR 852.219-75 Certificate",
+      "blocking": true,
+      "deadline": "Tomorrow",
+      "consequence_if_not_done": "Offer will be REJECTED without this certificate per VAAR clause"
+    },
+    {
+      "priority": 5,
+      "action": "Obtain OEM Authorization Letter from Movius (signed, dated, on letterhead)",
+      "blocking": true,
+      "deadline": "Tomorrow",
+      "consequence_if_not_done": "Required for Volume IV - needed to resell Movius solution"
+    },
+    {
+      "priority": 6,
+      "action": "Obtain Movius pricing for all CLINs (0001, 0003, 0005, 0006 + options)",
+      "blocking": true,
+      "deadline": "Tomorrow",
+      "consequence_if_not_done": "Cannot complete Volume III Price Schedule"
+    },
+    {
+      "priority": 7,
+      "action": "Verify SDVOSB status in SBA VetCert database and SAM.gov",
+      "blocking": true,
+      "deadline": "Tomorrow",
+      "consequence_if_not_done": "Cannot certify SDVOSB status - may be ineligible for set-aside"
+    },
+    {
+      "priority": 8,
+      "action": "Acknowledge ALL 3 amendments in writing (0001, 0002, 0003)",
+      "blocking": true,
+      "deadline": "In Volume IV",
+      "consequence_if_not_done": "Automatic REJECTION per SF 1449 Block 11 instructions"
+    },
+    {
+      "priority": 9,
+      "action": "Obtain Movius platform feature specifications for D.1 responses",
+      "blocking": true,
+      "deadline": "Tomorrow",
+      "consequence_if_not_done": "Cannot demonstrate HOW solution meets each D.1 requirement in Volume I"
+    },
+    {
+      "priority": 10,
+      "action": "Complete FAR 52.212-3 Representations and Certifications",
+      "blocking": true,
+      "deadline": "For Volume IV",
+      "consequence_if_not_done": "Incomplete proposal - may be deemed non-responsive"
+    }
+  ],
+  "movius_dependencies": [
+    "FedRAMP Moderate certificate or In-Process letter",
+    "OEM Authorization Letter (signed, dated, on Movius letterhead)",
+    "Complete pricing breakdown (licenses, cloud, FedRAMP services, support) for all CLINs",
+    "Platform feature specifications for D.1 Functionality Checklist responses",
+    "Security architecture details for Volume I Sections 4 & 5",
+    "Integration capabilities (EntraID, InTune, APIs)",
+    "Zero BYOD data storage confirmation (Q&A #40)",
+    "NOT SMS-based confirmation (Q&A #44)",
+    "Section 508 accessibility compliance (VPAT if available)",
+    "System Security Plan (SSP) repository access process",
+    "3PAO Security Assessment Report",
+    "Continuous monitoring processes",
+    "Technical support model and escalation procedures"
+  ],
+  "compliance_checkpoints": [
+    {
+      "requirement": "SDVOSB Set-Aside Eligibility",
+      "verification": "Verify RPR Tech listed in SBA VetCert database and SAM.gov as certified SDVOSB",
+      "consequence_if_missing": "Ineligible for contract - automatic rejection",
+      "status": "not_started"
+    },
+    {
+      "requirement": "50% Self-Performance Rule",
+      "verification": "Calculate and certify RPR Tech will perform >50% of total contract value (including licenses)",
+      "consequence_if_missing": "Offer REJECTED per VAAR 852.219-75",
+      "status": "not_started"
+    },
+    {
+      "requirement": "FedRAMP Moderate Authorization",
+      "verification": "Obtain certificate or In-Process letter from Movius",
+      "consequence_if_missing": "Critical blocker - cannot submit proposal per Q&A #18",
+      "status": "blocked"
+    },
+    {
+      "requirement": "Section 889 Compliance",
+      "verification": "Certify no prohibited telecommunications equipment (Huawei, ZTE, etc.)",
+      "consequence_if_missing": "Automatic rejection",
+      "status": "not_started"
+    },
+    {
+      "requirement": "Amendment Acknowledgment",
+      "verification": "Acknowledge amendments 0001, 0002, 0003 in Volume IV",
+      "consequence_if_missing": "Automatic REJECTION per SF 1449",
+      "status": "not_started"
+    },
+    {
+      "requirement": "OEM Authorization",
+      "verification": "Obtain signed OEM letter from Movius",
+      "consequence_if_missing": "Required to resell Movius solution - likely rejection",
+      "status": "blocked"
+    }
+  ],
+  "document_references": {
+    "primary_rfp": "/mnt/user-data/uploads/S06_-_36C10A25R0002_0003_Amended_RFP_FINAL.pdf",
+    "attachments": "S06__36C10A25R0002_0003_Attachments_D1D_3.xlsx (needs extraction)",
+    "qa_responses": "36C10A25R0002PublishedQAResponses.xlsx",
+    "price_template": "S06__36C10A25R0002_0003_Attachments_D1D_3.xlsx (needs extraction)",
+    "project_files": {
+      "requirements_tracking": "/mnt/project/RFP_Requirements_Tracking_Master.docx",
+      "requirements_json": "/mnt/project/requirements_skeleton.json",
+      "volume_i_template": "/mnt/project/RPRTech_Volume_I_Technical_Approach_TEMPLATE.md",
+      "resource_estimate": "/mnt/project/VA_Resource_Estimate_RPR_Tech_COMPLETE.md",
+      "security_guide": "/mnt/project/VA_Security_Compliance_Reference_Guide.md",
+      "qa_json": "/mnt/project/qa_responses_skeleton.json"
+    }
+  },
+  "version": "1.0",
+  "created_date": "2025-10-30",
+  "last_updated": "2025-10-30T11:53:53.092853",
+  "notes": "This JSON skeleton provides comprehensive tracking of all 124 pages of the RFP document. Each section identifies data requirements, team assignments, completion status, and whether requirements are already met or statutory/boilerplate. Use this alongside the requirements_skeleton.json to ensure complete proposal coverage. CRITICAL: Focus on sections marked 'pending_movius' and 'critical_blocker' first, as these are blocking proposal completion.",
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "Traceability links_to added to all sections",
+    "Standard schema fields applied",
+    "Acceptance criteria defined",
+    "Cross-references to requirements/QA added"
+  ]
+}

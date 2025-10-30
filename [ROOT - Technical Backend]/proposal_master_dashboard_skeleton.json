@@ -1,0 +1,1221 @@
+{
+  "skeleton_metadata": {
+    "skeleton_id": "proposal_master_dashboard",
+    "skeleton_name": "Proposal Master Dashboard & Controller",
+    "version": "1.0",
+    "created_date": "2025-10-30",
+    "last_updated": "2025-10-30T16:00:00Z",
+    "purpose": "Read-only aggregation and dashboard for entire proposal system - provides unified views, reports, and metrics across all 9 domain skeletons",
+    "domain": "Cross-skeleton aggregation, executive dashboard, reporting, analytics",
+    "is_read_only": true,
+    "modifies_other_skeletons": false,
+    "reads_from_skeletons": [
+      "requirements_skeleton_v2",
+      "qa_responses_skeleton_v2",
+      "movius_dependencies_skeleton_v2",
+      "compliance_verification_skeleton_v2",
+      "volumes_completion_skeleton_v2",
+      "deliverables_schedule_skeleton_v2",
+      "rfp_document_skeleton_v2",
+      "document_output_compliance_skeleton",
+      "development_timeline_user_stories_skeleton"
+    ]
+  },
+  "proposal_metadata": {
+    "rfp_number": "36C10A25R0002",
+    "solicitation_title": "VA Modernized Messaging Software as a Service (SaaS)",
+    "contracting_office": "Department of Veterans Affairs Technology Acquisition Center",
+    "contracting_officer": "Mary B. Accomando",
+    "submission_deadline": "2025-10-31T13:00:00-07:00",
+    "submission_method": "Electronic via email or portal",
+    "proposal_team": {
+      "prime_contractor": "RPR Technologies, Inc. (SDVOSB)",
+      "subcontractor": "Movius (Infobip)",
+      "set_aside_type": "Total SDVOSB Set-Aside"
+    },
+    "amendments": [
+      "0001",
+      "0002",
+      "0003"
+    ],
+    "current_date": "2025-10-30",
+    "hours_until_deadline": 22
+  },
+  "skeleton_registry": {
+    "total_skeletons": 9,
+    "last_registry_update": "2025-10-30T16:00:00Z",
+    "skeletons": [
+      {
+        "id": 1,
+        "skeleton_id": "requirements_skeleton_v2",
+        "name": "Requirements Tracking",
+        "version": "2.0",
+        "domain": "111 Requirements",
+        "file_path": "/mnt/project/requirements_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 2,
+        "skeleton_id": "qa_responses_skeleton_v2",
+        "name": "Q&A Responses Tracking",
+        "version": "2.0",
+        "domain": "53 Q&A Items",
+        "file_path": "/mnt/project/qa_responses_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 3,
+        "skeleton_id": "movius_dependencies_skeleton_v2",
+        "name": "Movius Dependencies Tracking",
+        "version": "2.0",
+        "domain": "7 Partner Deliverables",
+        "file_path": "/mnt/project/movius_dependencies_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 4,
+        "skeleton_id": "compliance_verification_skeleton_v2",
+        "name": "Compliance Verification",
+        "version": "2.0",
+        "domain": "Final QC Checks",
+        "file_path": "/mnt/project/compliance_verification_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 5,
+        "skeleton_id": "volumes_completion_skeleton_v2",
+        "name": "Volume Completion Tracking",
+        "version": "2.0",
+        "domain": "4 Volumes Progress",
+        "file_path": "/mnt/project/volumes_completion_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 6,
+        "skeleton_id": "deliverables_schedule_skeleton_v2",
+        "name": "Deliverables Schedule",
+        "version": "2.0",
+        "domain": "Post-Award Timeline",
+        "file_path": "/mnt/project/deliverables_schedule_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 7,
+        "skeleton_id": "rfp_document_skeleton_v2",
+        "name": "RFP Document Structure",
+        "version": "2.0",
+        "domain": "RFP Reference",
+        "file_path": "/mnt/project/rfp_document_skeleton_v2.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 8,
+        "skeleton_id": "document_output_compliance_skeleton",
+        "name": "Document Output & Format Compliance",
+        "version": "1.0",
+        "domain": "Format Tracking & File Conversion",
+        "file_path": "/home/claude/document_output_compliance_skeleton.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      },
+      {
+        "id": 9,
+        "skeleton_id": "development_timeline_user_stories_skeleton",
+        "name": "Development Timeline & User Stories",
+        "version": "1.0",
+        "domain": "Day 0-90 Timeline, User Stories, Meetings",
+        "file_path": "/home/claude/development_timeline_user_stories_skeleton.json",
+        "status": "active",
+        "last_modified": "2025-10-30",
+        "read_frequency": "on_demand"
+      }
+    ]
+  },
+  "executive_dashboard": {
+    "dashboard_id": "exec_dash_001",
+    "last_updated": "2025-10-30T16:00:00Z",
+    "next_update": "2025-10-30T20:00:00Z",
+    "update_frequency": "every_4_hours",
+    "proposal_health": {
+      "overall_status": "yellow",
+      "overall_status_definition": {
+        "green": "On track, no critical issues, >70% complete",
+        "yellow": "At risk, some blockers, 30-70% complete",
+        "red": "Critical blockers, <30% complete or <24 hours to deadline"
+      },
+      "completion_percentage": 45,
+      "confidence_level": "medium",
+      "confidence_factors": [
+        "Volume I draft in progress (40% complete)",
+        "Movius pricing pending (critical blocker)",
+        "VAAR certificate pending completion",
+        "22 hours until submission deadline"
+      ],
+      "recommendation": "Focus on critical path items: Movius pricing, VAAR certificate, Volume I completion",
+      "hours_until_deadline": 22,
+      "critical_blockers_count": 3,
+      "high_risk_items_count": 8,
+      "ready_to_submit": false
+    },
+    "completion_by_domain": {
+      "requirements": {
+        "source_skeleton": "requirements_skeleton_v2",
+        "total_items": 111,
+        "complete": 42,
+        "in_progress": 38,
+        "not_started": 31,
+        "percentage": 38,
+        "critical_incomplete": [
+          "rpr_005 - FedRAMP Moderate (pending Movius)",
+          "rpr_102 - VAAR 852.219-75 Certificate (pending pricing)",
+          "rpr_003 - D.1 Functionality (in progress)"
+        ]
+      },
+      "qa_responses": {
+        "source_skeleton": "qa_responses_skeleton_v2",
+        "total_items": 53,
+        "reviewed": 53,
+        "implemented_in_proposal": 40,
+        "pending_implementation": 13,
+        "percentage": 75,
+        "critical_actions_remaining": [
+          "QA-02 work split implementation in Vol IV",
+          "QA-07 D.1 formatting in Vol I (35-page limit)"
+        ]
+      },
+      "movius_dependencies": {
+        "source_skeleton": "movius_dependencies_skeleton_v2",
+        "total_dependencies": 7,
+        "received": 2,
+        "pending": 5,
+        "overdue": 3,
+        "percentage": 29,
+        "critical_pending": [
+          "movius_003 - FedRAMP ATO Letter (TIER 1 - BLOCKING)",
+          "movius_001 - Pricing for CLINs (TIER 1 - BLOCKING)",
+          "movius_007 - OEM Authorization Letter (TIER 1 - BLOCKING)"
+        ],
+        "meeting_scheduled": "2025-10-30 (today)"
+      },
+      "volumes": {
+        "source_skeleton": "volumes_completion_skeleton_v2",
+        "total_volumes": 4,
+        "complete": 0,
+        "in_progress": 2,
+        "not_started": 2,
+        "percentage": 25,
+        "volume_status": {
+          "vol1": {
+            "name": "Technical Approach",
+            "status": "in_progress",
+            "completion": 40,
+            "page_count_current": 28,
+            "page_limit": 35,
+            "sections_complete": 3,
+            "sections_total": 7
+          },
+          "vol2": {
+            "name": "Past Performance",
+            "status": "not_started",
+            "completion": 0,
+            "page_limit": 10
+          },
+          "vol3": {
+            "name": "Price Schedule",
+            "status": "in_progress",
+            "completion": 30,
+            "blocked_by": "Movius pricing"
+          },
+          "vol4": {
+            "name": "Solicitation/Contract/Order",
+            "status": "not_started",
+            "completion": 10,
+            "blocked_by": "VAAR certificate, OEM letter, pricing"
+          }
+        }
+      },
+      "compliance_checks": {
+        "source_skeleton": "compliance_verification_skeleton_v2",
+        "total_checks": 25,
+        "passed": 5,
+        "pending": 18,
+        "failed": 0,
+        "not_applicable": 2,
+        "percentage": 20,
+        "critical_pending": [
+          "sub_001 - Submission by deadline",
+          "vol4_002 - Amendment acknowledgment (ALL 3)",
+          "vol4_003 - VAAR certificate included",
+          "work_split_001 - Work split >50% verified"
+        ]
+      },
+      "document_formats": {
+        "source_skeleton": "document_output_compliance_skeleton",
+        "total_volumes": 4,
+        "format_verified": 0,
+        "conversion_complete": 0,
+        "ready_for_submission": 0,
+        "percentage": 15,
+        "workflow_status": {
+          "vol1": "Step 1 of 8 (drafting in MD)",
+          "vol2": "Not started",
+          "vol3": "Step 1 of 6 (pricing entry)",
+          "vol4": "Not started"
+        }
+      },
+      "development_timeline": {
+        "source_skeleton": "development_timeline_user_stories_skeleton",
+        "phases_planned": 3,
+        "user_stories_total": 10,
+        "user_stories_complete": 0,
+        "sprints_planned": 6,
+        "meetings_defined": 5,
+        "team_roster_complete": true,
+        "percentage": 100,
+        "note": "Post-award planning complete and ready"
+      }
+    },
+    "risk_summary": {
+      "total_risks": 51,
+      "critical": 3,
+      "high": 8,
+      "medium": 25,
+      "low": 15,
+      "critical_risks": [
+        {
+          "risk_id": "RISK-001",
+          "description": "Movius FedRAMP documentation not received",
+          "source_skeleton": "movius_dependencies_skeleton_v2",
+          "source_id": "movius_003",
+          "impact": "Cannot complete Volume I Section 4, evaluation may be 'Unacceptable'",
+          "affected_items": [
+            "vol1_section4",
+            "rpr_005",
+            "rpr_030"
+          ],
+          "mitigation": "Meeting scheduled today Oct 30 to obtain documentation",
+          "owner": "Contracts Team",
+          "due_date": "2025-10-30 EOD",
+          "status": "active"
+        },
+        {
+          "risk_id": "RISK-002",
+          "description": "Movius pricing not received for Volume III",
+          "source_skeleton": "movius_dependencies_skeleton_v2",
+          "source_id": "movius_001",
+          "impact": "Cannot complete Volume III, cannot calculate work split, cannot complete VAAR certificate",
+          "affected_items": [
+            "vol3_pricing",
+            "vol4_vaar_cert",
+            "work_split_calculation",
+            "rpr_102"
+          ],
+          "mitigation": "Meeting scheduled today Oct 30 to obtain pricing",
+          "owner": "Pricing Team",
+          "due_date": "2025-10-30 EOD",
+          "status": "active",
+          "cascade_impact": "Blocks submission if not resolved"
+        },
+        {
+          "risk_id": "RISK-003",
+          "description": "22 hours until submission deadline",
+          "source_skeleton": "proposal_master_dashboard",
+          "impact": "Limited time to resolve blockers and complete volumes",
+          "mitigation": "All-hands effort on critical path items",
+          "owner": "Program Manager",
+          "status": "active",
+          "time_critical": true
+        }
+      ],
+      "high_risks": [
+        {
+          "risk_id": "RISK-004",
+          "description": "Volume I at 28 pages (limit 35) with 4 sections remaining",
+          "source_skeleton": "document_output_compliance_skeleton",
+          "impact": "May exceed page limit, causing pages not to be evaluated",
+          "mitigation": "Concise writing, remove unnecessary content",
+          "owner": "Technical Writing Team"
+        },
+        {
+          "risk_id": "RISK-005",
+          "description": "OEM Authorization Letter not received from Movius",
+          "source_skeleton": "movius_dependencies_skeleton_v2",
+          "source_id": "movius_007",
+          "impact": "Volume IV incomplete, may appear non-responsive",
+          "mitigation": "Obtain signed letter today",
+          "owner": "Contracts Team"
+        }
+      ],
+      "risk_distribution_chart": {
+        "by_severity": {
+          "critical": 3,
+          "high": 8,
+          "medium": 25,
+          "low": 15
+        },
+        "by_source": {
+          "movius_dependencies": 5,
+          "time_constraints": 8,
+          "format_compliance": 10,
+          "content_completion": 18,
+          "approvals_signatures": 10
+        }
+      }
+    },
+    "blocker_analysis": {
+      "total_blockers": 5,
+      "blockers_by_type": {
+        "movius_dependencies": 3,
+        "internal_approvals": 1,
+        "time_constraints": 1
+      },
+      "active_blockers": [
+        {
+          "blocker_id": "BLOCK-001",
+          "severity": "critical",
+          "description": "Movius pricing for CLINs 0001-0011",
+          "blocks": [
+            "vol3_pricing",
+            "work_split_calculation",
+            "vaar_certificate",
+            "vol4_completion"
+          ],
+          "owner": "Pricing Team",
+          "status": "blocked",
+          "eta": "2025-10-30 EOD",
+          "escalation_path": "Movius meeting today â†’ If not received â†’ Executive escalation",
+          "contingency_plan": "Submit with placeholder pricing if absolutely necessary (NOT RECOMMENDED)"
+        },
+        {
+          "blocker_id": "BLOCK-002",
+          "severity": "critical",
+          "description": "Movius FedRAMP ATO Letter",
+          "blocks": [
+            "vol1_section4",
+            "rpr_005_compliance",
+            "technical_evaluation"
+          ],
+          "owner": "Contracts Team",
+          "status": "blocked",
+          "eta": "2025-10-30 EOD",
+          "escalation_path": "Movius meeting today â†’ If not received â†’ Cannot submit compliant proposal",
+          "contingency_plan": "None - this is mandatory for evaluation"
+        },
+        {
+          "blocker_id": "BLOCK-003",
+          "severity": "critical",
+          "description": "OEM Authorization Letter from Movius",
+          "blocks": [
+            "vol4_completion",
+            "partnership_validation"
+          ],
+          "owner": "Contracts Team",
+          "status": "blocked",
+          "eta": "2025-10-30 EOD",
+          "escalation_path": "Obtain via meeting today",
+          "contingency_plan": "Draft letter for Movius signature"
+        },
+        {
+          "blocker_id": "BLOCK-004",
+          "severity": "high",
+          "description": "Volume I Section 2 (D.1 Functionality) completion",
+          "blocks": [
+            "vol1_completion",
+            "technical_evaluation"
+          ],
+          "owner": "Technical Writing Team",
+          "status": "in_progress",
+          "eta": "2025-10-31 08:00",
+          "progress": "60% complete"
+        },
+        {
+          "blocker_id": "BLOCK-005",
+          "severity": "high",
+          "description": "Management approval and signatures",
+          "blocks": [
+            "vol4_sf1449",
+            "vol4_vaar_cert",
+            "final_submission"
+          ],
+          "owner": "Management",
+          "status": "in_progress",
+          "eta": "2025-10-31 12:00",
+          "note": "Requires final review of all volumes"
+        }
+      ],
+      "blocker_resolution_timeline": {
+        "by_2025-10-30_EOD": [
+          "BLOCK-001 (Movius pricing)",
+          "BLOCK-002 (FedRAMP letter)",
+          "BLOCK-003 (OEM letter)"
+        ],
+        "by_2025-10-31_08:00": [
+          "BLOCK-004 (Volume I completion)"
+        ],
+        "by_2025-10-31_12:00": [
+          "BLOCK-005 (Signatures)"
+        ]
+      }
+    },
+    "timeline_to_deadline": {
+      "current_time": "2025-10-30T16:00:00Z",
+      "submission_deadline": "2025-10-31T13:00:00-07:00",
+      "hours_remaining": 22,
+      "business_hours_remaining": 16,
+      "critical_path_milestones": [
+        {
+          "milestone": "Movius meeting complete with all deliverables",
+          "target_time": "2025-10-30 18:00",
+          "hours_from_now": 2,
+          "status": "not_started"
+        },
+        {
+          "milestone": "Volume I draft complete",
+          "target_time": "2025-10-31 08:00",
+          "hours_from_now": 16,
+          "status": "in_progress"
+        },
+        {
+          "milestone": "All volumes converted to final format",
+          "target_time": "2025-10-31 10:00",
+          "hours_from_now": 18,
+          "status": "not_started"
+        },
+        {
+          "milestone": "Final QC and signatures complete",
+          "target_time": "2025-10-31 12:00",
+          "hours_from_now": 20,
+          "status": "not_started"
+        },
+        {
+          "milestone": "Submission package sent to VA",
+          "target_time": "2025-10-31 13:30",
+          "hours_from_now": 21.5,
+          "status": "not_started",
+          "buffer": "30 minutes before deadline"
+        }
+      ]
+    }
+  },
+  "cross_skeleton_views": {
+    "view_001_requirements_to_volumes": {
+      "view_id": "view_001",
+      "view_name": "Requirements Coverage by Volume",
+      "description": "For each requirement, show which volume addresses it and current status",
+      "query": "JOIN requirements_skeleton_v2 WITH volumes_completion_skeleton_v2 ON links_to",
+      "data_sources": [
+        "requirements_skeleton_v2",
+        "volumes_completion_skeleton_v2"
+      ],
+      "output_format": "table",
+      "sample_output": {
+        "rpr_005": {
+          "requirement": "FedRAMP Moderate Authorization",
+          "priority": "critical",
+          "addressed_in_volumes": [
+            "Volume I, Section 4"
+          ],
+          "section_status": "pending_movius",
+          "completion": 20,
+          "risk": "critical",
+          "blocker": "Movius FedRAMP documentation"
+        },
+        "rpr_102": {
+          "requirement": "VAAR 852.219-75 Certificate with >50% work statement",
+          "priority": "critical",
+          "addressed_in_volumes": [
+            "Volume IV"
+          ],
+          "section_status": "not_started",
+          "completion": 0,
+          "risk": "critical",
+          "blocker": "Pricing not received",
+          "consequence_if_missing": "OFFER REJECTED"
+        }
+      },
+      "use_cases": [
+        "Verify all requirements are addressed in volumes",
+        "Identify requirements with no volume coverage",
+        "Track requirement completion through volume progress"
+      ]
+    },
+    "view_002_work_split_verification": {
+      "view_id": "view_002",
+      "view_name": "Work Split Cross-Volume Consistency",
+      "description": "Verify work split >50% is consistent across all locations",
+      "query": "AGGREGATE work_split FROM requirements_skeleton_v2, compliance_verification_skeleton_v2, volumes_completion_skeleton_v2",
+      "data_sources": [
+        "requirements_skeleton_v2:work_split_calculation",
+        "compliance_verification_skeleton_v2:work_split_001",
+        "volumes_completion_skeleton_v2:work_split_cross_reference"
+      ],
+      "output_format": "comparison_table",
+      "sample_output": {
+        "requirements_skeleton": {
+          "rpr_tech_percentage": "TBD (pending pricing)",
+          "movius_percentage": "TBD",
+          "status": "not_calculated"
+        },
+        "volume_iii_pricing": {
+          "rpr_tech_percentage": "TBD (pending pricing)",
+          "calculation_method": "sum(rpr_clins) / sum(all_clins)",
+          "status": "blocked"
+        },
+        "volume_iv_vaar_cert": {
+          "stated_percentage": "TBD (not completed)",
+          "status": "not_started"
+        },
+        "consistency_check": {
+          "all_match": false,
+          "variance": "N/A",
+          "compliant": "pending",
+          "blocker": "Movius pricing required"
+        }
+      },
+      "validation_rules": [
+        "RPR Tech percentage must be >50%",
+        "All three locations must state same percentage (Â±0.1%)",
+        "Calculation method must be documented",
+        "VAAR certificate Block 2 must match Volume III"
+      ]
+    },
+    "view_003_format_compliance_status": {
+      "view_id": "view_003",
+      "view_name": "Document Format Compliance by Volume",
+      "description": "Show format verification status for each volume",
+      "query": "JOIN document_output_compliance_skeleton WITH compliance_verification_skeleton_v2 ON volume_id",
+      "data_sources": [
+        "document_output_compliance_skeleton",
+        "compliance_verification_skeleton_v2"
+      ],
+      "output_format": "status_matrix",
+      "sample_output": {
+        "vol1": {
+          "workflow_step": "1 of 8 (drafting)",
+          "page_count": 28,
+          "page_limit": 35,
+          "pages_remaining": 7,
+          "format_checks_passed": 0,
+          "format_checks_total": 8,
+          "ready_for_conversion": false
+        },
+        "vol2": {
+          "workflow_step": "0 of 7 (not started)",
+          "page_limit": 10,
+          "format_checks_passed": 0,
+          "format_checks_total": 6,
+          "ready_for_conversion": false
+        },
+        "vol3": {
+          "workflow_step": "1 of 6 (pricing entry)",
+          "format": "xlsx",
+          "clins_priced": 0,
+          "clins_total": 26,
+          "ready_for_submission": false
+        },
+        "vol4": {
+          "workflow_step": "0 of 8 (not started)",
+          "required_docs": 6,
+          "docs_complete": 0,
+          "signatures_obtained": 0,
+          "ready_for_compilation": false
+        }
+      }
+    },
+    "view_004_timeline_to_deliverables": {
+      "view_id": "view_004",
+      "view_name": "Day 0-90 Deliverables Timeline",
+      "description": "Show all post-award deliverables by day/week for first 90 days",
+      "query": "JOIN development_timeline_user_stories_skeleton WITH deliverables_schedule_skeleton_v2 ON day",
+      "data_sources": [
+        "development_timeline_user_stories_skeleton",
+        "deliverables_schedule_skeleton_v2"
+      ],
+      "output_format": "gantt_chart_data",
+      "use_cases": [
+        "Post-award project planning",
+        "Resource allocation planning",
+        "VA coordination scheduling"
+      ]
+    },
+    "view_005_movius_dependency_impact": {
+      "view_id": "view_005",
+      "view_name": "Movius Dependency Impact Analysis",
+      "description": "Show what proposal items are blocked by each Movius dependency",
+      "query": "JOIN movius_dependencies_skeleton_v2 WITH all_skeletons ON dependency_id",
+      "data_sources": [
+        "movius_dependencies_skeleton_v2",
+        "requirements_skeleton_v2",
+        "volumes_completion_skeleton_v2",
+        "development_timeline_user_stories_skeleton"
+      ],
+      "output_format": "impact_tree",
+      "sample_output": {
+        "movius_001_pricing": {
+          "tier": 1,
+          "status": "not_received",
+          "blocks_items": [
+            "vol3_pricing (critical)",
+            "work_split_calculation (critical)",
+            "vaar_certificate (critical)",
+            "vol4_completion (critical)"
+          ],
+          "blocks_user_stories": [],
+          "cascade_impact": "Cannot submit proposal"
+        },
+        "movius_003_fedramp": {
+          "tier": 1,
+          "status": "not_received",
+          "blocks_items": [
+            "vol1_section4 (critical)",
+            "rpr_005 (critical)",
+            "rpr_030 (high)"
+          ],
+          "blocks_user_stories": [
+            "US-001 (Entra ID integration)",
+            "US-006 (SSP development)"
+          ],
+          "cascade_impact": "Technical evaluation may be 'Unacceptable'"
+        }
+      }
+    },
+    "view_006_critical_path_analysis": {
+      "view_id": "view_006",
+      "view_name": "Critical Path to Submission",
+      "description": "Identify the critical path of tasks that must be completed for submission",
+      "query": "ANALYZE dependencies ACROSS all_skeletons WHERE deadline = submission_deadline",
+      "data_sources": [
+        "all_skeletons"
+      ],
+      "output_format": "dependency_graph",
+      "critical_path_sequence": [
+        "1. Movius meeting â†’ Obtain pricing + FedRAMP docs + OEM letter",
+        "2. Enter pricing â†’ Calculate work split â†’ Complete VAAR cert",
+        "3. Complete Volume I Section 2 (D.1) and Section 4 (FedRAMP)",
+        "4. Complete remaining Volume I sections",
+        "5. Convert Volume I: MD â†’ DOCX â†’ PDF",
+        "6. Complete Volume II (Past Performance)",
+        "7. Complete Volume IV compilation",
+        "8. Obtain all signatures",
+        "9. Final QC all volumes",
+        "10. Submit to VA"
+      ],
+      "estimated_critical_path_hours": 20,
+      "hours_available": 22,
+      "buffer": 2
+    }
+  },
+  "reports": {
+    "report_001_daily_status": {
+      "report_id": "RPT-001",
+      "report_name": "Daily Status Report",
+      "frequency": "daily",
+      "target_audience": [
+        "Management",
+        "All Teams"
+      ],
+      "format": "markdown",
+      "sections": [
+        {
+          "section": "Executive Summary",
+          "content": [
+            "Overall completion percentage",
+            "Hours to deadline",
+            "Overall status (red/yellow/green)",
+            "Critical blockers (top 3)"
+          ]
+        },
+        {
+          "section": "Yesterday's Accomplishments",
+          "content": [
+            "Items completed",
+            "Milestones achieved",
+            "Blockers resolved"
+          ]
+        },
+        {
+          "section": "Today's Focus",
+          "content": [
+            "Planned activities",
+            "Target completion items",
+            "Meetings scheduled"
+          ]
+        },
+        {
+          "section": "Issues and Risks",
+          "content": [
+            "New issues identified",
+            "Risk status changes",
+            "Escalations needed"
+          ]
+        },
+        {
+          "section": "Action Items",
+          "content": [
+            "Open action items with owners and due dates"
+          ]
+        }
+      ],
+      "generated_at": "2025-10-30T08:00:00Z",
+      "next_generation": "2025-10-31T08:00:00Z"
+    },
+    "report_002_pre_submission_checklist": {
+      "report_id": "RPT-002",
+      "report_name": "Pre-Submission Go/No-Go Checklist",
+      "frequency": "on_demand",
+      "target_audience": [
+        "Management",
+        "QC Team"
+      ],
+      "format": "checklist",
+      "purpose": "Final verification before submission - determine if proposal is ready",
+      "sections": [
+        {
+          "section": "Volume Completion",
+          "checks": [
+            "Volume I complete and within 35 pages",
+            "Volume II complete and within 10 pages",
+            "Volume III all CLINs priced",
+            "Volume IV all documents included"
+          ]
+        },
+        {
+          "section": "Format Compliance",
+          "checks": [
+            "All volumes in correct file format (PDF/XLSX)",
+            "Filenames exactly match requirements",
+            "Fonts and margins per RFP requirements",
+            "Headers/footers on all pages"
+          ]
+        },
+        {
+          "section": "Critical Requirements",
+          "checks": [
+            "ALL 3 amendments acknowledged",
+            "VAAR 852.219-75 certificate included with >50% statement",
+            "SDVOSB certification current",
+            "OEM authorization letter included",
+            "FedRAMP documentation addressed"
+          ]
+        },
+        {
+          "section": "Signatures and Approvals",
+          "checks": [
+            "SF 1449 signed by authorized representative",
+            "VAAR certificate signed",
+            "OEM letter signed by Movius",
+            "Management approval obtained"
+          ]
+        },
+        {
+          "section": "Work Split Verification",
+          "checks": [
+            "Work split calculated >50% RPR Tech",
+            "Volume III pricing matches VAAR certificate",
+            "Calculation methodology documented"
+          ]
+        },
+        {
+          "section": "Final QC",
+          "checks": [
+            "All compliance checks passed",
+            "No pages exceed margin/font violations",
+            "All proprietary information marked",
+            "All links and references accurate"
+          ]
+        }
+      ],
+      "go_no_go_decision": {
+        "status": "not_ready",
+        "must_have_all_green": true,
+        "current_red_items": [
+          "Movius pricing not received",
+          "VAAR certificate not completed",
+          "Volume I not complete",
+          "Signatures not obtained"
+        ],
+        "recommendation": "NO-GO until blockers resolved"
+      }
+    },
+    "report_003_team_workload": {
+      "report_id": "RPT-003",
+      "report_name": "Team Workload Distribution",
+      "frequency": "on_demand",
+      "target_audience": [
+        "Management",
+        "Team Leads"
+      ],
+      "format": "table",
+      "purpose": "Show who is working on what and identify resource constraints",
+      "by_team": {
+        "technical_writing": {
+          "current_assignments": [
+            "Volume I Section 2 (D.1 Functionality)",
+            "Volume I Section 3 (D.2 Service Model)",
+            "Volume I Section 6 (Implementation)"
+          ],
+          "workload_hours_remaining": 40,
+          "capacity_hours_remaining": 22,
+          "status": "over_capacity",
+          "recommendation": "Prioritize critical sections, defer nice-to-have content"
+        },
+        "contracts": {
+          "current_assignments": [
+            "Movius coordination",
+            "OEM letter",
+            "VAAR certificate",
+            "Volume II Past Performance",
+            "Volume IV compilation"
+          ],
+          "workload_hours_remaining": 30,
+          "capacity_hours_remaining": 22,
+          "status": "over_capacity",
+          "recommendation": "Focus on Volume IV critical documents"
+        },
+        "pricing": {
+          "current_assignments": [
+            "Volume III CLIN pricing entry",
+            "Work split calculation",
+            "Price narrative"
+          ],
+          "workload_hours_remaining": 16,
+          "capacity_hours_remaining": 22,
+          "status": "blocked",
+          "blocker": "Waiting for Movius pricing"
+        }
+      }
+    },
+    "report_004_post_award_readiness": {
+      "report_id": "RPT-004",
+      "report_name": "Post-Award Execution Readiness Assessment",
+      "frequency": "pre_submission",
+      "target_audience": [
+        "Management",
+        "All Teams"
+      ],
+      "format": "scorecard",
+      "purpose": "Assess readiness to execute if contract is awarded",
+      "readiness_areas": {
+        "day_0_90_planning": {
+          "score": 100,
+          "status": "green",
+          "evidence": [
+            "Comprehensive timeline created",
+            "User stories defined with acceptance criteria",
+            "Sprint planning complete",
+            "Team roster defined",
+            "VA meeting schedule planned"
+          ]
+        },
+        "staffing_plan": {
+          "score": 90,
+          "status": "green",
+          "evidence": [
+            "26 FTE roles defined",
+            "Recruiting pipeline identified",
+            "Training plan complete",
+            "3-phase ramp-up defined"
+          ]
+        },
+        "movius_coordination": {
+          "score": 60,
+          "status": "yellow",
+          "gaps": [
+            "SLA with Movius not finalized",
+            "Escalation process needs documentation",
+            "Regular sync meeting cadence TBD"
+          ]
+        },
+        "deliverables_tracking": {
+          "score": 100,
+          "status": "green",
+          "evidence": [
+            "All Day 0-90 deliverables identified",
+            "Templates prepared",
+            "Responsibility matrix complete"
+          ]
+        }
+      },
+      "overall_readiness": {
+        "score": 87.5,
+        "status": "green",
+        "recommendation": "Ready to execute upon award with minor gaps to address in first 30 days"
+      }
+    }
+  },
+  "queries": {
+    "query_001_show_all_critical": {
+      "query_id": "Q-001",
+      "query_name": "Show All Critical Risk Items",
+      "description": "List all items marked risk=critical across all skeletons",
+      "skeletons_searched": [
+        "requirements_skeleton_v2",
+        "movius_dependencies_skeleton_v2",
+        "compliance_verification_skeleton_v2",
+        "volumes_completion_skeleton_v2"
+      ],
+      "filter": "risk == 'critical'",
+      "output_format": "list",
+      "use_case": "Identify highest priority items for immediate attention"
+    },
+    "query_002_show_all_pending_movius": {
+      "query_id": "Q-002",
+      "query_name": "Show All Items Pending Movius",
+      "description": "List all items with status containing 'pending_movius'",
+      "skeletons_searched": [
+        "requirements_skeleton_v2",
+        "volumes_completion_skeleton_v2",
+        "movius_dependencies_skeleton_v2"
+      ],
+      "filter": "status CONTAINS 'pending_movius'",
+      "output_format": "list",
+      "use_case": "Prepare for Movius meeting - know what to request"
+    },
+    "query_003_work_split_locations": {
+      "query_id": "Q-003",
+      "query_name": "Work Split Verification Across Volumes",
+      "description": "Find all locations where work split is mentioned and verify consistency",
+      "skeletons_searched": [
+        "requirements_skeleton_v2",
+        "compliance_verification_skeleton_v2",
+        "volumes_completion_skeleton_v2"
+      ],
+      "filter": "ID CONTAINS 'work_split'",
+      "output_format": "comparison_table",
+      "use_case": "Ensure >50% RPR Tech stated consistently"
+    },
+    "query_004_show_all_not_started": {
+      "query_id": "Q-004",
+      "query_name": "Show All Not Started Items",
+      "description": "List all items with status='not_started' across all skeletons",
+      "skeletons_searched": [
+        "all_skeletons"
+      ],
+      "filter": "status.state == 'not_started' OR status == 'not_started'",
+      "output_format": "list_by_skeleton",
+      "use_case": "Identify scope of remaining work"
+    },
+    "query_005_auto_evaluable_checks": {
+      "query_id": "Q-005",
+      "query_name": "Show All Auto-Evaluable Compliance Checks",
+      "description": "List checks that can be verified programmatically",
+      "skeletons_searched": [
+        "compliance_verification_skeleton_v2",
+        "document_output_compliance_skeleton"
+      ],
+      "filter": "auto_evaluable == true",
+      "output_format": "list_with_scripts",
+      "use_case": "Run automated pre-submission verification"
+    }
+  },
+  "alerts": {
+    "alert_config": {
+      "enabled": true,
+      "notification_method": "console_output",
+      "check_frequency": "every_hour"
+    },
+    "active_alerts": [
+      {
+        "alert_id": "ALERT-001",
+        "alert_type": "deadline_critical",
+        "severity": "critical",
+        "triggered_at": "2025-10-30T16:00:00Z",
+        "message": "Less than 24 hours until submission deadline",
+        "threshold": "24 hours",
+        "action_required": "All-hands focus on critical path items",
+        "acknowledged": false
+      },
+      {
+        "alert_id": "ALERT-002",
+        "alert_type": "blocker_active",
+        "severity": "critical",
+        "triggered_at": "2025-10-30T16:00:00Z",
+        "message": "3 critical blockers active (Movius pricing, FedRAMP docs, OEM letter)",
+        "action_required": "Movius meeting must resolve all three",
+        "acknowledged": false
+      },
+      {
+        "alert_id": "ALERT-003",
+        "alert_type": "page_limit_warning",
+        "severity": "high",
+        "triggered_at": "2025-10-30T14:00:00Z",
+        "message": "Volume I at 28 pages with 4 sections remaining (limit 35)",
+        "threshold": "80% of page limit",
+        "action_required": "Monitor page count closely, write concisely",
+        "acknowledged": false
+      }
+    ],
+    "alert_rules": [
+      {
+        "rule_id": "RULE-001",
+        "rule_name": "Deadline Approaching",
+        "trigger": "hours_until_deadline < 24",
+        "severity": "critical",
+        "action": "Generate alert"
+      },
+      {
+        "rule_id": "RULE-002",
+        "rule_name": "Critical Blocker Added",
+        "trigger": "new_blocker WITH severity='critical'",
+        "severity": "critical",
+        "action": "Generate alert and notify management"
+      },
+      {
+        "rule_id": "RULE-003",
+        "rule_name": "Compliance Check Failed",
+        "trigger": "compliance_check.pass_fail == false",
+        "severity": "high",
+        "action": "Block submission until resolved"
+      },
+      {
+        "rule_id": "RULE-004",
+        "rule_name": "Page Limit Warning",
+        "trigger": "page_count > (page_limit * 0.8) AND sections_remaining > 2",
+        "severity": "high",
+        "action": "Alert technical writing team"
+      }
+    ]
+  },
+  "action_items": {
+    "total_open": 15,
+    "overdue": 3,
+    "due_today": 8,
+    "due_tomorrow": 4,
+    "items": [
+      {
+        "action_id": "ACTION-001",
+        "description": "Obtain Movius pricing for all CLINs",
+        "owner": "Pricing Team",
+        "due_date": "2025-10-30 EOD",
+        "priority": "critical",
+        "status": "in_progress",
+        "depends_on": "Movius meeting"
+      },
+      {
+        "action_id": "ACTION-002",
+        "description": "Obtain Movius FedRAMP ATO Letter",
+        "owner": "Contracts Team",
+        "due_date": "2025-10-30 EOD",
+        "priority": "critical",
+        "status": "in_progress",
+        "depends_on": "Movius meeting"
+      },
+      {
+        "action_id": "ACTION-003",
+        "description": "Complete Volume I Section 2 (D.1 Functionality)",
+        "owner": "Technical Writing Team",
+        "due_date": "2025-10-31 08:00",
+        "priority": "critical",
+        "status": "in_progress",
+        "progress": 60
+      }
+    ]
+  },
+  "metrics_tracking": {
+    "key_metrics": {
+      "overall_completion": {
+        "current_value": 45,
+        "target_value": 100,
+        "unit": "percentage",
+        "trend": "increasing",
+        "last_updated": "2025-10-30T16:00:00Z"
+      },
+      "hours_to_deadline": {
+        "current_value": 22,
+        "target_value": 0,
+        "unit": "hours",
+        "trend": "decreasing",
+        "alert_threshold": 24
+      },
+      "critical_blockers": {
+        "current_value": 3,
+        "target_value": 0,
+        "unit": "count",
+        "trend": "stable",
+        "alert_threshold": 1
+      },
+      "volumes_complete": {
+        "current_value": 0,
+        "target_value": 4,
+        "unit": "count",
+        "trend": "stable"
+      },
+      "format_checks_passed": {
+        "current_value": 5,
+        "target_value": 50,
+        "unit": "count",
+        "trend": "stable"
+      }
+    },
+    "historical_tracking": {
+      "enabled": true,
+      "retention_days": 90,
+      "snapshots": [
+        {
+          "timestamp": "2025-10-29T16:00:00Z",
+          "overall_completion": 35,
+          "critical_blockers": 3,
+          "hours_to_deadline": 46
+        },
+        {
+          "timestamp": "2025-10-30T08:00:00Z",
+          "overall_completion": 40,
+          "critical_blockers": 3,
+          "hours_to_deadline": 30
+        },
+        {
+          "timestamp": "2025-10-30T16:00:00Z",
+          "overall_completion": 45,
+          "critical_blockers": 3,
+          "hours_to_deadline": 22
+        }
+      ]
+    }
+  },
+  "usage_instructions": {
+    "purpose": "This skeleton is READ-ONLY. It aggregates data from all 9 domain skeletons to provide unified views, reports, and metrics.",
+    "update_frequency": "This skeleton is regenerated on-demand by querying all domain skeletons. Do not manually edit this file.",
+    "how_to_use": [
+      "1. Run queries to get cross-skeleton views",
+      "2. Generate reports for specific audiences",
+      "3. Monitor executive dashboard for overall status",
+      "4. Review alerts for critical issues",
+      "5. Track action items by owner and due date"
+    ],
+    "data_freshness": "All data reflects the state of domain skeletons at last_updated timestamp. Re-run aggregation to refresh."
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2025-10-30",
+      "changes": "Initial proposal master dashboard skeleton created with read-only aggregation across all 9 domain skeletons"
+    }
+  ],
+  "filename_validation": {
+    "checked_at": "2025-10-30T07:44:21",
+    "drafts_dir": "C:\\Users\\fhcUSA\\Dropbox\\RPR-Tech\\5 - RFP\\VA Messaging\\[ROOT - Technical Backend]\\working_drafts",
+    "files_seen": [],
+    "issues": [],
+    "ok": true
+  },
+  "page_counts": {
+    "page_counts": [],
+    "checked_at": "2025-10-30T07:44:35",
+    "ok": true
+  }
+}

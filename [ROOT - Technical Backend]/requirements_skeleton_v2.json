@@ -1,0 +1,766 @@
+{
+  "rfp_number": "36C10A25R0002",
+  "rfp_title": "VA Modernized Messaging SaaS",
+  "submission_deadline": "October 31, 2025 at 2:00 PM CST",
+  "submission_method": "TBD - Check latest amendment",
+  "volumes": {
+    "volume_i_technical": {
+      "file_name": "RPRTech_Phase I-Technical.pdf",
+      "page_limit": 35,
+      "status": "IN_PROGRESS",
+      "sections": {
+        "executive_summary": {
+          "pages_allocated": 2,
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "key_points": [
+            "RPR Tech as SDVOSB Prime >55% work",
+            "Movius MultiLine platform with 24/7/365 RPR support",
+            "90-day deployment readiness",
+            "Zero data on device architecture",
+            "FedRAMP Moderate authorized"
+          ],
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "QA-02",
+            "RFP-\u00a7D.1"
+          ],
+          "owner": "Executive Team",
+          "risk": "high",
+          "fit": "Customization",
+          "updated_at": "2025-10-30T11:50:16.774007",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_1_technical_solution": {
+          "pages_allocated": 5,
+          "status": {
+            "state": "blocked",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_001-p93: Identify COTS platform",
+            "rpr_002-p93: Enterprise-wide implementation approach"
+          ],
+          "links_to": [
+            "rpr_001",
+            "rpr_002",
+            "RFP-\u00a7B.4.1",
+            "QA-15"
+          ],
+          "owner": "Software Development Team",
+          "risk": "high",
+          "fit": "OOTB",
+          "updated_at": "2025-10-30T11:50:16.774011",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_2_d1_functionality": {
+          "pages_allocated": "8-10",
+          "status": {
+            "state": "blocked",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_003-p93: Address ALL D.1 items with HOW",
+            "rpr_021 through rpr_027: Specific D.1 categories"
+          ],
+          "critical_note": "DO NOT restate requirements. Explain HOW with specific features.",
+          "links_to": [
+            "rpr_003",
+            "rpr_021",
+            "D1-001",
+            "D1-020",
+            "QA-07",
+            "QA-10"
+          ],
+          "owner": "Software Development Team",
+          "risk": "critical",
+          "fit": "OOTB",
+          "updated_at": "2025-10-30T11:50:16.774013",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_3_d2_service_model": {
+          "pages_allocated": "3-5",
+          "status": {
+            "state": "not_started",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_004-p93: Answer ALL D.2 questions",
+            "rpr_028-p93: Thoughtful complete answers"
+          ],
+          "links_to": [
+            "rpr_004",
+            "rpr_028",
+            "D2-001",
+            "D2-010",
+            "QA-08"
+          ],
+          "owner": "Product Delivery Team",
+          "risk": "high",
+          "fit": "Config",
+          "updated_at": "2025-10-30T11:50:16.774015",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_4_fedramp": {
+          "pages_allocated": "3-4",
+          "status": {
+            "state": "blocked",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_005-p94: FedRAMP Moderate or In-Process",
+            "rpr_030 through rpr_034: FedRAMP artifacts"
+          ],
+          "links_to": [
+            "rpr_005",
+            "rpr_030",
+            "rpr_115",
+            "rpr_116",
+            "QA-18",
+            "RFP-\u00a7B.4.5.10"
+          ],
+          "owner": "Security Team",
+          "risk": "critical",
+          "fit": "OOTB",
+          "updated_at": "2025-10-30T11:50:16.774017",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_5_fips199": {
+          "pages_allocated": "3-4",
+          "status": {
+            "state": "in_progress",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_006-p94: FIPS-199 Moderate",
+            "rpr_035 through rpr_038: CIA triad"
+          ],
+          "links_to": [
+            "rpr_006",
+            "rpr_035",
+            "rpr_112",
+            "RFP-\u00a7B.4.3",
+            "QA-19"
+          ],
+          "owner": "Security Team",
+          "risk": "high",
+          "fit": "OOTB",
+          "updated_at": "2025-10-30T11:50:16.774018",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_6_implementation": {
+          "pages_allocated": "4-5",
+          "status": {
+            "state": "in_progress",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_039-p93: 90-day plan",
+            "rpr_040 through rpr_044: Project mgmt and rollout"
+          ],
+          "links_to": [
+            "rpr_039",
+            "rpr_040",
+            "RFP-\u00a7B.4.7",
+            "QA-15"
+          ],
+          "owner": "Project Management Team",
+          "risk": "high",
+          "fit": "Config",
+          "updated_at": "2025-10-30T11:50:16.774020",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        },
+        "section_7_operations": {
+          "pages_allocated": "4-5",
+          "status": {
+            "state": "in_progress",
+            "last_changed": "2025-10-30"
+          },
+          "requirements": [
+            "rpr_049 through rpr_052: 24/7 support model"
+          ],
+          "links_to": [
+            "rpr_049",
+            "rpr_050",
+            "rpr_113",
+            "RFP-\u00a7B.4.8",
+            "QA-23"
+          ],
+          "owner": "Support Operations Team",
+          "risk": "high",
+          "fit": "Config",
+          "updated_at": "2025-10-30T11:50:16.774022",
+          "acceptance_criteria": "Section complete, reviewed, addresses all linked requirements"
+        }
+      },
+      "owner": "Technical Writing Team",
+      "updated_at": "2025-10-30T11:50:16.773999",
+      "risk": "high",
+      "acceptance_criteria": "All sections complete, reviewed, within 35-page limit"
+    },
+    "volume_ii_past_performance": {
+      "file_name": "RPRTech_Past Perf.pdf",
+      "page_limit": 10,
+      "status": "NOT_STARTED",
+      "max_contracts": 5,
+      "requirements": [
+        "rpr_053 through rpr_076: Past performance details",
+        "Section 1: Contract identification",
+        "Section 2: Performance information",
+        "Section 3: Subcontractor work split",
+        "Section 4: New entity officer/employee experience"
+      ],
+      "contracts_to_include": [
+        {
+          "number": 1,
+          "source": "RPR Tech leadership experience",
+          "status": "NOT_STARTED"
+        },
+        {
+          "number": 2,
+          "source": "RPR Tech related work",
+          "status": "NOT_STARTED"
+        },
+        {
+          "number": 3,
+          "source": "Movius/Infobip subcontractor",
+          "status": "blocked"
+        }
+      ]
+    },
+    "volume_iii_price": {
+      "file_name": "RPRTech_Schedule B.xlsx",
+      "page_limit": "None",
+      "status": "blocked",
+      "critical_requirements": [
+        "All prices exactly 2 decimal places",
+        "Unit Price \u00d7 Quantity = Extended Price (no rounding)",
+        "RPR Tech CLINs 0001-0011 must be >50% of total",
+        "Movius CLINs to be determined",
+        "Base year + 4 option years + 6-month extension"
+      ],
+      "clins_base_year": {
+        "0001": {
+          "desc": "Messaging Software Application (20K licenses)",
+          "qty": 20000,
+          "unit": "EA",
+          "status": "blocked"
+        },
+        "0002": {
+          "desc": "Project Management",
+          "qty": 1,
+          "unit": "LT",
+          "status": "NOT_STARTED"
+        },
+        "0003": {
+          "desc": "SaaS FedRAMP Requirements",
+          "qty": 1,
+          "unit": "EA",
+          "status": "blocked"
+        },
+        "0004": {
+          "desc": "Authority to Operate (ATO)",
+          "qty": 1,
+          "unit": "LT",
+          "status": "NOT_STARTED"
+        },
+        "0005": {
+          "desc": "Messaging Software Application Solution",
+          "qty": 1,
+          "unit": "LT",
+          "status": "blocked"
+        },
+        "0006": {
+          "desc": "Cloud Infrastructure (20K licenses)",
+          "qty": 1,
+          "unit": "LT",
+          "status": "blocked"
+        },
+        "0007": {
+          "desc": "OMS&E Technical Support (103 sites)",
+          "qty": 1,
+          "unit": "LT",
+          "status": "NOT_STARTED"
+        },
+        "0008_optional": {
+          "desc": "Additional licenses (up to 100K)",
+          "qty": 100000,
+          "unit": "EA",
+          "status": "blocked"
+        },
+        "0009_optional": {
+          "desc": "Cloud Infrastructure expansion",
+          "qty": 1,
+          "unit": "LT",
+          "status": "blocked"
+        },
+        "0010_optional": {
+          "desc": "OMS&E expansion to 175 sites",
+          "qty": 1,
+          "unit": "LT",
+          "status": "NOT_STARTED"
+        }
+      },
+      "deliverables_embedded": [
+        "0002AA: Project Kickoff Meeting Agenda",
+        "0002AB: Project Kickoff Meeting Minutes",
+        "0002AC: Go-Live Artifacts (10 EA)",
+        "0002AD: Contractor Management Plan",
+        "0002AE: Implementation Plan with Transition Plan",
+        "0002F: Weekly Progress Report (52 EA)",
+        "0002AG: Quarterly Usage Report (4 EA)",
+        "0003AA: FedRAMP Requirements Artifacts",
+        "0004AA: ATO Package Document",
+        "0005AA: Web-based Portal Interface",
+        "0005AB: License issuance and renewal",
+        "0005AC: Management level of effort breakdown",
+        "0005AD: Training Plan",
+        "0005AE: Capabilities and Effectiveness Report",
+        "0007AA: Application Monitoring Plan"
+      ]
+    },
+    "volume_iv_solicitation": {
+      "file_name": "RPRTech_Ofr.pdf",
+      "page_limit": "None",
+      "status": "IN_PROGRESS",
+      "critical_documents": [
+        {
+          "name": "SF 1449",
+          "requirement": "Blocks 30a-30c completed and signed",
+          "status": "NOT_STARTED",
+          "tag_id": "rpr_100-p96"
+        },
+        {
+          "name": "Amendment Acknowledgement",
+          "requirement": "ALL amendments acknowledged in writing",
+          "status": "NOT_STARTED",
+          "tag_id": "rpr_101-p96",
+          "amendments": [
+            "0001",
+            "0002",
+            "0003"
+          ],
+          "critical": "FAILURE TO ACKNOWLEDGE = REJECTION"
+        },
+        {
+          "name": "VAAR 852.219-75 Certificate",
+          "requirement": "RPR Tech will perform >50% of contract value",
+          "status": "IN_PROGRESS",
+          "tag_id": "rpr_102-p96",
+          "critical": "MANDATORY - Government will NOT consider offers without this",
+          "penalty": "Misrepresentation can result in criminal prosecution"
+        },
+        {
+          "name": "OEM Authorization Letter",
+          "requirement": "From Movius on their letterhead, signed, dated Oct 2025",
+          "status": "blocked",
+          "tag_id": "rpr_103-p96",
+          "critical": "Must explicitly authorize RPR Tech to resell/provide platform"
+        },
+        {
+          "name": "SDVOSB Certification",
+          "requirement": "Verified in SBA database at time of submission AND award",
+          "status": "IN_PROGRESS",
+          "tag_id": "rpr_104-p96"
+        },
+        {
+          "name": "FAR 52.212-3",
+          "requirement": "Offeror Representations and Certifications",
+          "status": "NOT_STARTED",
+          "tag_id": "rpr_105-p96"
+        }
+      ]
+    },
+    "step_2_software_testing": {
+      "file_name": "Software Testing RPRTech.pdf",
+      "page_limit": 50,
+      "status": "NOT_STARTED",
+      "trigger": "Invitation from Government after Step 1 evaluation",
+      "minimum_rating_required": "Acceptable",
+      "requirements": [
+        {
+          "item": "Written step-by-step instructions for ALL D.3 use cases",
+          "tag_id": "rpr_110-p94",
+          "page_allocation": 50,
+          "status": "NOT_STARTED"
+        },
+        {
+          "item": "6 temporary trial licenses in testing environment",
+          "tag_id": "rpr_111-p94",
+          "notification": "Minimum 2 business days advance notice",
+          "delivery_method": "Email to CO and Contract Specialist",
+          "status": "NOT_STARTED"
+        }
+      ],
+      "d3_use_cases": "See Attachment D.3 in RFP - must obtain from S06__36C10A25R0002_0003_Attachments_D1D_3.xlsx",
+      "critical_note": "Step 2 evaluation combined with Step 1. Must receive 'Acceptable' in BOTH to be considered for award."
+    }
+  },
+  "deliverables_schedule": {
+    "day_0_award": {
+      "milestone": "Contract Award"
+    },
+    "day_1_3": {
+      "0002AA": "Project Kickoff Meeting Agenda",
+      "0002AB": "Project Kickoff Meeting Minutes",
+      "personnel": "Contractor Staff Roster to COR"
+    },
+    "day_5": {
+      "personnel_forms": "OF 306, VA 0710, SIC Fingerprint forms for all staff",
+      "fedramp": "FedRAMP SSP Repository Access"
+    },
+    "day_7": {
+      "0002AD": "Contractor Management Plan (CMP)"
+    },
+    "day_10": {
+      "vaid": "VA Implementation Diagram",
+      "3pao": "Most Recent 3PAO SAP",
+      "0002AE": "Implementation Plan with Transition Plan"
+    },
+    "day_30": {
+      "vuln_scans": "Monthly Vulnerability Scans",
+      "irp": "Incident Response Plan Testing Results",
+      "cm_meeting": "Continuous Monitoring Meeting Schedule"
+    },
+    "within_90_days": {
+      "milestone": "Production Readiness",
+      "deliverables": [
+        "Platform configured and tested",
+        "Training materials developed",
+        "Support team operational",
+        "Initial pilot sites ready"
+      ]
+    },
+    "within_12_months": {
+      "0004AA": "Complete ATO Package Document",
+      "milestone": "VA ATO Granted - LIVE DATA AUTHORIZED"
+    },
+    "recurring_weekly": {
+      "0002F": "Weekly Progress Reports (52 per year)"
+    },
+    "recurring_quarterly": {
+      "0002AG": "Quarterly Usage Reports (4 per year)"
+    },
+    "recurring_monthly": {
+      "continuous_monitoring": "POA&M updates, vulnerability scans, artifact updates"
+    }
+  },
+  "critical_compliance_checks": [
+    {
+      "check": "VAAR 852.219-75 Certificate included",
+      "status": "IN_PROGRESS",
+      "consequence_if_missing": "OFFER REJECTED WITHOUT CONSIDERATION",
+      "check_id": "crit_comp_001",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774029",
+      "risk": "critical",
+      "auto_evaluable": false,
+      "links_to": [
+        "rpr_102",
+        "vol4_vaar_cert",
+        "RFP-\u00a7L.5",
+        "QA-02"
+      ],
+      "rfp_clause_ref": "VAAR 852.219-75",
+      "rfp_page": 96
+    },
+    {
+      "check": "Certificate states RPR Tech >50% performance",
+      "status": "IN_PROGRESS",
+      "consequence_if_false": "Non-responsive",
+      "check_id": "crit_comp_002",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774034",
+      "risk": "critical",
+      "auto_evaluable": false,
+      "links_to": []
+    },
+    {
+      "check": "All amendments acknowledged",
+      "status": "NOT_STARTED",
+      "consequence_if_missing": "OFFER REJECTED",
+      "check_id": "crit_comp_003",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774038",
+      "risk": "critical",
+      "auto_evaluable": true,
+      "links_to": [
+        "rpr_101",
+        "vol4_amendments",
+        "RFP-\u00a7SF1449"
+      ],
+      "auto_check_method": "document_contains_text"
+    },
+    {
+      "check": "OEM Letter from Movius",
+      "status": "blocked",
+      "consequence_if_missing": "Non-responsive",
+      "check_id": "crit_comp_004",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774041",
+      "risk": "critical",
+      "auto_evaluable": false,
+      "links_to": []
+    },
+    {
+      "check": "FedRAMP Moderate or In-Process",
+      "status": "blocked",
+      "consequence_if_missing": "Technical approach rated Unacceptable",
+      "check_id": "crit_comp_005",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774046",
+      "risk": "critical",
+      "auto_evaluable": false,
+      "links_to": [
+        "rpr_005",
+        "rpr_030",
+        "vol1_section4",
+        "QA-18"
+      ],
+      "rfp_clause_ref": "RFP \u00a7B.4.5.10",
+      "rfp_page": 16
+    },
+    {
+      "check": "SDVOSB status verified in SBA database",
+      "status": "IN_PROGRESS",
+      "consequence_if_not_verified": "Ineligible for award",
+      "check_id": "crit_comp_006",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774049",
+      "risk": "critical",
+      "auto_evaluable": true,
+      "links_to": [
+        "rpr_104",
+        "vol4_sdvosb_cert"
+      ],
+      "auto_check_method": "sba_database_verification"
+    },
+    {
+      "check": "Step 1 receives Acceptable rating",
+      "status": "NOT_STARTED",
+      "consequence_if_fails": "Cannot proceed to Step 2, eliminated from consideration",
+      "check_id": "crit_comp_007",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774052",
+      "risk": "critical",
+      "auto_evaluable": false,
+      "links_to": []
+    },
+    {
+      "check": "NO pricing in Volume I",
+      "status": "NOT_STARTED",
+      "consequence_if_violated": "Could be grounds for rejection",
+      "check_id": "crit_comp_008",
+      "owner": "Compliance Team",
+      "updated_at": "2025-10-30T11:50:16.774054",
+      "risk": "critical",
+      "auto_evaluable": false,
+      "links_to": []
+    }
+  ],
+  "work_split_requirement": {
+    "prime_contractor": "RPR Technologies, Inc.",
+    "minimum_prime_performance": "50.01%",
+    "target_prime_performance": "55%",
+    "subcontractor": "Movius (or TBD)",
+    "maximum_sub_performance": "49.99%",
+    "target_sub_performance": "45%",
+    "calculation_method": "Based on total contract value including all option years",
+    "evidence_required": "VAAR 852.219-75 Certificate with specific percentages"
+  },
+  "reference_documents": {
+    "refdoc_001-p16": "PWS Section B.4.5.10 - FedRAMP Requirements",
+    "refdoc_002-p15": "PWS Section B.4.3 - FIPS-199 Security Characterization",
+    "refdoc_003": "VA Handbook 6500.6 - Contract Security",
+    "refdoc_004": "NIST 800-53 - Security and Privacy Controls",
+    "refdoc_005": "FAR 52.212-1 - Instructions to Offerors",
+    "refdoc_006": "13 CFR \u00a7 125.2(g) - SDVOSB Limitations on Subcontracting",
+    "refdoc_007": "VAAR 852.219-75 - VA Notice of Limitations on Subcontracting"
+  },
+  "next_actions": [
+    {
+      "priority": "CRITICAL",
+      "action": "Obtain pricing from Movius for Volumes III and await partnership confirmation",
+      "assigned_to": "Management",
+      "deadline": "Tomorrow per user statement"
+    },
+    {
+      "priority": "CRITICAL",
+      "action": "Obtain FedRAMP certificate or In-Process letter from Movius",
+      "assigned_to": "Security Team",
+      "deadline": "ASAP"
+    },
+    {
+      "priority": "CRITICAL",
+      "action": "Obtain OEM Authorization Letter from Movius on their letterhead",
+      "assigned_to": "Contracts Team",
+      "deadline": "ASAP"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Complete VAAR 852.219-75 Certificate with >50% calculation",
+      "assigned_to": "Contracts Team",
+      "deadline": "After Movius pricing received"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Obtain Attachment D.1 and D.2 from RFP",
+      "assigned_to": "Technical Team",
+      "deadline": "This week"
+    },
+    {
+      "priority": "HIGH",
+      "action": "Fill out Volume I sections with Movius-specific features",
+      "assigned_to": "Technical Team",
+      "deadline": "After Movius confirmation"
+    },
+    {
+      "priority": "MEDIUM",
+      "action": "Identify 3-5 past performance contracts",
+      "assigned_to": "Contracts Team",
+      "deadline": "Next week"
+    }
+  ],
+  "document_metadata": {
+    "created_date": "2025-10-29",
+    "version": "2.0",
+    "total_requirements_tracked": 111,
+    "requirements_complete": 0,
+    "requirements_in_progress": 15,
+    "requirements_pending_movius": 25,
+    "requirements_not_started": 71,
+    "overall_completion": "10%",
+    "last_updated": "2025-10-30T11:50:16.774056",
+    "enhancements": "v2.0 - Traceability, evidence, standardized schema"
+  },
+  "schema_version": "2.0",
+  "last_updated": "2025-10-30T11:50:16.773972",
+  "enhancement_date": "2025-10-30",
+  "enhancements_applied": [
+    "Traceability links_to added",
+    "Evidence structure formalized",
+    "Security clause coverage expanded",
+    "Standard schema fields applied",
+    "Work split guardrails added"
+  ],
+  "work_split_calculation": {
+    "computed_source": "auto_calculated_from_volume_iii_pricing",
+    "rpr_tech_percentage": 55.0,
+    "movius_percentage": 45.0,
+    "total_contract_value": "TBD - pending Movius pricing",
+    "stated_in_volume_iv": "VAAR Certificate Block 2",
+    "priced_in_volume_iii": "CLINs 0001-0011 total vs Movius CLINs",
+    "links_to": [
+      "vol3_pricing",
+      "vol4_vaar_cert",
+      "rpr_102"
+    ],
+    "verification_status": "pending",
+    "last_calculated": null,
+    "owner": "Pricing Team",
+    "risk": "critical",
+    "acceptance_criteria": "RPR Tech >50.01% of total contract value including all option years"
+  },
+  "va_security_requirements": {
+    "owner": "Security Team",
+    "updated_at": "2025-10-30T11:50:16.773989",
+    "risk": "high",
+    "requirements": [
+      {
+        "req_id": "rpr_112",
+        "requirement": "FIPS 140-2 Bluetooth Encryption",
+        "description": "All Bluetooth communications must use FIPS 140-2 validated encryption",
+        "source": "VA Handbook 6500.6",
+        "links_to": [
+          "RFP-\u00a7B.4.5.10",
+          "vol1_section5"
+        ],
+        "owner": "Security Team",
+        "status": {
+          "state": "blocked",
+          "last_changed": "2025-10-30"
+        },
+        "risk": "high",
+        "fit": "OOTB",
+        "acceptance_criteria": "Movius platform documentation confirms FIPS 140-2 Bluetooth encryption"
+      },
+      {
+        "req_id": "rpr_113",
+        "requirement": "VA Training Management System (TMS) Integration",
+        "description": "Training completion must be trackable in VA TMS",
+        "source": "VA Security Requirements",
+        "links_to": [
+          "RFP-\u00a7B.4.8",
+          "vol1_section7"
+        ],
+        "owner": "Product Delivery Team",
+        "status": {
+          "state": "in_progress",
+          "last_changed": "2025-10-30"
+        },
+        "risk": "medium",
+        "fit": "Config",
+        "acceptance_criteria": "Training plan documents TMS integration approach"
+      },
+      {
+        "req_id": "rpr_114",
+        "requirement": "EA/TRM Conformance",
+        "description": "Solution must conform to VA Enterprise Architecture and Technical Reference Model",
+        "source": "VA EA/TRM Requirements",
+        "links_to": [
+          "RFP-\u00a7B.4.1",
+          "vol1_section1"
+        ],
+        "owner": "Technical Architecture Team",
+        "status": {
+          "state": "in_progress",
+          "last_changed": "2025-10-30"
+        },
+        "risk": "medium",
+        "fit": "OOTB",
+        "acceptance_criteria": "Architecture diagram shows VA EA/TRM alignment"
+      },
+      {
+        "req_id": "rpr_115",
+        "requirement": "VA Handbook 6500.6 Compliance",
+        "description": "Full compliance with VA Handbook 6500.6 Contract Security requirements",
+        "source": "VA Handbook 6500.6",
+        "links_to": [
+          "RFP-\u00a7B.4.5",
+          "vol1_section5",
+          "QA-18"
+        ],
+        "owner": "Security Team",
+        "status": {
+          "state": "blocked",
+          "last_changed": "2025-10-30"
+        },
+        "risk": "critical",
+        "fit": "OOTB",
+        "acceptance_criteria": "FedRAMP authorization includes VA Handbook 6500.6 overlay"
+      },
+      {
+        "req_id": "rpr_116",
+        "requirement": "NIST 800-53 Security Controls",
+        "description": "Implementation of NIST 800-53 Rev 5 Moderate baseline controls",
+        "source": "NIST 800-53 Rev 5",
+        "links_to": [
+          "RFP-\u00a7B.4.5.10",
+          "vol1_section5",
+          "rpr_030"
+        ],
+        "owner": "Security Team",
+        "status": {
+          "state": "blocked",
+          "last_changed": "2025-10-30"
+        },
+        "risk": "critical",
+        "fit": "OOTB",
+        "acceptance_criteria": "FedRAMP SSP documents all NIST 800-53 controls"
+      }
+    ]
+  }
+}
