@@ -48,9 +48,28 @@ def generate_dashboard():
         rows.append((n, mt, sz, ok, sm))
     html = [
         '<!doctype html>','<meta charset="utf-8">','<title>Proposal Dashboard</title>',
-        '<style>body{font-family:Segoe UI,Roboto,Arial;margin:24px} table{border-collapse:collapse;width:100%} th,td{border:1px solid #ccc;padding:8px 10px;text-align:left} th{background:#f5f7fb} .ok{color:#2e7d32}.bad{color:#c62828}.muted{color:#667} .nav a{margin-right:12px}</style>',
+        '<style>body{font-family:Segoe UI,Roboto,Arial;margin:24px} table{border-collapse:collapse;width:100%} th,td{border:1px solid #ccc;padding:8px 10px;text-align:left} th{background:#f5f7fb} .ok{color:#2e7d32}.bad{color:#c62828}.muted{color:#667} .nav a{margin-right:12px} .btn{display:inline-block;margin:4px 6px;padding:6px 10px;border:1px solid #ccc;border-radius:6px;background:#f7f9fc;cursor:pointer} .btn:disabled{opacity:.5;cursor:not-allowed} .toolbar{margin:12px 0 18px}</style>',
         '<div class="nav"><a href="dashboard.html">Dashboard</a><a href="volumes_status.html">Volumes Status</a></div>',
         '<h1>RPRTech · Proposal Status Dashboard</h1>',
+        '<div class="toolbar">',
+        '<button class="btn" onclick="runTask(\'validate_filenames\')">Validate Filenames</button>',
+        '<button class="btn" onclick="runTask(\'check_page_counts\')">Check Page Counts</button>',
+        '<button class="btn" onclick="runTask(\'compute_work_split\')">Compute Work Split</button>',
+        '<button class="btn" onclick="runTask(\'check_fedramp_evidence\')">Check FedRAMP Evidence</button>',
+        '<button class="btn" onclick="runTask(\'regen_dashboards\')">Regenerate Dashboards</button>',
+        '<span id="runStatus" class="muted"></span>',
+        '</div>',
+        '<script>
+async function runTask(task){
+  const s = document.getElementById("runStatus");
+  s.textContent = `Running ${task}...`;
+  try{
+    const res = await fetch(`http://127.0.0.1:8765/run?task=${task}`);
+    const j = await res.json();
+    s.textContent = `${task}: ${j.ok? 'OK' : 'FAILED'} (code ${j.returncode ?? 'n/a'})`;
+  }catch(e){ s.textContent = `${task}: error ${e}`; }
+}
+</script>',
         '<table><tr><th>File</th><th>Updated</th><th>Size</th><th>Summary</th></tr>'
     ]
     for n,mt,sz,ok,sm in rows:
@@ -70,12 +89,26 @@ def generate_volumes_status():
     vol2 = st.get('vol2','Unknown')
     html = [
         '<!doctype html>','<meta charset="utf-8">','<title>Volumes Status</title>',
-        '<style>body{font-family:Segoe UI,Roboto,Arial;margin:24px} .card{border:1px solid #ccc;border-radius:10px;padding:16px;margin-bottom:12px} .nav a{margin-right:12px}</style>',
+        '<style>body{font-family:Segoe UI,Roboto,Arial;margin:24px} .card{border:1px solid #ccc;border-radius:10px;padding:16px;margin-bottom:12px} .nav a{margin-right:12px} .btn{display:inline-block;margin:4px 6px;padding:6px 10px;border:1px solid #ccc;border-radius:6px;background:#f7f9fc;cursor:pointer}</style>',
         '<div class="nav"><a href="dashboard.html">Dashboard</a><a href="volumes_status.html">Volumes Status</a></div>',
         '<h1>Volumes Status</h1>',
-        f'<div class="card"><strong>Overall:</strong> {overall}</div>',
-        f'<div class="card"><strong>Volume 1 (Technical):</strong> {vol1}</div>',
-        f'<div class="card"><strong>Volume 2 (Past Performance):</strong> {vol2}</div>',
+        '<div class="card">'
+        '<div style="margin-bottom:8px;"><button class="btn" onclick="runTask(\'validate_filenames\')">Validate Filenames</button> <button class="btn" onclick="runTask(\'check_page_counts\')">Check Page Counts</button> <button class="btn" onclick="runTask(\'regen_dashboards\')">Regenerate Dashboards</button> <span id="runStatus" class="muted"></span></div>'
+        f'<div><strong>Overall:</strong> {overall}</div>'
+        f'<div><strong>Volume 1 (Technical):</strong> {vol1}</div>'
+        f'<div><strong>Volume 2 (Past Performance):</strong> {vol2}</div>'
+        '</div>',
+        '<script>
+async function runTask(task){
+  const s = document.getElementById("runStatus");
+  s.textContent = `Running ${task}...`;
+  try{
+    const res = await fetch(`http://127.0.0.1:8765/run?task=${task}`);
+    const j = await res.json();
+    s.textContent = `${task}: ${j.ok? 'OK' : 'FAILED'} (code ${j.returncode ?? 'n/a'})`;
+  }catch(e){ s.textContent = `${task}: error ${e}`; }
+}
+</script>'
     ]
     with open(VOLUMES_HTML,'w',encoding='utf-8') as f:
         f.write('\n'.join(html))
