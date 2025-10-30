@@ -59,7 +59,7 @@ def generate_dashboard():
         '<button class="btn" onclick="runTask(\'regen_dashboards\')">Regenerate Dashboards</button>',
         '<span id="runStatus" class="muted"></span>',
         '</div>',
-        '<script>
+        '''<script>
 async function runTask(task){
   const s = document.getElementById("runStatus");
   s.textContent = `Running ${task}...`;
@@ -69,7 +69,7 @@ async function runTask(task){
     s.textContent = `${task}: ${j.ok? 'OK' : 'FAILED'} (code ${j.returncode ?? 'n/a'})`;
   }catch(e){ s.textContent = `${task}: error ${e}`; }
 }
-</script>',
+</script>''',
         '<table><tr><th>File</th><th>Updated</th><th>Size</th><th>Summary</th></tr>'
     ]
     for n,mt,sz,ok,sm in rows:
@@ -98,7 +98,7 @@ def generate_volumes_status():
         f'<div><strong>Volume 1 (Technical):</strong> {vol1}</div>'
         f'<div><strong>Volume 2 (Past Performance):</strong> {vol2}</div>'
         '</div>',
-        '<script>
+        '''<script>
 async function runTask(task){
   const s = document.getElementById("runStatus");
   s.textContent = `Running ${task}...`;
@@ -108,7 +108,7 @@ async function runTask(task){
     s.textContent = `${task}: ${j.ok? 'OK' : 'FAILED'} (code ${j.returncode ?? 'n/a'})`;
   }catch(e){ s.textContent = `${task}: error ${e}`; }
 }
-</script>'
+</script>'''
     ]
     with open(VOLUMES_HTML,'w',encoding='utf-8') as f:
         f.write('\n'.join(html))
