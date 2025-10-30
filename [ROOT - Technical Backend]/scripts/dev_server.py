@@ -15,22 +15,23 @@ TASKS = {
 }
 
 class Handler(BaseHTTPRequestHandler):
+    def _set_cors(self):
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+
     def _json(self, code, obj):
         body = json.dumps(obj).encode('utf-8')
         self.send_response(code)
         self.send_header('Content-Type', 'application/json')
         self.send_header('Content-Length', str(len(body)))
-        self.send_header('Access-Control-Allow-Origin', 'http://localhost')
-        self.send_header('Access-Control-Allow-Origin', 'http://127.0.0.1')
-        self.send_header('Access-Control-Allow-Origin', '*')
+        self._set_cors()
         self.end_headers()
         self.wfile.write(body)
 
     def do_OPTIONS(self):
         self.send_response(204)
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Content-Type')
+        self._set_cors()
         self.end_headers()
 
     def do_GET(self):
@@ -54,10 +55,32 @@ class Handler(BaseHTTPRequestHandler):
                 })
             except Exception as e:
                 return self._json(500, {'ok': False, 'error': str(e), 'task': task})
-        return self._json(404, {'ok': False, 'error': 'not_found'})
+        # Serve static files under ROOT (dashboards, JSON, etc.)
+        path = url.path.lstrip('/') or 'dashboard.html'
+        fs_path = os.path.join(ROOT, path)
+        if os.path.isdir(fs_path):
+            fs_path = os.path.join(fs_path, 'index.html')
+        if os.path.exists(fs_path):
+            try:
+                with open(fs_path, 'rb') as f:
+                    data = f.read()
+                self.send_response(200)
+                ctype = 'text/html; charset=utf-8'
+                if fs_path.endswith('.json'): ctype = 'application/json; charset=utf-8'
+                if fs_path.endswith('.css'): ctype = 'text/css; charset=utf-8'
+                if fs_path.endswith('.js'): ctype = 'application/javascript; charset=utf-8'
+                self.send_header('Content-Type', ctype)
+                self.send_header('Content-Length', str(len(data)))
+                self._set_cors()
+                self.end_headers()
+                self.wfile.write(data)
+                return
+            except Exception as e:
+                return self._json(500, {'ok': False, 'error': str(e)})
+        return self._json(404, {'ok': False, 'error': 'not_found', 'path': path})
 
 def main():
-    host = '127.0.0.1'
+    host = '0.0.0.0'
     port = int(os.environ.get('DEV_SERVER_PORT', '8765'))
     httpd = HTTPServer((host, port), Handler)
     print(f"Dev server running on http://{host}:{port}")

@@ -60,15 +60,44 @@ def generate_dashboard():
         '<span id="runStatus" class="muted"></span>',
         '</div>',
         '''<script>
+const base = (window.location.origin && window.location.origin.startsWith('http')) ? window.location.origin : 'http://127.0.0.1:8765';
 async function runTask(task){
   const s = document.getElementById("runStatus");
   s.textContent = `Running ${task}...`;
   try{
-    const res = await fetch(`http://127.0.0.1:8765/run?task=${task}`);
+    const res = await fetch(`${base}/run?task=${task}`);
     const j = await res.json();
     s.textContent = `${task}: ${j.ok? 'OK' : 'FAILED'} (code ${j.returncode ?? 'n/a'})`;
   }catch(e){ s.textContent = `${task}: error ${e}`; }
 }
+
+async function loadChecks(){
+  const el = document.getElementById('checks');
+  if(!el) return;
+  try{
+    const [pm, cv] = await Promise.all([
+      fetch(`${base}/proposal_master_dashboard_skeleton.json`).then(r=>r.json()),
+      fetch(`${base}/compliance_verification_skeleton_v2.json`).then(r=>r.json()),
+    ]);
+    const items = [];
+    const hb = ((pm||{}).health_heartbeat)||{};
+    const work = hb.work_split||{};
+    const fed = hb.fedramp_evidence||{};
+    items.push({name:'Work Split >50%', ok:!!work.ok});
+    items.push({name:'FedRAMP Evidence Chain', ok:!!fed.ok});
+    const fv = (cv||{}).work_split_verification||{};
+    if(fv.verification_status){ items.push({name:'Work Split Verification', ok: fv.verification_status==='pass'}); }
+    const fe = (cv||{}).fedramp_evidence_verification||{};
+    if(fe.verification_status){ items.push({name:'FedRAMP Evidence Verification', ok: fe.verification_status==='pass'}); }
+    el.innerHTML = items.map(i=>{
+      const color = i.ok ? '#2e7d32' : '#c62828';
+      return `<div style="margin:6px 0;display:flex;align-items:center;"><span style="display:inline-block;width:10px;height:10px;border-radius:50%;background:${color};margin-right:8px;"></span>${i.name}</div>`;
+    }).join('');
+  }catch(e){
+    el.textContent = 'Failed to load checks: '+e;
+  }
+}
+window.addEventListener('DOMContentLoaded', loadChecks);
 </script>''',
         '<table><tr><th>File</th><th>Updated</th><th>Size</th><th>Summary</th></tr>'
     ]
@@ -76,6 +105,7 @@ async function runTask(task){
         cls = 'ok' if ok else 'bad'
         html.append(f'<tr><td>{n}</td><td class="muted">{mt}</td><td class="muted">{sz} B</td><td class="{cls}">{sm}</td></tr>')
     html.append('</table>')
+    html.append('<h2>Key Checks</h2><div id="checks" class="muted">Loading…</div>')
     html.append(f'<p class="muted">Last generated: {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}</p>')
     with open(DASHBOARD_HTML,'w',encoding='utf-8') as f:
         f.write('\n'.join(html))
